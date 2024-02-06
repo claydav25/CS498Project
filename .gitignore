@@ -2,7 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/[Ll]ibrary/
+/[Ll]ibrary/PackageCache/com.unity.burst@1.8.7/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/

@@ -1,0 +1,66 @@
+.data_start
+    .export jumpHeight
+    .export runSpeed
+    .export walkSpeed
+    .export strafeSpeed
+    .export gravity
+    .export useLegacyLocomotion
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    jumpHeight: %SystemSingle, null
+    runSpeed: %SystemSingle, null
+    walkSpeed: %SystemSingle, null
+    strafeSpeed: %SystemSingle, null
+    gravity: %SystemSingle, null
+    useLegacyLocomotion: %SystemBoolean, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemObject_0: %SystemObject, null
+    __this_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, this
+    __lcl_playerApi_VRCSDKBaseVRCPlayerApi_0: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Examples.Utilities.PlayerModSetter.Start()
+# 
+        PUSH, __lcl_playerApi_VRCSDKBaseVRCPlayerApi_0
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __lcl_playerApi_VRCSDKBaseVRCPlayerApi_0
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x000000e0
+        PUSH, __lcl_playerApi_VRCSDKBaseVRCPlayerApi_0
+        PUSH, jumpHeight
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__SetJumpImpulse__SystemSingle__SystemVoid"
+        PUSH, __lcl_playerApi_VRCSDKBaseVRCPlayerApi_0
+        PUSH, runSpeed
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__SetRunSpeed__SystemSingle__SystemVoid"
+        PUSH, __lcl_playerApi_VRCSDKBaseVRCPlayerApi_0
+        PUSH, walkSpeed
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__SetWalkSpeed__SystemSingle__SystemVoid"
+        PUSH, __lcl_playerApi_VRCSDKBaseVRCPlayerApi_0
+        PUSH, strafeSpeed
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__SetStrafeSpeed__SystemSingle__SystemVoid"
+        PUSH, __lcl_playerApi_VRCSDKBaseVRCPlayerApi_0
+        PUSH, gravity
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__SetGravityStrength__SystemSingle__SystemVoid"
+        PUSH, useLegacyLocomotion
+        JUMP_IF_FALSE, 0x000000e0
+        PUSH, __lcl_playerApi_VRCSDKBaseVRCPlayerApi_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__UseLegacyLocomotion__SystemVoid"
+        PUSH, __this_VRCUdonUdonBehaviour_0
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        EXTERN, "UnityEngineObject.__Destroy__UnityEngineObject__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end
