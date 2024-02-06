@@ -1,0 +1,57 @@
+.data_start
+    .export trackedBone
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    trackedBone: %UnityEngineHumanBodyBones, null
+    playerApi: %VRCSDKBaseVRCPlayerApi, null
+    isInEditor: %SystemBoolean, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemObject_0: %SystemObject, null
+    __this_UnityEngineTransform_0: %UnityEngineTransform, this
+    __intnl_UnityEngineVector3_0: %UnityEngineVector3, null
+    __intnl_UnityEngineQuaternion_0: %UnityEngineQuaternion, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Examples.Utilities.BoneFollower.Start()
+# 
+        PUSH, playerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, playerApi
+        PUSH, __const_SystemObject_0
+        PUSH, isInEditor
+        EXTERN, "SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _update
+    _update:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Examples.Utilities.BoneFollower.Update()
+# 
+        PUSH, isInEditor
+        JUMP_IF_FALSE, 0x00000078
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, playerApi
+        PUSH, trackedBone
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3"
+        PUSH, playerApi
+        PUSH, trackedBone
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetBoneRotation__UnityEngineHumanBodyBones__UnityEngineQuaternion"
+        PUSH, __this_UnityEngineTransform_0
+        PUSH, __intnl_UnityEngineVector3_0
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "UnityEngineTransform.__SetPositionAndRotation__UnityEngineVector3_UnityEngineQuaternion__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end
