@@ -1,0 +1,112 @@
+#T#PoiRalivDPSProperties
+//ifex _PenetratorEnabled!=1 && _OrifaceEnabled!=1
+[HideInInspector] m_start_raliv ("Raliv Dynamic Penetration System--{button_help:{text:Gumroad,action:{type:URL,data:https://gumroad.com/l/lwthuB},hover:Buy}}", Float) = 0
+// Penetrator
+[Helpbox(1)] _RalivHelp ("To use this you'll need to purchase the shader from the gumroad link in the header", Int) = 0
+//ifex _PenetratorEnabled!=1
+[HideInInspector] m_start_ralivPenetrator ("Penetrator--{reference_property:_PenetratorEnabled}", Float) = 0
+[HideInInspector][ToggleUI] _PenetratorEnabled ("Enabled", Float) = 0
+_Squeeze("Squeeze Minimum Size", Range(0, 0.2)) = 0
+_SqueezeDist("Squeeze Smoothness", Range(0, 0.1)) = 0
+_BulgePower("Bulge Amount", Range(0, 0.01)) = 0
+_BulgeOffset("Bulge Length", Range(0, 0.3)) = 0
+_Length("Length of Penetrator Model", Float) = 0
+_EntranceStiffness("Entrance Stiffness", Range(0.01, 1)) = 0.01
+_Curvature("Curvature", Range(-1, 1)) = 0
+_ReCurvature("ReCurvature", Range(-1, 1)) = 0
+_Wriggle("Wriggle Amount", Range(0, 1)) = 0
+_WriggleSpeed("Wriggle Speed", Range(0.1, 30)) = 0.28
+[HideInInspector] m_end_ralivPenetrator ("Penetrator", Float) = 0
+//endex
+// Oriface
+//ifex _OrifaceEnabled!=1
+[HideInInspector] m_start_ralivOriface ("Oriface--{reference_property:_OrifaceEnabled}", Float) = 0
+[HideInInspector][ToggleUI] _OrifaceEnabled ("Enabled", Float) = 0
+_OrificeData("OrificeData", 2D) = "white" {}
+_EntryOpenDuration("Entry Trigger Duration", Range(0, 1)) = 0.1
+_Shape1Depth("Shape 1 Trigger Depth", Range(0, 5)) = 0.1
+_Shape1Duration("Shape 1 Trigger Duration", Range(0, 1)) = 0.1
+_Shape2Depth("Shape 2 Trigger Depth", Range(0, 5)) = 0.2
+_Shape2Duration("Shape 2 Trigger Duration", Range(0, 1)) = 0.1
+_Shape3Depth("Shape 3 Trigger Depth", Range(0, 5)) = 0.3
+_Shape3Duration("Shape 3 Trigger Duration", Range(0, 1)) = 0.1
+_BlendshapePower("Blend Shape Power", Range(0, 5)) = 1
+_BlendshapeBadScaleFix("Blend Shape Bad Scale Fix", Range(1, 100)) = 1
+[HideInInspector] m_end_ralivOriface ("Oriface", Float) = 0
+//endex
+[HideInInspector] m_start_ralivAdvanced ("Advanced", Float) = 0
+[Helpbox(1)] _RalivAdvancedHelp ("An advanced user feature that allows a separate channel for penetrators and orifices (think toy radio controlled cars) 0s only interact with 0s and 1s only interact with 1s", Int) = 0
+_OrificeChannel("OrificeChannel Please Use 0", Float) = 0
+[Helpbox(0)] _RalivDPSDisableShadowCasterHelp ("Enabling ShadowCaster means that you may see real time shadows through the mesh and is not recommended for Penetrators and any Orifices that greatly expand", Int) = 0
+[ToggleUI] _RalivDPSDisableShadowCaster ("Disable ShadowCaster for DPS", Int) = 1
+[HideInInspector] m_end_ralivAdvanced ("Advanced", Float) = 0
+[HideInInspector] m_end_raliv ("Raliv", Float) = 0
+//endex
+
+#T#PoiRalivDPSInclude
+//ifex _PenetratorEnabled!=1
+#define RALIV_PENETRATOR
+//endex
+//ifex _OrifaceEnabled!=1
+#define RALIV_ORIFICE
+//endex
+//ifex _PenetratorEnabled!=1 && _OrifaceEnabled!=1
+#include "Assets/_PoiyomiShaders/Shaders/ThirdParty/RalivDynamicPenetrationSystem/RalivDPS_Keyword.cginc"
+#include "Assets/_PoiyomiShaders/Shaders/ThirdParty/RalivDynamicPenetrationSystem/RalivDPS_Defines.cginc"
+#include "Assets/_PoiyomiShaders/Shaders/ThirdParty/RalivDynamicPenetrationSystem/RalivDPS_Functions.cginc"
+int _PenetratorEnabled;
+int _OrifaceEnabled;
+int _RalivDPSDisableShadowCaster;
+//endex
+
+#T#PoiRalivDPSOrificeFunctionCall
+//ifex _OrifaceEnabled!=1
+#ifdef RALIV_PENETRATION
+	if (_OrifaceEnabled)
+	{
+		#ifdef UNITY_PASS_SHADOWCASTER
+			if (_RalivDPSDisableShadowCaster) return (VertexOut)POI_NAN;
+		#endif
+		OrificeReshape(v.vertex, v.normal, v.tangent, v.vertexId);
+	}
+#endif
+//endex
+
+#T#PoiRalivDPSPenetratorFunctionCall
+//ifex _PenetratorEnabled!=1
+#ifdef RALIV_PENETRATION
+	if (_PenetratorEnabled)
+	{
+		#ifdef UNITY_PASS_SHADOWCASTER
+			if (_RalivDPSDisableShadowCaster) return (VertexOut)POI_NAN;
+		#endif
+		PenetratorReshape(o.localPos, o.normal);
+	}
+#endif
+//endex
+
+#T#PoiRalivDPSAttenuationKill
+//ifex _RalivDPSDisableShadowCaster!=1
+#ifdef RALIV_PENETRATION
+	if (_PenetratorEnabled || _OrifaceEnabled)
+	{
+		if (_RalivDPSDisableShadowCaster)
+		{
+			poiLight.attenuation = 1;
+		}
+	}
+#endif
+//endex
+
+#T#PoiRalivDPSKillShadow
+// This is superseded by the #ifdef SHADOWCASTER checks
+// This is also removed from the Module
+//ifex _PenetratorEnabled!=1 && _OrifaceEnabled!=1
+#ifdef RALIV_PENETRATION
+	// if (_PenetratorEnabled || _OrifaceEnabled)
+	// {
+	// 	clip(-1);
+	// 	return 0;
+	// }
+#endif
+//endex

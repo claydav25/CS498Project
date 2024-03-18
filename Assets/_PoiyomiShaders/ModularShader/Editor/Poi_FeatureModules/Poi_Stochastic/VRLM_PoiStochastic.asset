@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1039f25740a92fc4292bb1d94d07ad19, type: 3}
+  m_Name: VRLM_PoiStochastic
+  m_EditorClassIdentifier: 
+  Id: PoiStochastic
+  Name: Poi Stochastic Sampling
+  Version: 1.0
+  Author: Poiyomi
+  Description: 
+  EnableProperties: []
+  Properties: []
+  ModuleDependencies: []
+  IncompatibleWith: []
+  Templates:
+  - Template: {fileID: 2424536110420513701, guid: 1125eac614b15f543a1d9d56e954284d,
+      type: 3}
+    Keywords:
+    - UV_PROPERTIES
+    NeedsVariant: 0
+    Queue: 0
+  - Template: {fileID: -8395935313959551562, guid: 1125eac614b15f543a1d9d56e954284d,
+      type: 3}
+    Keywords:
+    - SHADER_KEYWORDS
+    NeedsVariant: 0
+    Queue: 0
+  - Template: {fileID: 3848909675678313129, guid: 1125eac614b15f543a1d9d56e954284d,
+      type: 3}
+    Keywords:
+    - BASE_PROPERTY_VARIABLES
+    - ADD_PROPERTY_VARIABLES
+    - SHADOW_PROPERTY_VARIABLES
+    - OUTLINE_PROPERTY_VARIABLES
+    - META_PROPERTY_VARIABLES
+    NeedsVariant: 0
+    Queue: 0
+  - Template: {fileID: -221609092452328893, guid: 1125eac614b15f543a1d9d56e954284d,
+      type: 3}
+    Keywords:
+    - FRAGMENT_BASE_FUNCTIONS
+    - FRAGMENT_ADD_FUNCTIONS
+    - FRAGMENT_SHADOW_FUNCTIONS
+    - FRAGMENT_OUTLINE_FUNCTIONS
+    - FRAGMENT_META_FUNCTIONS
+    NeedsVariant: 0
+    Queue: 0
+  - Template: {fileID: -4998995568285184125, guid: 1125eac614b15f543a1d9d56e954284d,
+      type: 3}
+    Keywords:
+    - FRAGMENT_BASE_INIT
+    - FRAGMENT_ADD_INIT
+    - FRAGMENT_SHADOW_INIT
+    - FRAGMENT_META_INIT
+    NeedsVariant: 0
+    Queue: 0
+  Functions: []
+  AdditionalSerializedData: 

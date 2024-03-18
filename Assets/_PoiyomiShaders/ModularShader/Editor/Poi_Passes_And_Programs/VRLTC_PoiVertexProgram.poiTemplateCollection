@@ -1,0 +1,101 @@
+#T#PoiVertexPragma
+#pragma vertex vert
+#T#PoiVertexProgram
+VertexOut vert(
+    #ifndef POI_TESSELLATED
+        appdata v
+    #else
+        tessAppData v
+    #endif
+)
+{
+    UNITY_SETUP_INSTANCE_ID(v);
+    VertexOut o;
+    PoiInitStruct(VertexOut, o);
+    UNITY_TRANSFER_INSTANCE_ID(v, o);
+    #ifdef POI_TESSELLATED
+        UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(v);
+    #endif
+    UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
+
+    #K#VERTEX_INPUT_MODS
+
+    o.normal = UnityObjectToWorldNormal(v.normal);
+    o.tangent.xyz = UnityObjectToWorldDir(v.tangent);
+    o.tangent.w = v.tangent.w;
+    o.vertexColor = v.color;
+
+    o.uv[0] = float4(v.uv0.xy, v.uv1.xy);
+    o.uv[1] = float4(v.uv2.xy, v.uv3.xy);
+
+    #if defined(LIGHTMAP_ON)
+        o.lightmapUV.xy = v.uv1.xy * unity_LightmapST.xy + unity_LightmapST.zw;
+    #endif
+    #ifdef DYNAMICLIGHTMAP_ON
+        o.lightmapUV.zw = v.uv2.xy * unity_DynamicLightmapST.xy + unity_DynamicLightmapST.zw;
+    #endif
+
+    o.localPos = v.vertex;
+    o.worldPos = mul(unity_ObjectToWorld, o.localPos);
+
+    float3 localOffset = float3(0, 0, 0);
+    float3 worldOffset = float3(0, 0, 0);
+
+    #K#VERTEX_MODS_EARLY
+    #K#VERTEX_MODS
+    #K#VERTEX_MODS_LATE
+
+    o.localPos.rgb += localOffset;
+    o.worldPos.rgb += worldOffset;
+
+    #K#VERTEX_MODS_PENETRATION
+    #K#VERTEX_MODS_PRE_CLIPPOS
+
+    o.pos = UnityObjectToClipPos(o.localPos);
+
+    #K#VERTEX_MODS_POST_CLIPPOS
+
+    #ifdef POI_PASS_OUTLINE
+        #if defined(UNITY_REVERSED_Z)
+            //DX
+            o.pos.z += _Offset_Z * - 0.01;
+        #else
+            //OpenGL
+            o.pos.z += _Offset_Z * 0.01;
+        #endif
+    #endif
+    //o.grabPos = ComputeGrabScreenPos(o.pos);
+
+
+    #ifndef FORWARD_META_PASS
+        #if !defined(UNITY_PASS_SHADOWCASTER)
+            UNITY_TRANSFER_SHADOW(o, o.uv[0].xy);
+        #else
+            v.vertex.xyz = o.localPos.xyz;
+            TRANSFER_SHADOW_CASTER_NOPOS(o, o.pos);
+        #endif
+    #endif
+    
+    UNITY_TRANSFER_FOG(o, o.pos);
+
+    if (_RenderingReduceClipDistance)
+	{
+		if (o.pos.w < _ProjectionParams.y * 1.01 && o.pos.w > 0)
+		{
+			#if defined(UNITY_REVERSED_Z) // DirectX
+			o.pos.z = o.pos.z * 0.0001 + o.pos.w * 0.999;
+		    #else // OpenGL
+			o.pos.z = o.pos.z * 0.0001 - o.pos.w * 0.999;
+            #endif
+		}
+	}
+
+
+	#ifdef POI_PASS_META
+		o.pos = UnityMetaVertexPosition(v.vertex, v.uv1.xy, v.uv2.xy, unity_LightmapST, unity_DynamicLightmapST);
+	#endif
+
+    #K#VERTEX_MODS_FINAL
+
+    return o;
+}

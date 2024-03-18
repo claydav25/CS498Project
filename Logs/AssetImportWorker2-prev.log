@@ -1,0 +1,1669 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.6f1 (b9e6e7e9fa2d) revision 12183271'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 32605 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\Unity\Installs\2022.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/jevan/Documents/GitHub/CS498ProjectMain
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+53676
+Successfully changed project path to: C:/Users/jevan/Documents/GitHub/CS498ProjectMain
+C:/Users/jevan/Documents/GitHub/CS498ProjectMain
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [11332] Host "[IP] 192.168.51.39 [Port] 0 [Flags] 2 [Guid] 841476254 [EditorId] 841476254 [Version] 1048832 [Id] WindowsEditor(7,RadiantDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [11332] Host "[IP] 192.168.51.39 [Port] 0 [Flags] 2 [Guid] 841476254 [EditorId] 841476254 [Version] 1048832 [Id] WindowsEditor(7,RadiantDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 51.90 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.97 ms.
+Initialize engine version: 2022.3.6f1 (b9e6e7e9fa2d)
+[Subsystems] Discovering subsystems at path E:/Unity/Installs/2022.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/jevan/Documents/GitHub/CS498ProjectMain/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6800 (ID=0x73bf)
+    Vendor:   ATI
+    VRAM:     16338 MB
+    Driver:   31.0.23013.1023
+Initialize mono
+Mono path[0] = 'E:/Unity/Installs/2022.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/Installs/2022.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Unity/Installs/2022.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56672
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity/Installs/2022.3.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: E:/Unity/Installs/2022.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002511 seconds.
+- Loaded All Assemblies, in  0.278 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.262 seconds
+Domain Reload Profiling: 541ms
+	BeginReloadAssembly (59ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (59ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (141ms)
+				TypeCache.ScanAssembly (132ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (263ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (208ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (80ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (85ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.753 seconds
+Refreshing native plugins compatible for Editor in 28.62 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
+  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
+  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
+  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:282 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:267 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <347e3e2bef8c4deb82c9790c6e198135>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.067 seconds
+Domain Reload Profiling: 2817ms
+	BeginReloadAssembly (90ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (596ms)
+		LoadAssemblies (305ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (329ms)
+			TypeCache.Refresh (299ms)
+				TypeCache.ScanAssembly (285ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (2067ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1078ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (585ms)
+			ProcessInitializeOnLoadMethodAttributes (357ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 22.95 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.10 ms.
+Unloading 4298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 227 unused Assets / (1.8 MB). Loaded Objects now: 4734.
+Memory consumption went from 308.4 MB to 306.6 MB.
+Total: 20.931300 ms (FindLiveObjects: 0.234900 ms CreateObjectMapping: 0.127500 ms MarkObjects: 20.018900 ms  DeleteObjects: 0.549000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8857.660528 seconds.
+  path: Assets/_PoiyomiShaders/Textures/poigo.png
+  artifactKey: Guid(b43f2c4f40ab8c84da2c6c7dd11c8b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/poigo.png using Guid(b43f2c4f40ab8c84da2c6c7dd11c8b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8537c7ff334dd50723ea8c605cdf38a2') in 0.050593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.057222 seconds.
+  path: Assets/_PoiyomiShaders/TPS/Assets/Jar/textures/ranch_Base_color.png
+  artifactKey: Guid(5c3e3ddfe30e1a349897c666ccd1b292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/TPS/Assets/Jar/textures/ranch_Base_color.png using Guid(5c3e3ddfe30e1a349897c666ccd1b292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3436599757b7869c1a8d7e23f6b9ff44') in 0.014618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.273072 seconds.
+  path: Assets/_PoiyomiShaders/Scripts/Editor/ModularShaderSystem/Resources/POIMSS/ShaderModuleIcon.png
+  artifactKey: Guid(9451c1f11dba73b4ea6b13157202097d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Scripts/Editor/ModularShaderSystem/Resources/POIMSS/ShaderModuleIcon.png using Guid(9451c1f11dba73b4ea6b13157202097d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e2fbe364509a274404053112e6a4db') in 0.011666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.012850 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Ramps/SkinLUT.png
+  artifactKey: Guid(d13510bb2be49aa40a66a0101efb6a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Ramps/SkinLUT.png using Guid(d13510bb2be49aa40a66a0101efb6a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2048faabff1d1480a9441b0c9d63ae6') in 0.015978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.296043 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Gifs/T_2ColorLines_GIF.gif
+  artifactKey: Guid(3219b69a8562db0439012ae282fc6eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Gifs/T_2ColorLines_GIF.gif using Guid(3219b69a8562db0439012ae282fc6eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4596bb5614c08995f1d051184f14d96e') in 0.013861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Misc/T_Black.png
+  artifactKey: Guid(4ce40eff399b11a4fb5cddbc29ee2227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Misc/T_Black.png using Guid(4ce40eff399b11a4fb5cddbc29ee2227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7902d2fe0869752711adfbe5359a7e68') in 0.012041 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Shapes/Normals/T_Cloth_N.jpg
+  artifactKey: Guid(f3dc3d4e2a6de754d93047830bdc5d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Shapes/Normals/T_Cloth_N.jpg using Guid(f3dc3d4e2a6de754d93047830bdc5d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48951fc95da2b5790e1d478830c9c25e') in 0.020068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Cubemaps/T_Clouds_CM.jpg
+  artifactKey: Guid(8fc1b64e56c5c6540a4fe651abb8e855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Cubemaps/T_Clouds_CM.jpg using Guid(8fc1b64e56c5c6540a4fe651abb8e855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8416dd620943db5d95362f45cae45557') in 0.039057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Fonts/T_DigitalBold_FONT.png
+  artifactKey: Guid(fa80ac020379e5047896d6c7551b216a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Fonts/T_DigitalBold_FONT.png using Guid(fa80ac020379e5047896d6c7551b216a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42083709920fae1a01225340785b514b') in 0.016052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Distortion/T_DistortionMap0_DM.png
+  artifactKey: Guid(07f0a54a3a4e7754eabc8ced70d7b30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Distortion/T_DistortionMap0_DM.png using Guid(07f0a54a3a4e7754eabc8ced70d7b30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99911581c8eb0e8366d3f304794c7dd5') in 0.015179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Cloudy_Noise.png
+  artifactKey: Guid(39587adffa9ad98488e3d4c7c56a92a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Cloudy_Noise.png using Guid(39587adffa9ad98488e3d4c7c56a92a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '117546a3903900ac767af96a45e00100') in 0.011380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Misc/T_Circle.png
+  artifactKey: Guid(ce440cfbe62dfdd4abc464cf7b031b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Misc/T_Circle.png using Guid(ce440cfbe62dfdd4abc464cf7b031b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa25fa2adf4430fff14f6dd7e4144c5') in 0.010462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.176153 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Gifs/T_FireWorks_GIF.asset
+  artifactKey: Guid(b3e6736154fdd1741ab3ef67accabdcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Gifs/T_FireWorks_GIF.asset using Guid(b3e6736154fdd1741ab3ef67accabdcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a976f30a9909fa61c908eec21234eae') in 0.017810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Gifs/T_Hearts_GIF.gif
+  artifactKey: Guid(a937e2d8cd8cb8840ab729392c896c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Gifs/T_Hearts_GIF.gif using Guid(a937e2d8cd8cb8840ab729392c896c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f1c8dc82e68c637c18cf367176c524e') in 0.011020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Masks/T_Grid_MBW.png
+  artifactKey: Guid(47a1e48d03a0094499c5ebdd30e29495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Masks/T_Grid_MBW.png using Guid(47a1e48d03a0094499c5ebdd30e29495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa93f1072899b95273a4ca09ba7ea8d4') in 0.011645 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.512552 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Icons/T_icon-patreon.png
+  artifactKey: Guid(61cb1accaca1c8f4db4dc55dbfa567bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Icons/T_icon-patreon.png using Guid(61cb1accaca1c8f4db4dc55dbfa567bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0e68164fc73a79c5d4ad3113203783f') in 0.014138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Cubemaps/T_iridescent_CM.png
+  artifactKey: Guid(137e423b84d592745900f40e96109a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Cubemaps/T_iridescent_CM.png using Guid(137e423b84d592745900f40e96109a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b069b5b633356821c193fe7e8e846b3') in 0.014892 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap.png
+  artifactKey: Guid(b66c2d17fdb7f5a4197a759142e82c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap.png using Guid(b66c2d17fdb7f5a4197a759142e82c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f307521b0a9894d6a946e7e6db5768') in 0.011408 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Defaults/T_MainTex_D.png
+  artifactKey: Guid(a6d6984545cde4a4f9317b17d6dca225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Defaults/T_MainTex_D.png using Guid(a6d6984545cde4a4f9317b17d6dca225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a47a054f41a8f251de464987dc0b5a4') in 0.010637 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.044109 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (1).jpg
+  artifactKey: Guid(22e746c3d444b3c43b687229e8263cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (1).jpg using Guid(22e746c3d444b3c43b687229e8263cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4a7ae2aefcf4df6d1c58dced3f9f306') in 0.014325 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (6).jpg
+  artifactKey: Guid(9bb7c453de514554db5dbb8a2cfc672b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (6).jpg using Guid(9bb7c453de514554db5dbb8a2cfc672b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f49f843d6c7e524a8a3d8b063e670d7f') in 0.012310 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (3).png
+  artifactKey: Guid(f5303b4da8057574c84c7322a19702b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (3).png using Guid(f5303b4da8057574c84c7322a19702b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b60f7661bba0d8ce55fbe3f3e246eb5') in 0.011566 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (10).png
+  artifactKey: Guid(c9e5ea5d5e5e6f740815297d05d53ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (10).png using Guid(c9e5ea5d5e5e6f740815297d05d53ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8309abf412eb39a4fd772b94afe9c99') in 0.011679 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (5).png
+  artifactKey: Guid(caf2f79a23000a84599416e236287616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (5).png using Guid(caf2f79a23000a84599416e236287616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c873eea16ee646d3e34c448683438227') in 0.010787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (7).png
+  artifactKey: Guid(0e50551111e650f44bebc5d6f589d704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (7).png using Guid(0e50551111e650f44bebc5d6f589d704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0e6d1d4fe170c971c7ea9bc7ce1b535') in 0.011304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (2).jpg
+  artifactKey: Guid(ffefc5ef27c0c5542b545dd6169d0428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (2).jpg using Guid(ffefc5ef27c0c5542b545dd6169d0428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbebeeae3a5e9c882186208df21f0361') in 0.010463 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.765692 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (11).jpg
+  artifactKey: Guid(82136e8697de6eb4394177338725876f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (11).jpg using Guid(82136e8697de6eb4394177338725876f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16cb6c93aeb9b4ccabe08252eb8cd1e') in 0.019371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (14).png
+  artifactKey: Guid(b70fb87bdaed04d4db351ed4a1cf8433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (14).png using Guid(b70fb87bdaed04d4db351ed4a1cf8433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c56f311dd22d5ae485432e159386fb9b') in 0.016047 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (13).jpg
+  artifactKey: Guid(64eda4a30094fd24198f44b0c9d41208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (13).jpg using Guid(64eda4a30094fd24198f44b0c9d41208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2333ce3f37dbcf8f08c81394aa51dad6') in 0.013846 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.036775 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (16).jpg
+  artifactKey: Guid(507ec010e33595d4ca0fadcc45844169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (16).jpg using Guid(507ec010e33595d4ca0fadcc45844169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f77175aed196179ca5095923f8cdda7') in 0.014609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (18).png
+  artifactKey: Guid(db2d47f79a1508a44a20e7a3eebc07ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (18).png using Guid(db2d47f79a1508a44a20e7a3eebc07ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd51a7aaeb3e11038a7b6c72de8432b07') in 0.012190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (17).png
+  artifactKey: Guid(b2a2a720253b640459f15f64a371a83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (17).png using Guid(b2a2a720253b640459f15f64a371a83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fd20f91bf993c872e71c7c7f177d813') in 0.011940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (19).png
+  artifactKey: Guid(b9031c1f7aa3af84a9c6db1738c1ba59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (19).png using Guid(b9031c1f7aa3af84a9c6db1738c1ba59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe89b8cfae7db38a0a0cd744d720901') in 0.013375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (25).png
+  artifactKey: Guid(194efd6ff3768ab44b7ad9647dcd9d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (25).png using Guid(194efd6ff3768ab44b7ad9647dcd9d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c399bdd3837adf3588eb92e4787524f') in 0.011765 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (23).png
+  artifactKey: Guid(6fe30ec40a285ae4f90a2656a59b8048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (23).png using Guid(6fe30ec40a285ae4f90a2656a59b8048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c5d96768ad20af18cd061de2344cd1') in 0.011057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (21).png
+  artifactKey: Guid(5586e7d602e5b49408769f87e8c907d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (21).png using Guid(5586e7d602e5b49408769f87e8c907d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df8545ecf9c853eb91a0682341923da') in 0.013025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.024133 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (26).jpg
+  artifactKey: Guid(58b5b74caaea4b74ab0e210d080d43da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (26).jpg using Guid(58b5b74caaea4b74ab0e210d080d43da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc7af3f55fed9354f0c52a5ae31badf') in 0.013940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (30).jpg
+  artifactKey: Guid(0108fa829c99c56478b917b81937622c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (30).jpg using Guid(0108fa829c99c56478b917b81937622c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3912a12f12f9181f7c33803535c7814') in 0.010667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (29).jpg
+  artifactKey: Guid(7a28f4ace6d11af4a8b1e41c0e74e245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (29).jpg using Guid(7a28f4ace6d11af4a8b1e41c0e74e245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4bc99afcd1184ad8d1f72846abcc15b') in 0.013725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.068303 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (31).png
+  artifactKey: Guid(c481b4ce3da24254d8535e039bddd9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (31).png using Guid(c481b4ce3da24254d8535e039bddd9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ce7e2ffde631ab744239578011baa3') in 0.011034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (32).png
+  artifactKey: Guid(3c1b5b63bfcf1d64a85ae92a997559ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (32).png using Guid(3c1b5b63bfcf1d64a85ae92a997559ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1208d94dfd7f4d75aca4e0539546c02') in 0.011885 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (33).jpg
+  artifactKey: Guid(9093fc5a69128ad4b8d57fdfa63614ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (33).jpg using Guid(9093fc5a69128ad4b8d57fdfa63614ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed00f362449bf08c55fa39ca95b6860d') in 0.011312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (35).png
+  artifactKey: Guid(f5d590d6f058eab4ca5501856f5b48d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (35).png using Guid(f5d590d6f058eab4ca5501856f5b48d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313967b5c87b43dafbc978fa6370c6b6') in 0.010328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.034833 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (38).png
+  artifactKey: Guid(96af20914dee77340aa59723bee8417f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (38).png using Guid(96af20914dee77340aa59723bee8417f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a5fbb5dc72a4a7c801f4341755bea6') in 0.016441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (41).png
+  artifactKey: Guid(8db27ba22c9f17c408dd81739495da48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (41).png using Guid(8db27ba22c9f17c408dd81739495da48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7dfeeba5e52e07b360de1a3652652da') in 0.014805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (42).png
+  artifactKey: Guid(aa27df79f39a4aa4f9e59e56f202da35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Matcap_MC (42).png using Guid(aa27df79f39a4aa4f9e59e56f202da35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edba36098a3e0890c07de02c0db2e7e5') in 0.012751 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.134448 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_MatcapBlocky.png
+  artifactKey: Guid(93d28dfd4deff074e81bc284b54673c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_MatcapBlocky.png using Guid(93d28dfd4deff074e81bc284b54673c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1810c770feb84ca3d07a7d3a4c9da052') in 0.015077 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Ramps/T_Mihoyo_MCSR.tga
+  artifactKey: Guid(0901749828304e340844c78be88fe2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Ramps/T_Mihoyo_MCSR.tga using Guid(0901749828304e340844c78be88fe2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1087a0ab62227fbe285f7a7a404e38') in 0.016457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Ramps/T_Metal_SR.png
+  artifactKey: Guid(7ff3cc732aae9734f85c697329ee371f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Ramps/T_Metal_SR.png using Guid(7ff3cc732aae9734f85c697329ee371f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83423107256cfe5a3cd019fd726fb1f1') in 0.014538 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.071547 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (2).png
+  artifactKey: Guid(71eb1cadc5880074bb3788081492b75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (2).png using Guid(71eb1cadc5880074bb3788081492b75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d33086b18ee9baee2259be5857780a1') in 0.024750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (9).jpg
+  artifactKey: Guid(e645408cc6f35154bb09808bc39471b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (9).jpg using Guid(e645408cc6f35154bb09808bc39471b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f823153e94b92e3ef88a762d29e221a') in 0.011544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (4).jpg
+  artifactKey: Guid(04adfac2018725f43bf17158a3b6991a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (4).jpg using Guid(04adfac2018725f43bf17158a3b6991a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5b648f6a2436a09d424b1436a93626d') in 0.012806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.058493 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (10).jpg
+  artifactKey: Guid(83350d98782a3f64cb46dd7bb928271c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (10).jpg using Guid(83350d98782a3f64cb46dd7bb928271c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d941667b5689e9bcb01cb28ddd3f8d3') in 0.013300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (13).TGA
+  artifactKey: Guid(c0264675a41c58142ac2cd8e1e2c60d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (13).TGA using Guid(c0264675a41c58142ac2cd8e1e2c60d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca41ba717f617033c8a351ba92c256f') in 0.020298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (16).jpg
+  artifactKey: Guid(948d051b07279294088742d8154223f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (16).jpg using Guid(948d051b07279294088742d8154223f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abea58927850725a6287686fa76271aa') in 0.013308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (17).jpg
+  artifactKey: Guid(f09ed133d3c2ea743880f31ed4c4ec60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (17).jpg using Guid(f09ed133d3c2ea743880f31ed4c4ec60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a764041becc6c55c4765a42b46d8203') in 0.010230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.102951 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (19).jpg
+  artifactKey: Guid(384585c1d1eb2ae4293c37bc13542310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (19).jpg using Guid(384585c1d1eb2ae4293c37bc13542310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20ca2d8015dc829bbc9abd8d9ce99ec') in 0.018454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No.png (1).png
+  artifactKey: Guid(3d2855f84e40fc0479ba50c9b2822793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No.png (1).png using Guid(3d2855f84e40fc0479ba50c9b2822793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa52cf1ad97cf2470a145d691d47c7f') in 0.016631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No.png (3).png
+  artifactKey: Guid(98a08c318257af648b4288a136e3d523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No.png (3).png using Guid(98a08c318257af648b4288a136e3d523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08aea9ab7b93f00df4765fe8aacb2f12') in 0.012472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (23).jpg
+  artifactKey: Guid(ea37624af93d96943b2dd93ab64a1128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No (23).jpg using Guid(ea37624af93d96943b2dd93ab64a1128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f37a18e148d9599084ed199205a7e4') in 0.013550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.058460 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No.png (6).png
+  artifactKey: Guid(dc45c2a31dc431b4489192aac5b85cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No.png (6).png using Guid(dc45c2a31dc431b4489192aac5b85cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359ae278db42dc1fee695bfa6c581439') in 0.013074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No.png (9).png
+  artifactKey: Guid(e87e3d84ef8b649469166e2afa88c1c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No.png (9).png using Guid(e87e3d84ef8b649469166e2afa88c1c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '308320295d18d55cad1ebb79097eb5b0') in 0.016193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No.png (10).png
+  artifactKey: Guid(12d2a54817ebe334db38e85a687d9439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No.png (10).png using Guid(12d2a54817ebe334db38e85a687d9439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea54005648c3221fa0a4bd456932369c') in 0.011302 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.042456 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No.png (16).png
+  artifactKey: Guid(0cd62273cab4ce24bade5b72b2e02127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Noise_No.png (16).png using Guid(0cd62273cab4ce24bade5b72b2e02127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eaf4aed6236dd090df354a27d1daaa6') in 0.015422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Matcaps/T_Rainbow_Matcap.png
+  artifactKey: Guid(fc239b868ef86f94087bad300518901e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Matcaps/T_Rainbow_Matcap.png using Guid(fc239b868ef86f94087bad300518901e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '225fe88b458a95090c188735719fd378') in 0.012434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Misc/T_RainbowVertical.png
+  artifactKey: Guid(68238ea52b01b4646a834ac408126548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Misc/T_RainbowVertical.png using Guid(68238ea52b01b4646a834ac408126548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40365f40b1f8f07e6cececf16a924791') in 0.013213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Masks/T_RGBA_Mask.png
+  artifactKey: Guid(e9060b55e36833e4bb1deac3258e8c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Masks/T_RGBA_Mask.png using Guid(e9060b55e36833e4bb1deac3258e8c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441757f1f5bd5e4303fe3acbe4b2b8b5') in 0.011278 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Debug/T_SecretMessage.png
+  artifactKey: Guid(26945f7417f404a4991f14e10add5cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Debug/T_SecretMessage.png using Guid(26945f7417f404a4991f14e10add5cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4205c59433384c3f525bed744f27411b') in 0.012724 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Fonts/T_RobotoRegular_FONT.png
+  artifactKey: Guid(02efa160dddcf4d4b98cd9c8f73ea0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Fonts/T_RobotoRegular_FONT.png using Guid(02efa160dddcf4d4b98cd9c8f73ea0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9217e174ea27c6c52e929664df162458') in 0.016025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Ramps/T_Skin_SR.tga
+  artifactKey: Guid(b4ae486ee54de7243a507d6356e7537d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Ramps/T_Skin_SR.tga using Guid(b4ae486ee54de7243a507d6356e7537d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '756902e305d7b5d3c51f4b4169403b18') in 0.010970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Masks/T_Star.png
+  artifactKey: Guid(f5b49da3e7065f14894d289de4144039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Masks/T_Star.png using Guid(f5b49da3e7065f14894d289de4144039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a8e10d105671042b0d696cb51e8cd0') in 0.014839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Noise/T_Voronoi_Noise.png
+  artifactKey: Guid(71c08610deb243144888703479205c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Noise/T_Voronoi_Noise.png using Guid(71c08610deb243144888703479205c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ba595b9376795c4a955d2ac4e4ad743') in 0.011908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Shapes/T_Snowflake.png
+  artifactKey: Guid(3739010f030632a4fa615f9a0a4a62ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Shapes/T_Snowflake.png using Guid(3739010f030632a4fa615f9a0a4a62ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '400b681bb3c3b9e0e8a377dee547f870') in 0.010170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.069860 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Shapes/Normals/T_Wave_N.jpg
+  artifactKey: Guid(ab89d0b40a0410c4aa787b95750cb036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Shapes/Normals/T_Wave_N.jpg using Guid(ab89d0b40a0410c4aa787b95750cb036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c9e436da36dae07a73f2be310c3942') in 0.011682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_PoiyomiShaders/Scripts/ThryEditor/Resources/thryEditor_iconThry.png
+  artifactKey: Guid(693aa4c2cdc578346a196469a06ddbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Scripts/ThryEditor/Resources/thryEditor_iconThry.png using Guid(693aa4c2cdc578346a196469a06ddbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6281eff257b377ecd28f85f8523a89cd') in 0.011804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_PoiyomiShaders/Scripts/Editor/ModularShaderSystem/Resources/POIMSS/TemplateCollectionIcon.png
+  artifactKey: Guid(042b76953a4d1594f8f135d1d4344fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Scripts/Editor/ModularShaderSystem/Resources/POIMSS/TemplateCollectionIcon.png using Guid(042b76953a4d1594f8f135d1d4344fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5543bd27237c0ec7b91b50af01f531b4') in 0.010157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.072953 seconds.
+  path: Assets/_PoiyomiShaders/Textures/UV_Check.png
+  artifactKey: Guid(bb7711dde80ffc949b3171744eb92cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/UV_Check.png using Guid(bb7711dde80ffc949b3171744eb92cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb4c91c43c099eba387d9665a798c46e') in 0.012544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.163859 seconds.
+  path: Assets/_PoiyomiShaders/Textures/Gifs/VerticalCircles.gif
+  artifactKey: Guid(4defab4eefbca0d45a9cfe92f54d8f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_PoiyomiShaders/Textures/Gifs/VerticalCircles.gif using Guid(4defab4eefbca0d45a9cfe92f54d8f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d69a9a7154b604a3736ea9adc57a4aa') in 0.008986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.227904 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/GOBO/IndividualGobos/VRSL-SpotLightGOBO-Default.png
+  artifactKey: Guid(b01ba09b4a2acd34391cdd96cbf82837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/GOBO/IndividualGobos/VRSL-SpotLightGOBO-Default.png using Guid(b01ba09b4a2acd34391cdd96cbf82837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65566206a64ec1a6ca46a069feb3df98') in 0.011301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002295 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/GOBO/IndividualGobos/VRSL-SpotLightGOBO-Swooshes.png
+  artifactKey: Guid(ad20f072f311b2347a1053b14be0b73b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/GOBO/IndividualGobos/VRSL-SpotLightGOBO-Swooshes.png using Guid(ad20f072f311b2347a1053b14be0b73b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '756c139980247db15b936403977277c4') in 0.022500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.094718 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/Volumetric/VRSL-VolumetricNoiseCloud.png
+  artifactKey: Guid(95dae414ef2ffd7438602114879b8b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/Volumetric/VRSL-VolumetricNoiseCloud.png using Guid(95dae414ef2ffd7438602114879b8b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e733dd1d26282874762afb3bad3e202') in 0.011829 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/Washlight/WashLight-Mesh_WashMover-HQ_AlbedoTransparency.png
+  artifactKey: Guid(db6fc6dc5beedb8448840cb6852e57a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/Washlight/WashLight-Mesh_WashMover-HQ_AlbedoTransparency.png using Guid(db6fc6dc5beedb8448840cb6852e57a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef4265671d806e389851f4433af011a1') in 0.017203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/Washlight/WashLight-Mesh_WashMover-HQ_EmissionMask.png
+  artifactKey: Guid(190adfa91484e5c4ea2dff8956a571be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/Washlight/WashLight-Mesh_WashMover-HQ_EmissionMask.png using Guid(190adfa91484e5c4ea2dff8956a571be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128560eea5585a4a537661f5c5d898ac') in 0.016890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/Washlight/WashLight-Mesh_WashMover-HQ_EmissionMask-Alternate.png
+  artifactKey: Guid(c2d82d64fcf6b7f47a826fd6bf4f2ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/Washlight/WashLight-Mesh_WashMover-HQ_EmissionMask-Alternate.png using Guid(c2d82d64fcf6b7f47a826fd6bf4f2ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c92e01fc4247ee9cb856c41cb9ff00a6') in 0.012913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.061925 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/Washlight/WashLight-Mesh_WashMover-HQ_Normal.png
+  artifactKey: Guid(032a687341cf2b946b195188cd391c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Textures/MoverLightTextures/Washlight/WashLight-Mesh_WashMover-HQ_Normal.png using Guid(032a687341cf2b946b195188cd391c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d046e0b9bd11512d6d8037a8c29b402') in 0.027586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd
+  artifactKey: Guid(2b5e9ae96c5644d8bae932f8b4ca68a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd using Guid(2b5e9ae96c5644d8bae932f8b4ca68a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '303259302871b6560bcc8351acb5ab5a') in 0.015496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 36.805491 seconds.
+  path: Assets/Mochie/Unity/Textures/Subpixel Patterns/Modern LED.tga
+  artifactKey: Guid(1ea3ebe97bde63a489b073b9cdd90671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mochie/Unity/Textures/Subpixel Patterns/Modern LED.tga using Guid(1ea3ebe97bde63a489b073b9cdd90671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8c2874db847a71c14c25134f368a29') in 0.011995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 120.165260 seconds.
+  path: Assets/Mochie/Unity/Textures/Subpixel Patterns/Modern LED.tga
+  artifactKey: Guid(1ea3ebe97bde63a489b073b9cdd90671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mochie/Unity/Textures/Subpixel Patterns/Modern LED.tga using Guid(1ea3ebe97bde63a489b073b9cdd90671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '513e76639d8a3787295a3deaed3c3d3b') in 0.014231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 182.390152 seconds.
+  path: Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga
+  artifactKey: Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga using Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b488920fe1836c845f4991f06b1b29') in 0.011519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 73.665003 seconds.
+  path: Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga
+  artifactKey: Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga using Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77f95924bd6d78f78b5c97cb896e93d') in 0.010831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 407.935407 seconds.
+  path: Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga
+  artifactKey: Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga using Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46015b56775baf11089a4e9228a7e06') in 0.008699 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.229476 seconds.
+  path: Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga
+  artifactKey: Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga using Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '081ad958989eb195eb2026ff6363550e') in 0.006504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.950357 seconds.
+  path: Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga
+  artifactKey: Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga using Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '991c77587cdf1e7e9ea1b8498c407999') in 0.008452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.685971 seconds.
+  path: Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga
+  artifactKey: Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga using Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37d7990f95217104d7e2a8557d4e020') in 0.006982 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 22.699591 seconds.
+  path: Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga
+  artifactKey: Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mochie/Unity/Textures/Subpixel Patterns/LG OLED.tga using Guid(dc9e9b9306700534388c35a8de4d93c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bc7d47d27f9ede1670284e19a06ea6f') in 0.011085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Removing scripting define AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ArchiTech.SDK.Editor.ATEditorUtility:RemoveScriptingDefine (string) (at ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs:572)
+ArchiTech.ProTV.Editor.AudioLinkScriptingDefineHandler:ReloadDefines () (at ./Packages/dev.architech.protv/Editor/Helpers/ProTVEditorUtility.cs:658)
+UnityEditor.AssemblyReloadEvents:OnBeforeAssemblyReload ()
+
+(Filename: ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs Line: 572)
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+- Loaded All Assemblies, in  0.898 seconds
+Refreshing native plugins compatible for Editor in 22.31 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
+  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
+  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
+  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Set Scripting Define Symbols for selected build target (Standalone) to: UNITY_POST_PROCESSING_STACK_V2;UDONSHARP;UDON;VRC_SDK_VRCSDK3;AUDIOLINK;AVPRO_IMPORTED;TPS;AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioLink.Editor.AudioLinkDefineManager:AddDefinesIfMissing (UnityEditor.BuildTargetGroup,string[]) (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:41)
+AudioLink.Editor.AudioLinkDefineManager:.cctor () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs Line: 41)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:282 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:267 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <347e3e2bef8c4deb82c9790c6e198135>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
+UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
+UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
+UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
+UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
+UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
+UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
+UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
+UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
+
+[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
+  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
+  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
+  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
+  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
+  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
+  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
+  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
+  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
+  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
+
+- Finished resetting the current domain, in  2.278 seconds
+Domain Reload Profiling: 3173ms
+	BeginReloadAssembly (231ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (117ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (599ms)
+		LoadAssemblies (321ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (318ms)
+			TypeCache.Refresh (309ms)
+				TypeCache.ScanAssembly (295ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (2279ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (861ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (114ms)
+			ProcessInitializeOnLoadAttributes (337ms)
+			ProcessInitializeOnLoadMethodAttributes (385ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 28.10 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.13 ms.
+Unloading 4050 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 183 unused Assets / (1.8 MB). Loaded Objects now: 4795.
+Memory consumption went from 253.8 MB to 252.0 MB.
+Total: 16.540300 ms (FindLiveObjects: 0.331400 ms CreateObjectMapping: 0.179800 ms MarkObjects: 15.380300 ms  DeleteObjects: 0.647600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 312.979910 seconds.
+  path: Assets/LEDTV.mat
+  artifactKey: Guid(97f1db2f1ff08264d86b08aee7b5e88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LEDTV.mat using Guid(97f1db2f1ff08264d86b08aee7b5e88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f62d7e6567fd661d8bf60c209d5a8795') in 0.061886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Removing scripting define AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ArchiTech.SDK.Editor.ATEditorUtility:RemoveScriptingDefine (string) (at ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs:572)
+ArchiTech.ProTV.Editor.AudioLinkScriptingDefineHandler:ReloadDefines () (at ./Packages/dev.architech.protv/Editor/Helpers/ProTVEditorUtility.cs:658)
+UnityEditor.AssemblyReloadEvents:OnBeforeAssemblyReload ()
+
+(Filename: ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs Line: 572)
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+- Loaded All Assemblies, in  0.890 seconds
+Refreshing native plugins compatible for Editor in 22.65 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
+  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
+  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
+  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Set Scripting Define Symbols for selected build target (Standalone) to: UNITY_POST_PROCESSING_STACK_V2;UDONSHARP;UDON;VRC_SDK_VRCSDK3;AUDIOLINK;AVPRO_IMPORTED;TPS;AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioLink.Editor.AudioLinkDefineManager:AddDefinesIfMissing (UnityEditor.BuildTargetGroup,string[]) (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:41)
+AudioLink.Editor.AudioLinkDefineManager:.cctor () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs Line: 41)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:282 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:267 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <347e3e2bef8c4deb82c9790c6e198135>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
+UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
+UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
+UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
+UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
+UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
+UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
+UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
+UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
+
+[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
+  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
+  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
+  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
+  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
+  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
+  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
+  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
+  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
+  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
+
+- Finished resetting the current domain, in  2.277 seconds
+Domain Reload Profiling: 3164ms
+	BeginReloadAssembly (215ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (100ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (605ms)
+		LoadAssemblies (320ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (326ms)
+			TypeCache.Refresh (317ms)
+				TypeCache.ScanAssembly (305ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (2278ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (866ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (341ms)
+			ProcessInitializeOnLoadMethodAttributes (386ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 28.65 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.19 ms.
+Unloading 4050 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 183 unused Assets / (1.8 MB). Loaded Objects now: 4822.
+Memory consumption went from 253.8 MB to 252.0 MB.
+Total: 17.903300 ms (FindLiveObjects: 0.273000 ms CreateObjectMapping: 0.150900 ms MarkObjects: 16.609700 ms  DeleteObjects: 0.868200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 97.789623 seconds.
+  path: Assets/Mochie/Unity/Textures/Subpixel Patterns/Modern LED.tga
+  artifactKey: Guid(1ea3ebe97bde63a489b073b9cdd90671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mochie/Unity/Textures/Subpixel Patterns/Modern LED.tga using Guid(1ea3ebe97bde63a489b073b9cdd90671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c60e122e12aac740cd63a6ad5203ee0') in 0.034569 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 20.270781 seconds.
+  path: Assets/Mochie/Unity/Textures/Subpixel Patterns/Modern LED.tga
+  artifactKey: Guid(1ea3ebe97bde63a489b073b9cdd90671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mochie/Unity/Textures/Subpixel Patterns/Modern LED.tga using Guid(1ea3ebe97bde63a489b073b9cdd90671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3417b6079bfc2b3180eaa302e197af95') in 0.008966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Removing scripting define AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ArchiTech.SDK.Editor.ATEditorUtility:RemoveScriptingDefine (string) (at ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs:572)
+ArchiTech.ProTV.Editor.AudioLinkScriptingDefineHandler:ReloadDefines () (at ./Packages/dev.architech.protv/Editor/Helpers/ProTVEditorUtility.cs:658)
+UnityEditor.AssemblyReloadEvents:OnBeforeAssemblyReload ()
+
+(Filename: ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs Line: 572)
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+- Loaded All Assemblies, in  0.895 seconds
+Refreshing native plugins compatible for Editor in 22.76 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
+  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
+  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
+  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Set Scripting Define Symbols for selected build target (Standalone) to: UNITY_POST_PROCESSING_STACK_V2;UDONSHARP;UDON;VRC_SDK_VRCSDK3;AUDIOLINK;AVPRO_IMPORTED;TPS;AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioLink.Editor.AudioLinkDefineManager:AddDefinesIfMissing (UnityEditor.BuildTargetGroup,string[]) (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:41)
+AudioLink.Editor.AudioLinkDefineManager:.cctor () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs Line: 41)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:282 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:267 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <347e3e2bef8c4deb82c9790c6e198135>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
+UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
+UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
+UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
+UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
+UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
+UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
+UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
+UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
+
+[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
+  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
+  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
+  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
+  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
+  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
+  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
+  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
+  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
+  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
+
+- Finished resetting the current domain, in  2.312 seconds
+Domain Reload Profiling: 3204ms
+	BeginReloadAssembly (202ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (90ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (625ms)
+		LoadAssemblies (312ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (354ms)
+			TypeCache.Refresh (344ms)
+				TypeCache.ScanAssembly (329ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (2312ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (869ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (335ms)
+			ProcessInitializeOnLoadMethodAttributes (391ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 29.97 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.12 ms.
+Unloading 4050 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 183 unused Assets / (1.8 MB). Loaded Objects now: 4839.
+Memory consumption went from 253.9 MB to 252.1 MB.
+Total: 19.266100 ms (FindLiveObjects: 0.324100 ms CreateObjectMapping: 0.147200 ms MarkObjects: 18.123500 ms  DeleteObjects: 0.669600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Removing scripting define AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ArchiTech.SDK.Editor.ATEditorUtility:RemoveScriptingDefine (string) (at ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs:572)
+ArchiTech.ProTV.Editor.AudioLinkScriptingDefineHandler:ReloadDefines () (at ./Packages/dev.architech.protv/Editor/Helpers/ProTVEditorUtility.cs:658)
+UnityEditor.AssemblyReloadEvents:OnBeforeAssemblyReload ()
+
+(Filename: ./Packages/dev.architech.sdk/Editor/ATEditorUtility.cs Line: 572)
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+- Loaded All Assemblies, in  0.942 seconds
+Refreshing native plugins compatible for Editor in 25.86 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
+  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
+  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
+  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Set Scripting Define Symbols for selected build target (Standalone) to: UNITY_POST_PROCESSING_STACK_V2;UDONSHARP;UDON;VRC_SDK_VRCSDK3;AUDIOLINK;AVPRO_IMPORTED;TPS;AUDIOLINK_V1
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioLink.Editor.AudioLinkDefineManager:AddDefinesIfMissing (UnityEditor.BuildTargetGroup,string[]) (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:41)
+AudioLink.Editor.AudioLinkDefineManager:.cctor () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs Line: 41)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:282 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:267 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <347e3e2bef8c4deb82c9790c6e198135>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:75)
+UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
+UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
+UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
+UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
+UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
+UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
+UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
+UdonSharpEditor.UdonSharpEditorUtility:UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1<VRC.Udon.UdonBehaviour>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorUtility.cs:650)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1694)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 75]
+
+[<color=#FF00FF>UdonSharp</color>] Hit exception while attempting to upgrade scene behaviours: UnityEngine.UnityException: Creating asset at path Assets/UdonSharp/UdonSharpDataLocator.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at UdonSharp.Updater.UdonSharpDataLocator.InitializeUdonSharpData () [0x0005d] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:75 
+  at UdonSharp.Updater.UdonSharpDataLocator.get_DataPath () [0x00065] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpDataLocator.cs:44 
+  at UdonSharp.Updater.UdonSharpLocator.get_SettingsPath () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Runtime\UdonSharpLocator.cs:49 
+  at UdonSharpEditor.UdonSharpSettings.GetSettings () [0x00012] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:87 
+  at UdonSharpEditor.UdonSharpSettings.GetScannerBlacklist () [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:160 
+  at UdonSharpEditor.UdonSharpSettings.FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1[T] paths) [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Editors\UdonSharpSettings.cs:182 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredSourcePaths (System.Boolean isEditorBuild) [0x0006a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:212 
+  at UdonSharp.Compiler.CompilationContext.GetAllFilteredScripts (System.Boolean isEditorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\Compiler\CompilationContext.cs:228 
+  at UdonSharp.UdonSharpProgramAsset.IsAnyScriptDirty () [0x00006] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:256 
+  at UdonSharp.UdonSharpProgramAsset.CompileAllCsPrograms (System.Boolean forceCompile, System.Boolean editorBuild) [0x00000] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpProgramAsset.cs:292 
+  at UdonSharpEditor.UdonSharpEditorUtility.UpgradeSceneBehaviours (System.Collections.Generic.IEnumerable`1[T] behaviours) [0x0001a] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorUtility.cs:650 
+  at UdonSharpEditor.UdonSharpEditorManager.RunAllUpgrades () [0x0001c] in .\Packages\com.vrchat.worlds\Integrations\UdonSharp\Editor\UdonSharpEditorManager.cs:1694 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UdonSharp.UdonSharpUtils:LogError (object) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs:324)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1698)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+(Filename: ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpUtils.cs Line: 324)
+
+- Finished resetting the current domain, in  2.472 seconds
+Domain Reload Profiling: 3411ms
+	BeginReloadAssembly (226ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (110ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (649ms)
+		LoadAssemblies (340ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (348ms)
+			TypeCache.Refresh (339ms)
+				TypeCache.ScanAssembly (324ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (2472ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (971ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (179ms)
+			ProcessInitializeOnLoadAttributes (374ms)
+			ProcessInitializeOnLoadMethodAttributes (386ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 31.71 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.15 ms.
+Unloading 4051 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 183 unused Assets / (1.8 MB). Loaded Objects now: 4856.
+Memory consumption went from 254.2 MB to 252.4 MB.
+Total: 23.426700 ms (FindLiveObjects: 0.341200 ms CreateObjectMapping: 0.175600 ms MarkObjects: 21.922900 ms  DeleteObjects: 0.985700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

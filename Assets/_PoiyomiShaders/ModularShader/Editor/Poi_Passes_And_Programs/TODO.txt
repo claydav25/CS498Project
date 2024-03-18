@@ -1,0 +1,46 @@
+Pre 9.0 release
+Thry tool for correctly setting shaders on upgrade to 9.0
+change the blending names for grabpass
+* fur ui broken
+* clip pos z adjust
+https://discord.com/channels/550477546958094348/550477704617787422/1214626902879371274
+cubemap color adjust broken removing cubemap?
+outline tint possibly missing but don't think so
+emission saturation
+
+https://discord.com/channels/550477546958094348/550477704617787422/1192982874174017557
+
+# 9.0.47 BETA
+* Adjust depth fx to function with grabpass
+* Fixed a bug with the mirror section
+* Changed Cubemap color adjust defaults so they function when being enabled (if your material is old just set contrast to 1)
+* 
+
+
+Don't know how to fix
+decal depth uv0 only (uses tangents which are generated from uv0)
+
+post 9.0
+* Add udon video texture
+* Use Luminance for Min Brightness when using Realistic Lighting
+* use depth to move skirt out of leg geometry
+* matcap spritesheet
+* truchet thickness audio link
+* outline grabpass with pixelation
+* internal parallax no global mask
+* internal parallax no way to use it as emission and it shows in the dark by default
+* LTCGI
+* fur
+* add a no special uv toggle to decals
+* scrolling emission offset by uv x or y
+* UV glitching for textures
+* screenspace ao in base pass
+* plane uv better pano effects including fresnel effects and depth
+* Paralax write to depth
+* normal shadows https://gitlab.com/s-ilent/filamented/-/blob/master/Filamented/SharedNormalShadowLib.hlsl?ref_type=heads
+* take a look at the gem cloth aniso
+* 3d noise R&D
+* voronoi mask
+* Video player stuff uniform Texture2D _Udon_VideoTex; exists if >16px
+
+

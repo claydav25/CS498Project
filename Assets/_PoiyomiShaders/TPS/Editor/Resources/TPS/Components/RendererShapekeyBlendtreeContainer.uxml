@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <uie:ObjectField label="Renderer" name="renderer" type="UnityEngine.SkinnedMeshRenderer, UnityEngine.CoreModule" style="padding-bottom: 4px;" />
+    <ui:ListView focusable="true" name="list" reorderable="true" show-foldout-header="true" header-title="Blendshapes" show-add-remove-footer="true" reorder-mode="Animated" show-bound-collection-size="false" style="background-color: rgba(0, 0, 0, 0.11);" />
+</ui:UXML>

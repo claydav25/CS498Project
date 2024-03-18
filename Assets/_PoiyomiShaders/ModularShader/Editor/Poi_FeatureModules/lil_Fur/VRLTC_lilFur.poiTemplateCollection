@@ -1,0 +1,563 @@
+#T#lilFurProperties
+[HideInInspector]m_lilfurCategory ("lilFur", Float) = 0
+
+_FurNoiseMask ("Fur Noise--{reference_properties:[_FurNoiseMaskPan, _FurNoiseMaskUV]}", 2D) = "white" { }
+[HideInInspector][Vector2]_FurNoiseMaskPan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)]_FurNoiseMaskUV ("UV", Int) = 0
+//[HideInInspector][ToggleUI]_FurNoiseMaskStochastic ("Stochastic Sampling", Float) = 0
+
+_FurMask ("Fur Mask--{reference_properties:[_FurMaskPan, _FurMaskUV]}", 2D) = "white" { }
+[HideInInspector][Vector2]_FurMaskPan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)]_FurMaskUV ("UV", Int) = 0
+//[HideInInspector][ToggleUI]_FurMaskStochastic ("Stochastic Sampling", Float) = 0
+
+_FurLengthMask ("Fur Length Mask--{reference_properties:[_FurLengthMaskPan, _FurLengthMaskUV]}", 2D) = "white" { }
+[HideInInspector][Vector2]_FurLengthMaskPan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)]_FurLengthMaskUV ("UV", Int) = 0
+//[HideInInspector][ToggleUI]_FurLengthMaskStochastic ("Stochastic Sampling", Float) = 0
+
+[Normal]_FurVectorTex ("Fur Vector Map--{reference_properties:[_FurVectorTexPan, _FurVectorTexUV, _FurVectorScale]}", 2D) = "bump" { }
+[HideInInspector]_FurVectorScale ("Fur Vector scale", Range(-10, 10)) = 1
+[HideInInspector][Vector2]_FurVectorTexPan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _FurVectorTexUV ("UV", Int) = 0
+//[HideInInspector][ToggleUI]_FurVectorTexStochastic ("Stochastic Sampling", Float) = 0
+
+_FurVector ("Vector Length", Vector) = (0.0, 0.0, 1.0, 0.02)
+[ToggleUI]_VertexColor2FurVector ("VertexColor as Vector", Int) = 0
+_FurGravity ("Gravity", Range(0, 1)) = 0.25
+_FurRandomize ("Randomize", Float) = 0
+_FurAO ("AO", Range(0, 1)) = 0
+[ThryWideEnum(Subdivision, 0, Shrink, 1)]_FurMeshType ("FurMeshType", Int) = 1
+[IntRange]_FurLayerNum ("Layer Num", Range(1, 6)) = 2
+_FurRootOffset ("Root Offset", Range(-1, 0)) = 0
+_FurCutoutLength ("Cutout Length", Float) = 0.8
+_FurTouchStrength ("Touch Strength", Range(0, 1)) = 0
+
+/*
+[HideInInspector] m_start_lilfurAdvanced ("Advanced", Float) = 0
+
+        [lilEnum]                                       _FurCull ("Cull Mode|Off|Front|Back", Int) = 0
+        [Enum(UnityEngine.Rendering.BlendMode)]         _FurSrcBlend ("SrcBlend", Int) = 5
+        [Enum(UnityEngine.Rendering.BlendMode)]         _FurDstBlend ("DstBlend", Int) = 10
+        [Enum(UnityEngine.Rendering.BlendMode)]         _FurSrcBlendAlpha ("SrcBlendAlpha", Int) = 1
+        [Enum(UnityEngine.Rendering.BlendMode)]         _FurDstBlendAlpha ("DstBlendAlpha", Int) = 10
+        [Enum(UnityEngine.Rendering.BlendOp)]           _FurBlendOp ("BlendOp", Int) = 0
+        [Enum(UnityEngine.Rendering.BlendOp)]           _FurBlendOpAlpha ("BlendOpAlpha", Int) = 0
+        [Enum(UnityEngine.Rendering.BlendMode)]         _FurSrcBlendFA ("ForwardAdd SrcBlend", Int) = 1
+        [Enum(UnityEngine.Rendering.BlendMode)]         _FurDstBlendFA ("ForwardAdd DstBlend", Int) = 1
+        [Enum(UnityEngine.Rendering.BlendMode)]         _FurSrcBlendAlphaFA ("ForwardAdd SrcBlendAlpha", Int) = 0
+        [Enum(UnityEngine.Rendering.BlendMode)]         _FurDstBlendAlphaFA ("ForwardAdd DstBlendAlpha", Int) = 1
+        [Enum(UnityEngine.Rendering.BlendOp)]           _FurBlendOpFA ("ForwardAdd BlendOp", Int) = 4
+        [Enum(UnityEngine.Rendering.BlendOp)]           _FurBlendOpAlphaFA ("ForwardAdd BlendOpAlpha", Int) = 4
+        [lilToggle]                                     _FurZClip ("ZClip", Int) = 1
+        [lilToggle]                                     _FurZWrite ("ZWrite", Int) = 0
+        [Enum(UnityEngine.Rendering.CompareFunction)]   _FurZTest ("ZTest", Int) = 4
+        [IntRange]                                      _FurStencilRef ("Stencil Reference Value", Range(0, 255)) = 0
+        [IntRange]                                      _FurStencilReadMask ("Stencil ReadMask Value", Range(0, 255)) = 255
+        [IntRange]                                      _FurStencilWriteMask ("Stencil WriteMask Value", Range(0, 255)) = 255
+        [Enum(UnityEngine.Rendering.CompareFunction)]   _FurStencilComp ("Stencil Compare Function", Float) = 8
+        [Enum(UnityEngine.Rendering.StencilOp)]         _FurStencilPass ("Stencil Pass", Float) = 0
+        [Enum(UnityEngine.Rendering.StencilOp)]         _FurStencilFail ("Stencil Fail", Float) = 0
+        [Enum(UnityEngine.Rendering.StencilOp)]         _FurStencilZFail ("Stencil ZFail", Float) = 0
+                                                        _FurOffsetFactor ("Offset Factor", Float) = 0
+                                                        _FurOffsetUnits ("Offset Units", Float) = 0
+        [lilColorMask]                                  _FurColorMask ("Color Mask", Int) = 15
+        [lilToggle]                                     _FurAlphaToMask ("AlphaToMask", Int) = 0
+
+[HideInInspector] m_end_lilfurAdvanced ("Advanced", Float) = 0
+*/
+
+#T#lilFurKeywords
+// #pragma shader_feature_local POI_LIL_FUR
+
+#T#lilFurVariables
+
+#if defined(PROP_FURNOISEMASK) || !defined(OPTIMIZER_ENABLED)
+    Texture2D _FurNoiseMask;
+    float4 _FurNoiseMask_ST;
+    float2 _FurNoiseMaskPan;
+    float _FurNoiseMaskUV;
+    float _FurNoiseMaskChannel;
+#endif
+
+#if defined(PROP_FURMASK) || !defined(OPTIMIZER_ENABLED)
+    Texture2D _FurMask;
+    float4 _FurMask_ST;
+    float2 _FurMaskPan;
+    float _FurMaskUV;
+    float _FurMaskChannel;
+#endif
+
+#if defined(PROP_FURLENGTHMASK) || !defined(OPTIMIZER_ENABLED)
+    Texture2D _FurLengthMask;
+    float4 _FurLengthMask_ST;
+    float2 _FurLengthMaskPan;
+    float _FurLengthMaskUV;
+    float _FurLengthMaskChannel;
+#endif
+
+#if defined(PROP_FURVECTORTEX) || !defined(OPTIMIZER_ENABLED)
+    Texture2D _FurVectorTex;
+    float4 _FurVectorTex_ST;
+    float2 _FurVectorTexPan;
+    float _FurVectorTexUV;
+#endif
+
+float _FurVectorScale;
+float4 _FurVector;
+uint _VertexColor2FurVector;
+float _FurGravity;
+float _FurRandomize;
+float _FurAO;
+uint _FurMeshType;
+uint _FurLayerNum;
+float _FurRootOffset;
+float _FurCutoutLength;
+float _FurTouchStrength;
+
+#T#lilFurVertexOutVariable
+float3 furVector : FURVECTOR;
+uint vertexId : VERTEXID;
+float furLayer : FURLAYER;
+
+#T#lilFurVertexIDInjection
+
+o.vertexId = v.vertexId;
+
+#T#lilFurVertexCalculations
+
+float3 bitangent = normalize(cross(v.normal, v.tangent.xyz)) * (v.tangent.w * length(v.normal));
+float3x3 tbnOS = float3x3(v.tangent.xyz, bitangent, v.normal);
+o.furVector = _FurVector.xyz + float3(0, 0, 0.001);
+if (_VertexColor2FurVector) o.furVector = PoiBlendNormal(o.furVector, v.color.xyz);
+#if defined(LIL_FEATURE_FurVectorTex)
+    //o.furVector = PoiBlendNormal(o.furVector, lilUnpackNormalScale(LIL_SAMPLE_2D_LOD(_FurVectorTex, lil_sampler_linear_repeat, uvMain, 0), _FurVectorScale));
+#endif
+o.furVector = mul(normalize(o.furVector), tbnOS);
+o.furVector *= _FurVector.w;
+#if defined(LIL_FUR_PRE)
+    o.furVector *= _FurCutoutLength;
+#endif
+o.furVector = lilTransformDirOStoWS(o.furVector, false);
+float furLength = length(o.furVector);
+o.furVector.y -= _FurGravity * furLength;
+
+#if defined(LIL_FEATURE_FUR_COLLISION) && defined(LIL_BRP) && defined(VERTEXLIGHT_ON)
+    // Touch
+    float3 positionWS2 = o.positionWS + o.furVector;
+    float4 toLightX = unity_4LightPosX0 - positionWS2.x;
+    float4 toLightY = unity_4LightPosY0 - positionWS2.y;
+    float4 toLightZ = unity_4LightPosZ0 - positionWS2.z;
+    float4 lengthSq = toLightX * toLightX + 0.000001;
+    lengthSq += toLightY * toLightY;
+    lengthSq += toLightZ * toLightZ;
+    float4 atten = saturate(1.0 - lengthSq * unity_4LightAtten0 / 25.0) * _FurTouchStrength * furLength;
+    //float4 rangeToggle = abs(frac(sqrt(25.0 / unity_4LightAtten0) * 100.0) - 0.22);
+    float4 rangeToggle = abs(frac(sqrt(250000 / unity_4LightAtten0)) - 0.22);
+    o.furVector = rangeToggle[0] < 0.001 - unity_LightColor[0].r - unity_LightColor[0].g - unity_LightColor[0].b ? o.furVector - float3(toLightX[0], toLightY[0], toLightZ[0]) * rsqrt(lengthSq[0]) * atten[0] : o.furVector;
+    o.furVector = rangeToggle[1] < 0.001 - unity_LightColor[1].r - unity_LightColor[1].g - unity_LightColor[1].b ? o.furVector - float3(toLightX[1], toLightY[1], toLightZ[1]) * rsqrt(lengthSq[1]) * atten[1] : o.furVector;
+    o.furVector = rangeToggle[2] < 0.001 - unity_LightColor[2].r - unity_LightColor[2].g - unity_LightColor[2].b ? o.furVector - float3(toLightX[2], toLightY[2], toLightZ[2]) * rsqrt(lengthSq[2]) * atten[2] : o.furVector;
+    o.furVector = rangeToggle[3] < 0.001 - unity_LightColor[3].r - unity_LightColor[3].g - unity_LightColor[3].b ? o.furVector - float3(toLightX[3], toLightY[3], toLightZ[3]) * rsqrt(lengthSq[3]) * atten[3] : o.furVector;
+#endif
+
+
+#T#lilFurGeom
+float lillerp3(float a, float b, float c, float3 factor)
+{
+    return a * factor.x + b * factor.y + c * factor.z;
+}
+float2 lillerp3(float2 a, float2 b, float2 c, float3 factor)
+{
+    return a * factor.x + b * factor.y + c * factor.z;
+}
+float3 lillerp3(float3 a, float3 b, float3 c, float3 factor)
+{
+    return a * factor.x + b * factor.y + c * factor.z;
+}
+float4 lillerp3(float4 a, float4 b, float4 c, float3 factor)
+{
+    return a * factor.x + b * factor.y + c * factor.z;
+}
+float lillerp3(float a[3], float3 factor)
+{
+    return lillerp3(a[0], a[1], a[2], factor);
+}
+float2 lillerp3(float2 a[3], float3 factor)
+{
+    return lillerp3(a[0], a[1], a[2], factor);
+}
+float3 lillerp3(float3 a[3], float3 factor)
+{
+    return lillerp3(a[0], a[1], a[2], factor);
+}
+float4 lillerp3(float4 a[3], float3 factor)
+{
+    return lillerp3(a[0], a[1], a[2], factor);
+}
+
+void AppendFur(inout TriangleStream<VertexOut> outStream, inout VertexOut output, VertexOut input[3], float3 furVectors[3], float3 factor)
+{
+    output.pos = lillerp3(input[0].pos, input[1].pos, input[2].pos, factor);
+    output.uv[0] = lillerp3(input[0].uv[0], input[1].uv[0], input[2].uv[0], factor);
+    output.uv[1] = lillerp3(input[0].uv[1], input[1].uv[1], input[2].uv[1], factor);
+    output.normal = lillerp3(input[0].normal, input[1].normal, input[2].normal, factor);
+    output.tangent = lillerp3(input[0].tangent, input[1].tangent, input[2].tangent, factor);
+    output.worldPos = lillerp3(input[0].worldPos, input[1].worldPos, input[2].worldPos, factor);
+    output.localPos = lillerp3(input[0].localPos, input[1].localPos, input[2].localPos, factor);
+    output.vertexColor = lillerp3(input[0].vertexColor, input[1].vertexColor, input[2].vertexColor, factor);
+    output.lightmapUV = lillerp3(input[0].lightmapUV, input[1].lightmapUV, input[2].lightmapUV, factor);
+    // Missing UNITY_SHADOW_COORDS and UNITY_FOG_COORDS?
+    output.furVector = lillerp3(input[0].furVector, input[1].furVector, input[2].furVector, factor);
+    output.vertexId = lillerp3(input[0].vertexId, input[1].vertexId, input[2].vertexId, factor);
+    float4 worldPos = lillerp3(input[0].worldPos, input[1].worldPos, input[2].worldPos, factor);
+    output.pos = UnityWorldToClipPos(worldPos);
+    // Motion Vector stuff
+    //#if defined(LIL_PASS_MOTIONVECTOR_INCLUDED)
+    //    float3 previousworldPos = lillerp3(input[0].previousworldPos, input[1].previousworldPos, input[2].previousworldPos, factor);
+    //    output.previouspos = mul(UNITY_MATRIX_PREV_VP, float4(previousworldPos, 1.0));
+    //#endif
+    output.furLayer = 0;
+
+    if (_RenderingReduceClipDistance)
+    {
+        if (output.pos.w < _ProjectionParams.y * 1.01 && output.pos.w > 0)
+        {
+            #if defined(UNITY_REVERSED_Z) // DirectX
+                output.pos.z = output.pos.z * 0.0001 + output.pos.w * 0.999;
+            #else // OpenGL
+                output.pos.z = output.pos.z * 0.0001 - output.pos.w * 0.999;
+            #endif
+        }
+    }
+
+    #if defined(LIL_V2F_POSITION_CS) && defined(LIL_FUR_PRE)
+        #if defined(UNITY_REVERSED_Z)
+            // DirectX
+            output.pos.z -= 0.0000001;
+        #else
+            // OpenGL
+            output.pos.z += 0.0000001;
+        #endif
+    #endif
+
+    outStream.Append(output);
+
+    float3 mixVector = lillerp3(furVectors[0], furVectors[1], furVectors[2], factor);
+    worldPos.xyz += mixVector;
+    output.worldPos = worldPos;
+    output.pos = UnityWorldToClipPos(worldPos);
+    // MotionVector stuff
+    // #if defined(LIL_PASS_MOTIONVECTOR_INCLUDED)
+    //    previousworldPos.xyz += mixVector;
+    //    output.previouspos = mul(UNITY_MATRIX_PREV_VP, float4(previousworldPos, 1.0));
+    //#endif
+    //#if defined(LIL_V2F_FURLAYER)
+    //    output.furLayer = 1;
+    //#endif
+    #if defined(LIL_V2F_POSITION_CS) && defined(LIL_FEATURE_CLIPPING_CANCELLER) && !defined(LIL_PASS_SHADOWCASTER_INCLUDED) && !defined(LIL_PASS_META_INCLUDED)
+        //------------------------------------------------------------------------------------------------------------------------------
+        // Clipping Canceller
+        #if defined(UNITY_REVERSED_Z)
+            // DirectX
+            if (output.pos.w < _ProjectionParams.y * 1.01 && output.pos.w > 0 && _ProjectionParams.y < LIL_NEARCLIP_THRESHOLD LIL_MULTI_SHOULD_CLIPPING)
+            {
+                output.pos.z = output.pos.z * 0.0001 + output.pos.w * 0.999;
+            }
+        #else
+            // OpenGL
+            if (output.pos.w < _ProjectionParams.y * 1.01 && output.pos.w > 0 && _ProjectionParams.y < LIL_NEARCLIP_THRESHOLD LIL_MULTI_SHOULD_CLIPPING)
+            {
+                output.pos.z = output.pos.z * 0.0001 - output.pos.w * 0.999;
+            }
+        #endif
+    #endif
+    #if defined(LIL_V2F_POSITION_CS) && defined(LIL_FUR_PRE)
+        #if defined(UNITY_REVERSED_Z)
+            // DirectX
+            output.pos.z -= 0.000001;
+        #else
+            // OpenGL
+            output.pos.z += 0.000001;
+        #endif
+    #endif
+    outStream.Append(output);
+}
+// lil toon does 46 but maxvertexcount * total number of declared declared scalar components of output data (currently 64) cannot be greater than 1024 on d3d11
+// 16 is the highest we can currently do, and if more modules are added then this shader might stop compiling and you'd have to lower the vertexcount
+// [maxvertexcount(46)]
+[maxvertexcount(32)]
+void GeometryProgram(triangle VertexOut p[3], inout TriangleStream<VertexOut> tristream, uint InstanceID : SV_GSInstanceID)
+{
+    UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[0]);
+    UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[1]);
+    UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[2]);
+    
+    VertexOut outputBase[3];
+    UNITY_INITIALIZE_OUTPUT(VertexOut, outputBase[0]);
+    UNITY_INITIALIZE_OUTPUT(VertexOut, outputBase[1]);
+    UNITY_INITIALIZE_OUTPUT(VertexOut, outputBase[2]);
+
+    for (uint i = 0; i < 3; i++)
+    {
+        UNITY_TRANSFER_INSTANCE_ID(p[i], outputBase[i]);
+        UNITY_TRANSFER_VERTEX_OUTPUT_STEREO(p[i], outputBase[i]);
+        
+        outputBase[i] = p[i];
+        outputBase[i].pos = p[i].pos;
+        outputBase[i].uv = p[i].uv;
+        outputBase[i].worldPos = p[i].worldPos;
+        
+        
+        #if defined(LIL_V2F_POSITION_CS)
+            outputBase[i].pos = UnityWorldToClipPos(p[i].worldPos);
+        #endif
+        #if defined(LIL_PASS_MOTIONVECTOR_INCLUDED)
+            outputBase[i].previouspos = mul(UNITY_MATRIX_PREV_VP, float4(p[i].previousworldPos, 1.0));
+        #endif
+        #if defined(LIL_V2F_TEXCOORD0)
+            //outputBase[i].uv0 = p[i].uv0;
+        #endif
+        #if defined(LIL_V2F_NORMAL_WS)
+            outputBase[i].normalWS = p[i].normalWS;
+        #endif
+        outputBase[i].furLayer = -2;
+    }
+
+    if (_Cull != 1) // Front
+
+    {
+        tristream.Append(outputBase[0]);
+        tristream.Append(outputBase[1]);
+        tristream.Append(outputBase[2]);
+        tristream.RestartStrip();
+    }
+    
+    if (_Cull != 2) // Back
+
+    {
+        tristream.Append(outputBase[2]);
+        tristream.Append(outputBase[1]);
+        tristream.Append(outputBase[0]);
+        tristream.RestartStrip();
+    }
+    
+    VertexOut output;
+    UNITY_INITIALIZE_OUTPUT(VertexOut, output);
+    UNITY_TRANSFER_INSTANCE_ID(p[0], output);
+    UNITY_TRANSFER_VERTEX_OUTPUT_STEREO(p[0], output);
+
+    
+    if (_FurMeshType)
+    {
+        //------------------------------------------------------------------------------------------------------------------------------
+        // FakeFur (based on UnlitWF/UnToon by whiteflare, MIT License)
+        // https://github.com/whiteflare/Unlit_WF_ShaderSuite
+        float2 uv0c = (p[0].uv[0] + p[1].uv[0] + p[2].uv[0]) * 0.333333333333;
+        float3 fvc = (p[0].furVector + p[1].furVector + p[2].furVector) * 0.333333333333;
+        float4 wpc = (p[0].worldPos + p[1].worldPos + p[2].worldPos) * 0.333333333333;
+        float4 uv01c = (p[0].uv[0] + p[1].uv[0] + p[2].uv[0]) * 0.333333333333;
+        float4 uv23c = (p[0].uv[1] + p[1].uv[1] + p[2].uv[1]) * 0.333333333333;
+        float3 ndc = (p[0].normal + p[1].normal + p[2].normal) * 0.333333333333;
+
+        #if defined(LIL_V2G_VERTEXLIGHT_FOG) && !(!defined(LIL_USE_ADDITIONALLIGHT_VS) && defined(LIL_HDRP))
+            LIL_VERTEXLIGHT_FOG_TYPE vlfc = (p[0].vlf + p[1].vlf + p[2].vlf) * 0.333333333333;
+        #endif
+        #if defined(LIL_PASS_MOTIONVECTOR_INCLUDED)
+            //float3 pwpc = (p[0].previousPositionWS + p[1].previousPositionWS + p[2].previousPositionWS) * 0.333333333333;
+        #endif
+
+        for (uint fl = 0; fl < _FurLayerNum; fl++)
+        {
+            float lpmix = fl / (float)_FurLayerNum;
+            for (int ii = 0; ii < 4; ii++)
+            {
+                int ii2 = ii == 3 ? 0 : ii;
+
+                // CommonpositionWS
+                float2 outUV = lerp(p[ii2].uv[0], uv0c, lpmix);
+                output.uv[0] = lerp(p[ii2].uv[0], uv01c, lpmix);
+                output.uv[1] = lerp(p[ii2].uv[1], uv23c, lpmix);
+                output.normal = lerp(p[ii2].normal, ndc, lpmix);
+
+                #if defined(LIL_V2F_VERTEXLIGHT_FOG) && !(!defined(LIL_USE_ADDITIONALLIGHT_VS) && defined(LIL_HDRP))
+                    output.vlf = lerp(p[ii2].vlf, vlfc, lpmix);
+                #endif
+
+                float3 fvmix = lerp(p[ii2].furVector, fvc, lpmix);
+                float3 furVector = normalize(fvmix);
+                #if !defined(LIL_NOT_SUPPORT_VERTEXID)
+                    uint3 n0 = (p[0].vertexId * p[1].vertexId * p[2].vertexId + (fl * 439853 + ii * 364273 + 1)) * uint3(1597334677U, 3812015801U, 2912667907U);
+                    float3 noise0 = normalize(float3(n0) * (2.0 / float(0xffffffffU)) - 1.0);
+                    fvmix += noise0 * _FurVector.w * _FurRandomize;
+                #endif
+                #if defined(LIL_FEATURE_FurLengthMask)
+                    fvmix *= LIL_SAMPLE_2D_LOD(_FurLengthMask, lil_sampler_linear_repeat, outUV * _MainTex_ST.xy + _MainTex_ST.zw, 0).r;
+                #endif
+
+                // Inv
+                float4 worldPos = lerp(p[ii2].worldPos, wpc, lpmix);
+                output.worldPos = worldPos;
+                output.pos = UnityWorldToClipPos(worldPos);
+                //float3 previousWorldPos = lerp(p[ii2].previousWorldPos, pwpc, lpmix);
+                //output.previouspos = mul(LIL_MATRIX_PREV_VP, float4(previousWorldPos, 1.0));
+                output.furLayer = 0;
+                #if defined(LIL_V2F_POSITION_CS) && defined(LIL_FEATURE_CLIPPING_CANCELLER) && !defined(LIL_PASS_SHADOWCASTER_INCLUDED) && !defined(LIL_PASS_META_INCLUDED)
+                    //------------------------------------------------------------------------------------------------------------------------------
+                    // Clipping Canceller
+                    #if defined(UNITY_REVERSED_Z)
+                        // DirectX
+                        if (output.pos.w < _ProjectionParams.y * 1.01 && output.pos.w > 0 && _ProjectionParams.y < LIL_NEARCLIP_THRESHOLD LIL_MULTI_SHOULD_CLIPPING)
+                        {
+                            output.pos.z = output.pos.z * 0.0001 + output.pos.w * 0.999;
+                        }
+                    #else
+                        // OpenGL
+                        if (output.pos.w < _ProjectionParams.y * 1.01 && output.pos.w > 0 && _ProjectionParams.y < LIL_NEARCLIP_THRESHOLD LIL_MULTI_SHOULD_CLIPPING)
+                        {
+                            output.pos.z = output.pos.z * 0.0001 - output.pos.w * 0.999;
+                        }
+                    #endif
+                #endif
+                #if defined(LIL_FUR_PRE)
+                    #if defined(UNITY_REVERSED_Z)
+                        // DirectX
+                        output.pos.z -= 0.0000001;
+                    #else
+                        // OpenGL
+                        output.pos.z += 0.0000001;
+                    #endif
+                #endif
+                tristream.Append(output);
+
+                // Out
+                worldPos.xyz += fvmix;
+                output.worldPos = worldPos;
+                output.pos = UnityWorldToClipPos(worldPos);
+                #if defined(LIL_PASS_MOTIONVECTOR_INCLUDED)
+                    //previousPositionWS.xyz += fvmix;
+                    //output.previouspos = mul(LIL_MATRIX_PREV_VP, float4(previousPositionWS, 1.0));
+                #endif
+                #if defined(LIL_V2F_FURLAYER)
+                    output.furLayer = 1;
+                #endif
+                #if defined(LIL_V2F_POSITION_CS) && defined(LIL_FEATURE_CLIPPING_CANCELLER) && !defined(LIL_PASS_SHADOWCASTER_INCLUDED) && !defined(LIL_PASS_META_INCLUDED)
+                    //------------------------------------------------------------------------------------------------------------------------------
+                    // Clipping Canceller
+                    #if defined(UNITY_REVERSED_Z)
+                        // DirectX
+                        if (output.pos.w < _ProjectionParams.y * 1.01 && output.pos.w > 0 && _ProjectionParams.y < LIL_NEARCLIP_THRESHOLD LIL_MULTI_SHOULD_CLIPPING)
+                        {
+                            output.pos.z = output.pos.z * 0.0001 + output.pos.w * 0.999;
+                        }
+                    #else
+                        // OpenGL
+                        if (output.pos.w < _ProjectionParams.y * 1.01 && output.pos.w > 0 && _ProjectionParams.y < LIL_NEARCLIP_THRESHOLD LIL_MULTI_SHOULD_CLIPPING)
+                        {
+                            output.pos.z = output.pos.z * 0.0001 - output.pos.w * 0.999;
+                        }
+                    #endif
+                #endif
+                #if defined(LIL_FUR_PRE)
+                    #if defined(UNITY_REVERSED_Z)
+                        // DirectX
+                        output.pos.z -= 0.0000001;
+                    #else
+                        // OpenGL
+                        output.pos.z += 0.0000001;
+                    #endif
+                #endif
+                tristream.Append(output);
+            }
+            tristream.RestartStrip();
+        }
+    }
+    else
+    {
+        float3 furVectors[3];
+        furVectors[0] = p[0].furVector;
+        furVectors[1] = p[1].furVector;
+        furVectors[2] = p[2].furVector;
+        
+        uint3 n0 = (p[0].vertexId * 3 + p[1].vertexId * 1 + p[2].vertexId * 1) * uint3(1597334677U, 3812015801U, 2912667907U);
+        uint3 n1 = (p[0].vertexId * 1 + p[1].vertexId * 3 + p[2].vertexId * 1) * uint3(1597334677U, 3812015801U, 2912667907U);
+        uint3 n2 = (p[0].vertexId * 1 + p[1].vertexId * 1 + p[2].vertexId * 3) * uint3(1597334677U, 3812015801U, 2912667907U);
+        float3 noise0 = normalize(float3(n0) * (2.0 / float(0xffffffffU)) - 1.0);
+        float3 noise1 = normalize(float3(n1) * (2.0 / float(0xffffffffU)) - 1.0);
+        float3 noise2 = normalize(float3(n2) * (2.0 / float(0xffffffffU)) - 1.0);
+        furVectors[0] += noise0 * _FurVector.w * _FurRandomize;
+        furVectors[1] += noise1 * _FurVector.w * _FurRandomize;
+        furVectors[2] += noise2 * _FurVector.w * _FurRandomize;
+        
+        // #if defined(LIL_FEATURE_FurLengthMask)
+        //furVectors[0] *= LIL_SAMPLE_2D_LOD(_FurLengthMask, lil_sampler_linear_repeat, p[0].uv0 * _MainTex_ST.xy + _MainTex_ST.zw, 0).r;
+        //furVectors[1] *= LIL_SAMPLE_2D_LOD(_FurLengthMask, lil_sampler_linear_repeat, p[1].uv0 * _MainTex_ST.xy + _MainTex_ST.zw, 0).r;
+        //furVectors[2] *= LIL_SAMPLE_2D_LOD(_FurLengthMask, lil_sampler_linear_repeat, p[2].uv0 * _MainTex_ST.xy + _MainTex_ST.zw, 0).r;
+        
+        //TODO(float3): figure out why this causes bitmask mismatch?????
+
+        //furVectors[0] *= _FurLengthMask.SampleLevel(sampler_MainTex, poiUV(p[0].uv[_FurLengthMaskUV], _FurLengthMask_ST), 0)[_FurNoiseMaskChannel];
+        //furVectors[1] *= _FurLengthMask.SampleLevel(sampler_MainTex, poiUV(p[1].uv[_FurLengthMaskUV], _FurLengthMask_ST), 0)[_FurNoiseMaskChannel];
+        //furVectors[2] *= _FurLengthMask.SampleLevel(sampler_MainTex, poiUV(p[2].uv[_FurLengthMaskUV], _FurLengthMask_ST), 0)[_FurNoiseMaskChannel];
+        //#endif
+        
+        if (_FurLayerNum == 1)
+        {
+            AppendFur(tristream, output, p, furVectors, float3(1.0, 0.0, 0.0) / 1.0);
+            AppendFur(tristream, output, p, furVectors, float3(0.0, 1.0, 0.0) / 1.0);
+            AppendFur(tristream, output, p, furVectors, float3(0.0, 0.0, 1.0) / 1.0);
+        }
+        else if (_FurLayerNum >= 2)
+        {
+            AppendFur(tristream, output, p, furVectors, float3(1.0, 0.0, 0.0) / 1.0);
+            AppendFur(tristream, output, p, furVectors, float3(0.0, 1.0, 1.0) / 2.0);
+            AppendFur(tristream, output, p, furVectors, float3(0.0, 1.0, 0.0) / 1.0);
+            AppendFur(tristream, output, p, furVectors, float3(1.0, 0.0, 1.0) / 2.0);
+            AppendFur(tristream, output, p, furVectors, float3(0.0, 0.0, 1.0) / 1.0);
+            AppendFur(tristream, output, p, furVectors, float3(1.0, 1.0, 0.0) / 2.0);
+        }
+        if (_FurLayerNum >= 3)
+        {
+            AppendFur(tristream, output, p, furVectors, float3(1.0, 4.0, 1.0) / 6.0);
+            AppendFur(tristream, output, p, furVectors, float3(0.0, 1.0, 1.0) / 2.0);
+            AppendFur(tristream, output, p, furVectors, float3(1.0, 1.0, 4.0) / 6.0);
+            AppendFur(tristream, output, p, furVectors, float3(1.0, 0.0, 1.0) / 2.0);
+            AppendFur(tristream, output, p, furVectors, float3(4.0, 1.0, 1.0) / 6.0);
+            AppendFur(tristream, output, p, furVectors, float3(1.0, 1.0, 0.0) / 2.0);
+        }
+        AppendFur(tristream, output, p, furVectors, float3(1.0, 0.0, 0.0) / 1.0);
+        tristream.RestartStrip();
+    }
+}
+
+
+// TODO(float3): figure out why the alpha isn't the same as lil toon (note: I think it's because of the input.furLayer not being the same)
+#T#lilFurFragFunctionCalls
+ApplyLilFurAlpha(i, poiFragData, poiMesh);
+#T#lilFurFragFunctions
+void ApplyLilFurAlpha(inout VertexOut input, inout PoiFragData data, in PoiMesh poiMesh)
+{
+    float furLayer = input.furLayer;
+    float furLayerShift = furLayer - furLayer * _FurRootOffset +_FurRootOffset;
+    float furLayerAbs = abs(furLayerShift);
+    #if defined(PROP_FURNOISEMASK) || !defined(OPTIMIZER_ENABLED)
+        float furNoiseMask = POI2D_SAMPLER_PAN(_FurNoiseMask, _MainTex, poiUV(poiMesh.uv[_FurNoiseMaskUV], _FurNoiseMask_ST), _FurNoiseMaskPan)[_FurNoiseMaskChannel];
+    #else
+        float furNoiseMask = 1;
+    #endif
+
+    float furAlpha = furLayerShift < - 1.5 ? 1.0 : saturate(furNoiseMask - furLayerShift * furLayerAbs * furLayerAbs);
+
+    #if defined(PROP_FURNOISEMASK) || !defined(OPTIMIZER_ENABLED)
+        furAlpha *= POI2D_SAMPLER_PAN(_FurMask, _MainTex, poiUV(poiMesh.uv[_FurMaskUV], _FurMask_ST), _FurMaskPan)[_FurMaskChannel];
+    #endif
+    
+    data.alpha *= furAlpha;
+    data.baseColor *= saturate(1.0 - furNoiseMask + furNoiseMask * furLayer) * _FurAO * 1.25 + 1.0 - _FurAO;
+
+    //float furAO = _FurAO * saturate(1.0 - fwidth(input.furLayer));
+    //data.baseColor *= furLayer * furAO * 2.0 + 1.0 - furAO;
+
+};
+//------------------------------------------------------------------------------------------------------------------------------
+#T#lilFurGlobalMask
+//keep this

@@ -1,0 +1,189 @@
+#T#PoiFurProperties
+[HideInInspector] m_furCategory ("Fur", Float) = 0
+[NoAnimate][IntRange]_FurLayerCount ("Layer Count", Range(1, 31)) = 15
+_FurLength ("Length", Range(0.0, 0.05)) = 0.005
+_FurGravityStrength ("Gravity Strength", Range(-1, 1)) = 0.5
+
+_FurColor ("Color--{reference_property:_FurColorThemeIndex}", Color) = (1, 1, 1, 1)
+[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _FurColorThemeIndex ("", Int) = 0
+[sRGBWarning(true)]_FurTexture ("Fur Texture--{reference_properties:[_FurTexturePan, _FurTextureUV]}", 2D) = "white" { }
+[HideInInspector][Vector2]_FurTexturePan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _FurTextureUV ("UV", Int) = 0
+[ToggleUI]_FurTextureApplyToSkin ("Apply Fur Texture to Skin", Float) = 1
+
+[sRGBWarning]_FurMask ("Mask--{reference_properties:[_FurMaskPan, _FurMaskUV]}", 2D) = "white" { }
+[HideInInspector][Vector2]_FurMaskPan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _FurMaskUV ("UV", Int) = 0
+
+[sRGBWarning]_FurHeightMap ("Height Map--{reference_properties:[_FurHeightMapPan, _FurHeightMapUV]}", 2D) = "white" { }
+[HideInInspector][Vector2]_FurHeightMapPan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _FurHeightMapUV ("UV", Int) = 0
+[MultiSlider]_FurHeightMapMinMax ("Height Map Min Max", Vector) = (0.0, 1.0, 0, 1)
+
+_FurAO ("AO", Range(0, 1)) = 0.5
+[MultiSlider]_FurAOMinMax ("AO Min Max", Vector) = (0.0, 1.0, 0, 1)
+
+[ThryToggleUI(true)] _FurHueShiftEnabled ("<size=13><b>  Hue Shift</b></size>", Float) = 0
+_FurHueShiftSpeed ("Shift Speed--{condition_showS:(_FurHueShiftEnabled==1)}", Float) = 0
+_FurHueShift ("Hue Shift--{condition_showS:(_FurHueShiftEnabled==1)}", Range(0, 1)) = 0
+
+[HideInInspector] m_start_furAdvanced ("Advanced", Float) = 0
+[ToggleUI]_FurUseVertexColorNormals ("Vertex Color Normals", Float) = 0
+_FurMinDistance ("Min Distance", Float) = 2
+_FurMaxDistance ("Max Distance", Float) = 8
+[HideInInspector] m_end_furAdvanced ("Advanced", Float) = 0
+
+#T#PoiFurKeywords
+// #pragma shader_feature_local POI_FUR
+
+#T#PoiFurVariables
+int _FurLayerCount;
+float _FurLength;
+float _FurGravityStrength;
+float4 _FurColor;
+float _FurColorThemeIndex;
+
+Texture2D _FurTexture;
+float4 _FurTexture_ST;
+float2 _FurTexturePan;
+float _FurTextureUV;
+float _FurTextureApplyToSkin;
+
+Texture2D _FurMask;
+float4 _FurMask_ST;
+float2 _FurMaskPan;
+float _FurMaskUV;
+
+Texture2D _FurHeightMap;
+float4 _FurHeightMap_ST;
+float2 _FurHeightMapPan;
+float _FurHeightMapUV;
+float2 _FurHeightMapMinMax;
+
+float _FurAO;
+float2 _FurAOMinMax;
+
+float _FurHueShiftEnabled;
+float _FurHueShift;
+float _FurHueShiftSpeed;
+
+float _FurUseVertexColorNormals;
+#ifdef POI_WORLD
+    float _FurMinDistance;
+    float _FurMaxDistance;
+#endif
+
+#T#PoiFurVertexOutVariable
+float2 furSettings : TEXCOORD18;
+
+#T#PoiFurGeom
+#if !defined(OPTIMIZER_ENABLED)
+    [instance(32)]
+#else
+    [instance(_FurLayerCount + 1)]
+#endif
+[maxvertexcount(3)]
+void GeometryProgram(triangle VertexOut p[3], inout TriangleStream<VertexOut> tristream, uint InstanceID : SV_GSInstanceID)
+{
+    UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[0]);
+    UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[1]);
+    UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[2]);
+    float3 objectPos = mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).xyz;
+    #ifndef POI_PASS_OUTLINE
+        #ifdef POI_WORLD
+            uint layerCount = max(1, ceil(_FurLayerCount * (1 - smoothstep(_FurMinDistance, _FurMaxDistance, distance(objectPos, getCameraPosition())))));
+        #else
+            uint layerCount = max(1, ceil(_FurLayerCount * (1 - smoothstep(2, 8, distance(objectPos, getCameraPosition())))));
+        #endif
+        if (InstanceID > layerCount) return;
+        float4 furSettings = 0;
+        furSettings.x = InstanceID > 0;
+        furSettings.y = (InstanceID) / (float)layerCount;
+        furSettings.y *= furSettings.x;
+        VertexOut o[3];
+        [unroll(3)]
+        for (int i = 0; i < 3; i++)
+        {
+            VertexOut t = p[i];
+            float3 normal = t.normal;
+            if (_FurUseVertexColorNormals)
+            {
+                float3 vectorTS = t.vertexColor.rgb * 2.0 - 1.0;
+                
+                float3 binormal = cross(t.normal, t.tangent) * (t.tangent.w * unity_WorldTransformParams.w);
+                normal = vectorTS.x * t.tangent.xyz + vectorTS.y * binormal.xyz + vectorTS.z * normal;
+            }
+            float3 furGravityOffset = (float3(0, -1, 0) * (furSettings.y * _FurLength) * _FurGravityStrength) * smoothstep(-0.5, 1, dot(normal, float3(0, -sign(_FurGravityStrength), 0)) * 0.5 + 0.5);
+            t.furSettings = furSettings;
+            float3 offset = furGravityOffset +furSettings.y * _FurLength * normal;
+            t.worldPos.xyz += offset;
+            t.localPos.xyz += mul((float3x3)unity_WorldToObject, offset);
+            o[i] = t;
+        }
+        float3 faceNormal = normalize(mul(unity_ObjectToWorld, float4(cross(normalize(o[0].localPos.xyz - o[1].localPos.xyz), normalize(o[0].localPos.xyz - o[2].localPos.xyz)), 0)));
+        if (InstanceID > 0 && dot(normalize(UnityWorldSpaceViewDir((o[0].worldPos.xyz + o[1].worldPos.xyz + o[2].worldPos.xyz) * 0.33333333)), faceNormal) < 0.0) return;
+        [unroll(3)]
+        for (int j = 0; j < 3; j++)
+        {
+            o[j].pos = UnityWorldToClipPos(o[j].worldPos.xyz);
+            tristream.Append(o[j]);
+        }
+    #else
+        [unroll(3)]
+        for (int j = 0; j < 3; j++)
+        {
+            tristream.Append(p[j]);
+        }
+    #endif
+}
+
+#T#PoiFurFragFunctions
+void applyFur(in float2 furSettings, inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiMods poiMods)
+{
+    float furMask = POI2D_SAMPLER_PAN(_FurMask, _MainTex, poiUV(poiMesh.uv[_FurMaskUV], _FurMask_ST), _FurMaskPan).x;
+    float furHeightMap = POI2D_SAMPLER_PAN(_FurHeightMap, _MainTex, poiUV(poiMesh.uv[_FurHeightMapUV], _FurHeightMap_ST), _FurHeightMapPan).x;
+    furHeightMap = saturate(remap(furHeightMap, 0, _FurHeightMapMinMax.y, _FurHeightMapMinMax.x, 1));
+    float ao = lerp(1, smoothstep(_FurAOMinMax.x, _FurAOMinMax.y, furHeightMap), _FurAO * furMask);
+    float4 furTexture = POI2D_SAMPLER_PAN(_FurTexture, _MainTex, poiUV(poiMesh.uv[_FurTextureUV], _FurTexture_ST), _FurTexturePan);
+    furTexture.rgb *= poiThemeColor(poiMods, _FurColor.rgb, _FurColorThemeIndex);
+
+    if (_FurHueShiftEnabled)
+    {
+        furTexture.rgb = hueShift(furTexture.rgb, _FurHueShift + _Time.x * _FurHueShiftSpeed);
+    }
+
+    furTexture.rgb *= ao;
+    poiFragData.baseColor = lerp(poiFragData.baseColor, furTexture.rgb, furMask * _FurTextureApplyToSkin);
+    if (furSettings.x)
+    {
+        poiFragData.baseColor = furTexture.rgb;
+        if (_AlphaToCoverage)
+        {
+            poiFragData.alpha = min(poiFragData.alpha, min(saturate(furHeightMap - furSettings.y), saturate(furMask - furSettings.y)));
+            if (!_AlphaSharpenedA2C)
+            {
+                poiFragData.alpha = saturate((poiFragData.alpha) / max(fwidth(poiFragData.alpha), 0.0001));
+            }
+        }
+        else
+        {
+            clip(furHeightMap - furSettings.y);
+            clip(furMask - furSettings.y);
+        }
+    }
+}
+
+#T#PoiFurFragFunctionCalls
+#ifndef POI_PASS_OUTLINE
+    applyFur(i.furSettings, poiFragData, poiMesh, poiMods);
+#endif
+
+#T#PoiFurGlobalMask
+// if (_WaveGlobalMaskIndex > 0)
+// {
+//     applyToGlobalMask(poiMods, _WaveGlobalMaskIndex-1, _WaveGlobalMaskBlendType, i.furSettings.r * (i.furSettings.g == 0));
+// }
+// if (_UnderWaveGlobalMaskIndex > 0)
+// {
+//     applyToGlobalMask(poiMods, _UnderWaveGlobalMaskIndex-1, _UnderWaveGlobalMaskBlendType, i.furSettings.g > 0);
+// }

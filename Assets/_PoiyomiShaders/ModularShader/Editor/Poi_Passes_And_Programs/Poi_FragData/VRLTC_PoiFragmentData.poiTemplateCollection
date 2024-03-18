@@ -1,0 +1,259 @@
+#T#PoiFragDataVariables
+struct PoiMesh
+{
+    #K#POI_MESH_PROPERTIES
+    // 0 Vertex normal
+    // 1 Fragment normal
+    float3 normals[2];
+    float3 objNormal;
+    float3 tangentSpaceNormal;
+    float3 binormal[2];
+    float3 tangent[2];
+    float3 worldPos;
+    float3 localPos;
+    float3 objectPosition;
+    float isFrontFace;
+    float4 vertexColor;
+    float4 lightmapUV;
+    // 0-3 UV0-UV3
+    // 4 Panosphere UV
+    // 5 world pos xz
+    // 6 Polar UV
+    // 7 Distorted UV
+    float2 uv[9];
+    float2 parallaxUV;
+    float2 dx;
+    float2 dy;
+};
+
+struct PoiCam
+{
+    float3 viewDir;
+    float3 forwardDir;
+    float3 worldPos;
+    float distanceToVert;
+    float4 clipPos;
+    float4 screenSpacePosition;
+    float3 reflectionDir;
+    float3 vertexReflectionDir;
+    float3 tangentViewDir;
+    float4 posScreenSpace;
+    float2 posScreenPixels;
+    float2 screenUV;
+    float vDotN;
+    float4 worldDirection;
+    #K#POI_CAM_PROPERTIES
+};
+
+struct PoiMods
+{
+    float4 Mask;
+    float audioLink[5];
+    float audioLinkAvailable;
+    float audioLinkVersion;
+    float4 audioLinkTexture;
+    float2 detailMask;
+    float2 backFaceDetailIntensity;
+    float globalEmission;
+    float4 globalColorTheme[12];
+    float globalMask[16];
+    float ALTime[8];
+};
+
+struct PoiLight
+{
+    #K#POI_LIGHT_PROPERTIES
+    float3 direction;
+    float attenuation;
+    float attenuationStrength;
+    float3 directColor;
+    float3 indirectColor;
+    float occlusion;
+    float shadowMask;
+    float detailShadow;
+    float3 halfDir;
+    float lightMap;
+    float lightMapNoAttenuation;
+    float3 rampedLightMap;
+    float vertexNDotL;
+    float nDotL;
+    float nDotV;
+    float vertexNDotV;
+    float nDotH;
+    float vertexNDotH;
+    float lDotv;
+    float lDotH;
+    float nDotLSaturated;
+    float nDotLNormalized;
+    #ifdef POI_PASS_ADD
+        float additiveShadow;
+    #endif
+    float3 finalLighting;
+    float3 finalLightAdd;
+    float3 LTCGISpecular;
+    float3 LTCGIDiffuse;
+    float directLuminance;
+    float indirectLuminance;
+    float finalLuminance;
+
+    #if defined(VERTEXLIGHT_ON)
+        // Non Important Lights
+        float4 vDotNL;
+        float4 vertexVDotNL;
+        float3 vColor[4];
+        float4 vCorrectedDotNL;
+        float4 vAttenuation;
+        float4 vSaturatedDotNL;
+        float3 vPosition[4];
+        float3 vDirection[4];
+        float3 vFinalLighting;
+        float3 vHalfDir[4];
+        half4 vDotNH;
+        half4 vertexVDotNH;
+        half4 vDotLH;
+    #endif
+    #K#POI_LIGHT_PROPERTIES
+};
+
+struct PoiVertexLights
+{
+    #K#POI_VERTEX_LIGHTS_PROPERTIES
+    float3 direction;
+    float3 color;
+    float attenuation;
+};
+
+struct PoiFragData
+{
+    float smoothness;
+    float smoothness2;
+    float metallic;
+    float specularMask;
+    float reflectionMask;
+
+    float3 baseColor;
+    float3 finalColor;
+    float alpha;
+    float3 emission;
+    float toggleVertexLights;
+};
+
+float4 poiTransformClipSpacetoScreenSpaceFrag(float4 clipPos)
+{
+    float4 positionSS = float4(clipPos.xyz * clipPos.w, clipPos.w);
+    positionSS.xy = positionSS.xy / _ScreenParams.xy;
+    return positionSS;
+}
+
+#T#PoiFragDataDeclerations
+
+PoiMesh poiMesh;
+PoiInitStruct(PoiMesh, poiMesh);
+
+PoiLight poiLight;
+PoiInitStruct(PoiLight, poiLight);
+
+PoiVertexLights poiVertexLights;
+PoiInitStruct(PoiVertexLights, poiVertexLights);
+
+PoiCam poiCam;
+PoiInitStruct(PoiCam, poiCam);
+
+PoiMods poiMods;
+PoiInitStruct(PoiMods, poiMods);
+poiMods.globalEmission = 1;
+
+PoiFragData poiFragData;
+poiFragData.smoothness = 1;
+poiFragData.smoothness2 = 1;
+poiFragData.metallic = 1;
+poiFragData.specularMask = 1;
+poiFragData.reflectionMask = 1;
+poiFragData.emission = 0;
+poiFragData.baseColor = float3(0, 0, 0);
+poiFragData.finalColor = float3(0, 0, 0);
+poiFragData.alpha = 1;
+poiFragData.toggleVertexLights = 0;
+
+
+#T#PoiFragDataImplementation
+// Mesh Data
+//poiMesh.objectPosition = mul(unity_ObjectToWorld, float3(0, 0, 0)).xyz;
+poiMesh.objectPosition = mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).xyz;
+poiMesh.objNormal = mul(unity_WorldToObject, i.normal);
+poiMesh.normals[0] = i.normal;
+poiMesh.tangent[0] = i.tangent.xyz;
+poiMesh.binormal[0] = cross(i.normal, i.tangent.xyz) * (i.tangent.w * unity_WorldTransformParams.w);
+poiMesh.worldPos = i.worldPos.xyz;
+poiMesh.localPos = i.localPos.xyz;
+poiMesh.vertexColor = i.vertexColor;
+poiMesh.isFrontFace = facing;
+poiMesh.dx = ddx(poiMesh.uv[0]);
+poiMesh.dy = ddy(poiMesh.uv[0]);
+
+
+#ifndef POI_PASS_OUTLINE
+    if (!poiMesh.isFrontFace && _FlipBackfaceNormals)
+    {
+        poiMesh.normals[0] *= -1;
+        poiMesh.tangent[0] *= -1;
+        poiMesh.binormal[0] *= -1;
+    }
+#endif
+
+poiCam.viewDir = !IsOrthographicCamera() ? normalize(_WorldSpaceCameraPos - i.worldPos.xyz) : normalize(UNITY_MATRIX_I_V._m02_m12_m22);
+float3 tanToWorld0 = float3(poiMesh.tangent[0].x, poiMesh.binormal[0].x, poiMesh.normals[0].x);
+float3 tanToWorld1 = float3(poiMesh.tangent[0].y, poiMesh.binormal[0].y, poiMesh.normals[0].y);
+float3 tanToWorld2 = float3(poiMesh.tangent[0].z, poiMesh.binormal[0].z, poiMesh.normals[0].z);
+float3 ase_tanViewDir = tanToWorld0 * poiCam.viewDir.x + tanToWorld1 * poiCam.viewDir.y + tanToWorld2 * poiCam.viewDir.z;
+poiCam.tangentViewDir = normalize(ase_tanViewDir);
+
+// 0-3 UV0-UV3
+// 4 Panosphere UV
+// 5 world pos xz
+// 6 Polar UV
+// 6 Distorted UV
+#if defined(LIGHTMAP_ON) || defined(DYNAMICLIGHTMAP_ON)
+    poiMesh.lightmapUV = i.lightmapUV;
+#endif
+poiMesh.parallaxUV = poiCam.tangentViewDir.xy / max(poiCam.tangentViewDir.z, 0.0001);
+poiMesh.uv[0] = i.uv[0].xy;
+poiMesh.uv[1] = i.uv[0].zw;
+poiMesh.uv[2] = i.uv[1].xy;
+poiMesh.uv[3] = i.uv[1].zw;
+poiMesh.uv[4] = poiMesh.uv[0];
+poiMesh.uv[5] = poiMesh.uv[0];
+poiMesh.uv[6] = poiMesh.uv[0];
+poiMesh.uv[7] = poiMesh.uv[0];
+poiMesh.uv[8] = poiMesh.uv[0];
+
+#K#MESH_DATA_INIT
+
+#K#MAIN_TEXTURE_SAMPLE
+
+#K#FRAGMENT_NORMAL_CALCULATIION
+
+// Camera data
+poiCam.forwardDir = getCameraForward();
+poiCam.worldPos = _WorldSpaceCameraPos;
+poiCam.reflectionDir = reflect(-poiCam.viewDir, poiMesh.normals[1]);
+poiCam.vertexReflectionDir = reflect(-poiCam.viewDir, poiMesh.normals[0]);
+//poiCam.distanceToModel = distance(poiMesh.modelPos, poiCam.worldPos);
+poiCam.clipPos = i.pos;
+poiCam.distanceToVert = distance(poiMesh.worldPos, poiCam.worldPos);
+poiCam.posScreenSpace = poiTransformClipSpacetoScreenSpaceFrag(poiCam.clipPos);
+#if defined(POI_GRABPASS) && defined(POI_PASS_BASE)
+    poiCam.screenUV = poiCam.clipPos.xy / poiGetWidthAndHeight(_PoiGrab2);
+#else
+    poiCam.screenUV = poiCam.clipPos.xy / _ScreenParams.xy;
+#endif
+#ifdef UNITY_SINGLE_PASS_STEREO
+    poiCam.posScreenSpace.x = poiCam.posScreenSpace.x * 0.5;
+#endif
+poiCam.posScreenPixels = calcPixelScreenUVs(poiCam.posScreenSpace);
+poiCam.vDotN = abs(dot(poiCam.viewDir, poiMesh.normals[1]));
+
+poiCam.worldDirection.xyz = poiMesh.worldPos.xyz - poiCam.worldPos;
+poiCam.worldDirection.w = dot(poiCam.clipPos, CalculateFrustumCorrection());
+
+#K#CAMERA_DATA_INIT

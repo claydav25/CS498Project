@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; max-height: 22px; padding-left: 6px; padding-right: 6px;">
+        <ui:TextField picking-mode="Ignore" name="field_name" style="flex-grow: 1; flex-shrink: 1; margin-right: 6px;" />
+        <ui:FloatField name="field_value" style="max-width: 50px; flex-grow: 1; min-width: 30px;" />
+    </ui:VisualElement>
+</ui:UXML>

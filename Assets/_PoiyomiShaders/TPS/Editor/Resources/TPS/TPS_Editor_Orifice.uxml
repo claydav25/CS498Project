@@ -1,0 +1,49 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/_PoiyomiShaders/TPS/Editor/Resources/TPS/TPS_Editor.uss?fileID=7433441132597879392&amp;guid=ebad57e44ec26834dbf8483f83bbe486&amp;type=3#TPS_Editor" />
+    <ui:VisualElement name="container_title" style="margin-bottom: 10px;">
+        <ui:Label text="Orifice" name="label_title" class="label-title" />
+        <ui:VisualElement style="flex-direction: row; justify-content: center;">
+            <ui:Label name="label_subtitle" text="Thry&apos;s Penetration System" class="label-subtitle" />
+            <ui:Label text="v0.0" name="label_version" class="label-subtitle" style="padding-bottom: 2px; font-size: 12px; -unity-font-style: normal;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="container_settings" view-data-key="thry-orifice-settings">
+        <ui:VisualElement name="section_references" class="section">
+            <ui:Label text="References" class="label-subsection" />
+            <ui:TextField label="Id" name="text-id" binding-path="Id" />
+            <uie:ObjectField label="Root Transform" name="object-rootbone" binding-path="Root" type="UnityEngine.Transform, UnityEngine.CoreModule" />
+        </ui:VisualElement>
+        <ui:VisualElement name="section_position" class="section">
+            <ui:Label text="Position" class="label-subsection" />
+            <ui:Button text="Edit Position" name="button-position" class="button-fat" />
+        </ui:VisualElement>
+        <ui:VisualElement name="section_settings" class="section">
+            <ui:Label text="Settings" class="label-subsection" />
+            <uie:EnumField label="Orifice Type" name="enum-type" binding-path="Type" />
+            <uie:EnumField label="Channel" name="enum-channel" binding-path="Channel" value="1" />
+        </ui:VisualElement>
+        <ui:VisualElement name="section_animator" class="section">
+            <ui:Label text="Animator" class="label-subsection" />
+            <ui:VisualElement name="subsection_setup-animator" class="subsection">
+                <ui:Toggle label="Setup Animator" name="toggle_setup-animator" binding-path="DoAnimatorSetup" />
+            </ui:VisualElement>
+            <ui:VisualElement name="subsection_shapekeys" class="subsection">
+                <ui:Label text="Blendshapes" class="label-subsection" />
+                <uie:ObjectField label="Renderer" type="UnityEngine.SkinnedMeshRenderer, UnityEngine.CoreModule" binding-path="Renderer" name="object_renderer" />
+                <ui:MultiColumnListView focusable="true" reorderable="true" show-foldout-header="true" header-title="Blendshape Setup" show-add-remove-footer="true" reorder-mode="Animated" show-bound-collection-size="false" binding-path="OpeningShapekeys" name="list_blendshapes" show-border="true" selection-type="None" style="max-height: 200px; margin-top: 1px; margin-bottom: 1px; max-width: 100%; flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="section_menu" class="section">
+            <ui:Label text="Avatar Menu" class="label-subsection" />
+            <ui:TextField picking-mode="Ignore" label="Menu Path" />
+        </ui:VisualElement>
+        <ui:VisualElement name="section_setup" class="section">
+            <ui:Label text="Apply Setup" class="label-subsection" />
+            <ui:Toggle label="Apply Automatically" name="toggle_automatic-setup" binding-path="SetupAutomatically" />
+            <ui:VisualElement name="subsection_manual-setup" class="subsection">
+                <ui:Button text="Run Manual Animator Setup" name="button_run-setup" class="button-fat" />
+                <ui:Button text="Delete Animator Setup" name="button_delete-setup" value="1" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

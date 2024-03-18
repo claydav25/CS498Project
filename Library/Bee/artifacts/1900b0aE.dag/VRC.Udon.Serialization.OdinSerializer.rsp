@@ -121,6 +121,10 @@
 -define:UDONSHARP
 -define:UDON
 -define:VRC_SDK_VRCSDK3
+-define:AUDIOLINK
+-define:AUDIOLINK_V1
+-define:AVPRO_IMPORTED
+-define:TPS
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
@@ -328,6 +332,7 @@
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Data.dll"
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.dll"
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Drawing.dll"
+-r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Drawing.dll"
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.IO.Compression.dll"
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.IO.Compression.FileSystem.dll"
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Net.Http.dll"
@@ -340,6 +345,8 @@
 -r:"Library/PackageCache/com.unity.collections@2.1.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
 -r:"Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.dll"
 -r:"Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll"
+-r:"Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/GridReader/SharpOSC.dll"
+-r:"Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/GridReader/TekView.dll"
 -r:"Packages/com.vrchat.base/Editor/VRCSDK/Plugins/VRC.SDK3.Dynamics.Contact.Editor.dll"
 -r:"Packages/com.vrchat.base/Editor/VRCSDK/Plugins/VRC.SDK3.Dynamics.PhysBone.Editor.dll"
 -r:"Packages/com.vrchat.base/Runtime/VRCSDK/Dependencies/librsync/Blake2Sharp.dll"
@@ -376,6 +383,8 @@
 -r:"Packages/com.vrchat.worlds/Runtime/Udon/External/VRC.Udon.VM.dll"
 -r:"Packages/com.vrchat.worlds/Runtime/Udon/External/VRC.Udon.VRCWrapperModules.dll"
 -r:"Packages/com.vrchat.worlds/Runtime/Udon/External/VRC.Udon.Wrapper.dll"
+-r:"Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCEconomy-Editor.dll"
+-r:"Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCEconomy.dll"
 -r:"Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3-Editor.dll"
 -r:"Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
@@ -582,6 +591,7 @@
 /nowarn:0282
 /nowarn:1701
 /nowarn:1702
+-define:SYSTEM_DRAWING
 /utf8output
 /preferreduilang:en-US
 

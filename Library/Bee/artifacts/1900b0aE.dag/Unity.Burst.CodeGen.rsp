@@ -121,6 +121,10 @@
 -define:UDONSHARP
 -define:UDON
 -define:VRC_SDK_VRCSDK3
+-define:AUDIOLINK
+-define:AUDIOLINK_V1
+-define:AVPRO_IMPORTED
+-define:TPS
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -define:UNITY_EDITOR_ONLY_COMPILATION
@@ -331,6 +335,7 @@
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Data.dll"
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.dll"
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Drawing.dll"
+-r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Drawing.dll"
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.IO.Compression.dll"
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.IO.Compression.FileSystem.dll"
 -r:"E:/Unity/Installs/2022.3.6f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Net.Http.dll"
@@ -368,6 +373,7 @@
 /nowarn:0282
 /nowarn:1701
 /nowarn:1702
+-define:SYSTEM_DRAWING
 /utf8output
 /preferreduilang:en-US
 

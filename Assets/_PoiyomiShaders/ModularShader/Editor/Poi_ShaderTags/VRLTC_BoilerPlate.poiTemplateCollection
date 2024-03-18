@@ -1,0 +1,4 @@
+#T#ShaderTagsDefault
+Tags { "RenderType" = "Opaque" "Queue" = "Geometry" "VRCFallback" = "Standard" }
+#T#ShaderTagsGrabPass
+Tags { "RenderType" = "Opaque" "Queue" = "Transparent" "VRCFallback" = "Standard" }

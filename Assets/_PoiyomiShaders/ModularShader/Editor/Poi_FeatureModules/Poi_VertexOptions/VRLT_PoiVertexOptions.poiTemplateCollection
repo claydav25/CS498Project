@@ -1,0 +1,298 @@
+#T#PoiVertexOptionsProperties
+//ifex _VertexManipulationsEnabled==0
+[HideInInspector] m_start_vertexManipulation ("Vertex Options--{reference_property:_VertexManipulationsEnabled, button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/color-and-normals/vertex-options},hover:YouTube}}", Float) = 0
+[HideInInspector][ThryToggle(AUTO_EXPOSURE)]_VertexManipulationsEnabled ("Enabled", Float) = 0
+[Vector3]_VertexManipulationLocalTranslation ("Local Translation", Vector) = (0, 0, 0, 1)
+[Vector3]_VertexManipulationWorldTranslation ("World Translation", Vector) = (0, 0, 0, 1)
+_VertexManipulationLocalScale ("Scale", Vector) = (1, 1, 1, 1)
+[Vector3]_VertexManipulationLocalRotation ("Rotation", Vector) = (0, 0, 0, 1)
+[Vector3]_VertexManipulationLocalRotationSpeed ("Rotation Speed", Vector) = (0, 0, 0, 1)
+
+[HideInInspector] s_start_VertexManipulationHeight ("Height Map--{persistent_expand:true,default_expand:true}", Float) = 1
+[sRGBWarning]_VertexManipulationHeightMask ("Height Map--{reference_properties:[_VertexManipulationHeightMaskPan, _VertexManipulationHeightMaskUV, _VertexManipulationHeightMaskChannel]}", 2D) = "white" { }
+[HideInInspector][Vector2]_VertexManipulationHeightMaskPan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][Enum(UV0, 0, UV1, 1, UV2, 2, UV3, 3)] _VertexManipulationHeightMaskUV ("UV", Int) = 0
+[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_VertexManipulationHeightMaskChannel ("Channel", Float) = 0
+_VertexManipulationHeight ("Height", Float) = 0
+_VertexManipulationHeightBias ("Map Bias", Range(0, 1)) = 0
+[HideInInspector] s_end_VertexManipulationHeight ("Height Map", Float) = 0
+
+[HideInInspector] s_start_vertexRounding ("Vertex Rounding (Blocky/PS1)--{reference_property:_VertexRoundingEnabled,persistent_expand:true,default_expand:true}", Float) = 0
+[HideInInspector][ToggleUI]_VertexRoundingEnabled ("Rounding Enabled", Float) = 0
+[Enum(World, 0, Local, 1)]_VertexRoundingSpace ("Rounding Space", Int) = 0
+_VertexRoundingDivision ("Rounding Interval", Float) = 0.02
+[HideInInspector] s_end_vertexRounding ("Vertex Rounding (Blocky/PS1)", Float) = 0
+
+[HideInInspector] s_start_VertexBarrelMode ("Barrel Distortion--{reference_property:_VertexBarrelMode,persistent_expand:true}", Float) = 0
+[HideInInspector][ThryToggleUI(true)]_VertexBarrelMode ("<size=13><b>  Barrel Mode</b></size>", Float) = 0
+_VertexBarrelWidth ("Barrel Width", Float) = 0.2
+_VertexBarrelAlpha ("Barrel Alpha", Range(0, 1)) = 0
+_VertexBarrelHeight ("Barrel Height", Range(0, 1)) = 0
+[HideInInspector] s_end_VertexBarrelMode ("Barrel Distortion", Float) = 0
+
+[HideInInspector] s_start_VertexSphereMode ("Sphere Distortion--{reference_property:_VertexSphereMode,persistent_expand:true}", Float) = 0
+[HideInInspector][ThryToggleUI(true)]_VertexSphereMode ("<size=13><b>  Sphere Mode</b></size>", Float) = 0
+_VertexSphereRadius ("Sphere Radius", Range(0, 1)) = 1
+_VertexSphereHeight ("Sphere Height", Range(0, 1)) = 1
+_VertexSphereAlpha ("Sphere Alpha", Range(0, 1)) = 0
+[Vector3]_VertexSphereCenter ("Sphere Center", Vector) = (0, 0, 0, 1)
+[HideInInspector] s_end_VertexSphereMode ("Sphere Distortion", Float) = 0
+
+[HideInInspector] s_start_VertexTornadoMode ("Tornado--{reference_property:_VertexTornadoMode,persistent_expand:true}", Float) = 0
+[HideInInspector][ThryToggleUI(true)]_VertexTornadoMode ("<size=13><b>  Tornado</b></size>", Float) = 0
+_VertexTornadoRadius ("Radius", Float) = .2
+_VertexTornadoIntensity ("Spiral Intensity", Float) = 100
+_VertexTornadoSpeed ("Rotation Speed", Float) = 5
+_VertexTornadoTopHeight ("Top Height", Float) = 1
+_VertexTornadoBaseHeight ("Bottom Height", Float) = 0
+[HideInInspector] s_end_VertexTornadoMode ("Tornado", Float) = 0
+
+
+[HideInInspector] s_start_VertAL ("Audio Link--{reference_property:_VertexAudioLinkEnabled,persistent_expand:true,default_expand:true,condition_showS:(_EnableAudioLink==1)}", Float) = 0
+[HideInInspector][ThryToggleUI(true)]_VertexAudioLinkEnabled ("Audio Link", Float) = 0
+
+[HideInInspector] s_start_LocalTranslation ("Local Translation--{persistent_expand:true,default_expand:true}", Float) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _VertexLocalTranslationALBand ("Band", Int) = 0
+[Vector3]_VertexLocalTranslationALMin ("Translation Min", Vector) = (0, 0, 0)
+[Vector3]_VertexLocalTranslationALMax ("Translation Max", Vector) = (0, 0, 0)
+[HideInInspector] s_end_LocalTranslation ("Local Translation", Float) = 0
+
+[HideInInspector] s_start_LocalRotation ("Local Rotation--{persistent_expand:true,default_expand:true}", Float) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _VertexLocalRotationALBandX ("Band X", Int) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _VertexLocalRotationALBandY ("Band Y", Int) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _VertexLocalRotationALBandZ ("Band Z", Int) = 0
+[Vector3]_VertexLocalRotationAL ("Rotation", Vector) = (0, 0, 0)
+[HideInInspector] s_end_LocalRotation ("Local Rotation", Float) = 0
+
+[HideInInspector] s_start_ContinuousRotation ("Continuous Rotation--{persistent_expand:true,default_expand:true}", Float) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _VertexLocalRotationCTALBandX ("Band X", Int) = 0
+[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_VertexLocalRotationCTALTypeX ("Motion Type X", Int) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _VertexLocalRotationCTALBandY ("Band Y", Int) = 0
+[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_VertexLocalRotationCTALTypeY ("Motion Type Y", Int) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _VertexLocalRotationCTALBandZ ("Band Z", Int) = 0
+[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_VertexLocalRotationCTALTypeZ ("Motion Type Z", Int) = 0
+[Vector3]_VertexLocalRotationCTALSpeed ("Speed", Vector) = (0, 0, 0)
+[HideInInspector] s_end_ContinuousRotation ("Continuous Rotation", Float) = 0
+
+[HideInInspector] s_start_VertexScale ("Vertex Scale--{persistent_expand:true,default_expand:true}", Float) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _VertexLocalScaleALBand ("Band", Int) = 0
+_VertexLocalScaleALMin ("Scale Min", Vector) = (0, 0, 0, 0)
+_VertexLocalScaleALMax ("Scale Max", Vector) = (0, 0, 0, 0)
+[HideInInspector] s_end_VertexScale ("Vertex Scale", Float) = 0
+
+[HideInInspector] s_start_WorldTranslation ("World Translation--{persistent_expand:true,default_expand:true}", Float) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _VertexWorldTranslationALBand ("Band", Int) = 0
+[Vector3]_VertexWorldTranslationALMin ("World Translation Min", Vector) = (0, 0, 0)
+[Vector3]_VertexWorldTranslationALMax ("World Translation Max", Vector) = (0, 0, 0)
+[HideInInspector] s_end_WorldTranslation ("World Translation", Float) = 0
+
+[HideInInspector] s_start_ALVertexHeight ("Vertex Height--{persistent_expand:true,default_expand:true}", Float) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _VertexManipulationHeightBand ("Band", Int) = 0
+[VectorLabel(Min, Max)]_VertexManipulationHeightAL ("Height", Vector) = (0, 0, 0)
+[HideInInspector] s_end_ALVertexHeight ("Vertex Height", Float) = 0
+
+[HideInInspector] s_start_vertexRoundingAL ("Vertex Rounding--{persistent_expand:true,default_expand:true}", Float) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _VertexRoundingRangeBand ("Band", Int) = 0
+[VectorLabel(Min, Max)]_VertexRoundingRangeAL ("Range", Vector) = (0, 0, 0)
+[HideInInspector] s_end_VertexRoundingAL ("Vertex Rounding", Float) = 0
+
+[HideInInspector] s_start_ALSpectrumMotion ("Spectrum Motion--{reference_property:_VertexSpectrumMotion,persistent_expand:true,default_expand:true}", Float) = 0
+[HideInInspector][ThryToggleUI(true)]_VertexSpectrumMotion ("Spectrum Motion", Float) = 0
+[Enum(UV0, 0, UV1, 1, UV2, 2, UV3, 3)] _VertexSpectrumUV ("UV", Int) = 0
+[Enum(X, 0, Y, 1)] _VertexSpectrumUVDirection ("UV Direction", Int) = 0
+_VertexSpectrumOffsetMin ("Offset Min", Vector) = (0, 0, 0)
+_VertexSpectrumOffsetMax ("Offset Max", Vector) = (0, .1, 0)
+[HideInInspector] s_end_ALSpectrumMotion ("Spectrum Motion", Float) = 0
+
+[HideInInspector] s_end_VertAL ("Audio Link", Float) = 0
+
+[HideInInspector] m_end_vertexManipulation ("Vertex Options", Float) = 0
+//endex
+
+#T#PoiVertexOptionsKeywords
+//ifex _VertexManipulationsEnabled==0
+#pragma shader_feature AUTO_EXPOSURE
+//endex
+
+#T#PoiVertexOptionsVariables
+//ifex _VertexManipulationsEnabled==0
+#ifdef AUTO_EXPOSURE
+    float4 _VertexManipulationLocalTranslation;
+    float4 _VertexManipulationLocalRotation;
+    float3 _VertexManipulationLocalRotationSpeed;
+    float4 _VertexManipulationLocalScale;
+    float4 _VertexManipulationWorldTranslation;
+    float _VertexManipulationHeight;
+    sampler2D _VertexManipulationHeightMask;
+    float4 _VertexManipulationHeightMask_ST;
+    float2 _VertexManipulationHeightMaskPan;
+    float _VertexManipulationHeightMaskUV;
+    float _VertexManipulationHeightMaskChannel;
+    float _VertexManipulationHeightBias;
+    float _VertexRoundingEnabled;
+    int _VertexRoundingSpace;
+    float _VertexRoundingDivision;
+
+    //AL
+    float _VertexAudioLinkEnabled;
+    float3 _VertexLocalTranslationALMin;
+    float3 _VertexLocalTranslationALMax;
+    float _VertexLocalTranslationALBand;
+
+    float3 _VertexLocalRotationAL;
+    float _VertexLocalRotationALBand;
+
+    float3 _VertexLocalRotationCTALSpeed;
+    float _VertexLocalRotationCTALBandX;
+    float _VertexLocalRotationCTALBandY;
+    float _VertexLocalRotationCTALBandZ;
+    float _VertexLocalRotationCTALTypeX;
+    float _VertexLocalRotationCTALTypeY;
+    float _VertexLocalRotationCTALTypeZ;
+
+    float4 _VertexLocalScaleALMin;
+    float4 _VertexLocalScaleALMax;
+    float _VertexLocalScaleALBand;
+
+    float3 _VertexWorldTranslationALMin;
+    float3 _VertexWorldTranslationALMax;
+    float _VertexWorldTranslationALBand;
+
+    float2 _VertexManipulationHeightAL;
+    float _VertexManipulationHeightBand;
+    
+    float2 _VertexRoundingRangeAL;
+    float _VertexRoundingRangeBand;
+
+    float _VertexBarrelMode;
+    float _VertexBarrelWidth;
+    float _VertexBarrelAlpha;
+    float _VertexBarrelHeight;
+
+    float _VertexSphereMode;
+    float _VertexSphereRadius;
+    float _VertexSphereHeight;
+    float _VertexSphereAlpha;
+    float4 _VertexSphereCenter;
+
+    float _VertexTornadoMode;
+    float _VertexTornadoRadius;
+    float _VertexTornadoSpeed;
+    float _VertexTornadoIntensity;
+    float _VertexTornadoBaseHeight;
+    float _VertexTornadoTopHeight;
+
+    float _VertexSpectrumMotion;
+    float3 _VertexSpectrumOffsetMin;
+    float3 _VertexSpectrumOffsetMax;
+    float _VertexSpectrumUV;
+    float _VertexSpectrumUVDirection;
+#endif
+//endex
+
+#T#PoiVertexOptionsInputModImplementation
+//ifex _VertexManipulationsEnabled==0
+#ifdef AUTO_EXPOSURE
+    float4 audioLinkBands = 0;
+    float3 ALrotation = 0;
+    float3 ALLocalTranslation = 0;
+    float3 CTALRotation = 0;
+    float3 ALScale = 0;
+    float3 ALWorldTranslation = 0;
+    float ALHeight = 0;
+    float ALRoundingAmount = 0;
+    float4 ALSpectrumLocalOffset = float4(0, 0, 0, 0);
+    #ifdef POI_AUDIOLINK
+        if (AudioLinkIsAvailable() && _VertexAudioLinkEnabled && _AudioLinkAnimToggle)
+        {
+            audioLinkBands.x = AudioLinkData(ALPASS_AUDIOBASS).r;
+            audioLinkBands.y = AudioLinkData(ALPASS_AUDIOLOWMIDS).r;
+            audioLinkBands.z = AudioLinkData(ALPASS_AUDIOHIGHMIDS).r;
+            audioLinkBands.w = AudioLinkData(ALPASS_AUDIOTREBLE).r;
+
+            if (any(_VertexLocalTranslationALMin) || any(_VertexLocalTranslationALMax))
+            {
+                ALLocalTranslation = lerp(_VertexLocalTranslationALMin, _VertexLocalTranslationALMax, audioLinkBands[_VertexLocalTranslationALBand]);
+            }
+            if (any(_VertexLocalRotationAL))
+            {
+                ALrotation = audioLinkBands[_VertexLocalRotationALBand] * _VertexLocalRotationAL;
+            }
+            if (any(_VertexLocalRotationCTALSpeed))
+            {
+                CTALRotation.x = AudioLinkGetChronoTime(_VertexLocalRotationCTALTypeX, _VertexLocalRotationCTALBandX) * _VertexLocalRotationCTALSpeed.x * 360;
+                CTALRotation.y = AudioLinkGetChronoTime(_VertexLocalRotationCTALTypeY, _VertexLocalRotationCTALBandY) * _VertexLocalRotationCTALSpeed.y * 360;
+                CTALRotation.z = AudioLinkGetChronoTime(_VertexLocalRotationCTALTypeZ, _VertexLocalRotationCTALBandZ) * _VertexLocalRotationCTALSpeed.z * 360;
+            }
+            if (any(_VertexLocalScaleALMin) || any(_VertexLocalScaleALMax))
+            {
+                ALScale = lerp(_VertexLocalScaleALMin.xyz + _VertexLocalScaleALMin.w, _VertexLocalScaleALMax.xyz + _VertexLocalScaleALMax.w, audioLinkBands[_VertexLocalScaleALBand]);
+            }
+            if (any(_VertexWorldTranslationALMin) || any(_VertexWorldTranslationALMax))
+            {
+                ALWorldTranslation = lerp(_VertexWorldTranslationALMin, _VertexWorldTranslationALMax, audioLinkBands[_VertexWorldTranslationALBand]);
+            }
+            if (any(_VertexManipulationHeightAL))
+            {
+                ALHeight = lerp(_VertexManipulationHeightAL.x, _VertexManipulationHeightAL.y, audioLinkBands[_VertexManipulationHeightBand]);
+            }
+            if (any(_VertexRoundingRangeAL))
+            {
+                ALRoundingAmount = lerp(_VertexRoundingRangeAL.x, _VertexRoundingRangeAL.y, audioLinkBands[_VertexRoundingRangeBand]);
+            }
+            if (_VertexSpectrumMotion)
+            {
+                ALSpectrumLocalOffset.xyz = lerp(_VertexSpectrumOffsetMin.xyz, _VertexSpectrumOffsetMax.xyz, AudioLinkLerpMultiline(ALPASS_DFT + float2(vertexUV(v, _VertexSpectrumUV)[_VertexSpectrumUVDirection] * AUDIOLINK_ETOTALBINS, 0.)));
+            }
+        }
+    #endif
+
+    // Local Transformation
+    float4 rotation = float4(_VertexManipulationLocalRotation.xyz + float3(180, 0, 0) + _VertexManipulationLocalRotationSpeed * _Time.x + ALrotation + CTALRotation, _VertexManipulationLocalRotation.w);
+    v.normal = rotate_with_quaternion(v.normal, rotation.xyz);
+    v.tangent.xyz = rotate_with_quaternion(v.tangent.xyz, rotation.xyz);
+    v.vertex = transform(v.vertex, _VertexManipulationLocalTranslation + float4(ALLocalTranslation, 0) + ALSpectrumLocalOffset, rotation, _VertexManipulationLocalScale + float4(ALScale, 0));
+    o.normal = UnityObjectToWorldNormal(v.normal);
+
+
+    #if defined(PROP_VERTEXMANIPULATIONHEIGHTMASK) || !defined(OPTIMIZER_ENABLED)
+        float3 heightOffset = (tex2Dlod(_VertexManipulationHeightMask, float4(poiUV(vertexUV(v, _VertexManipulationHeightMaskUV), _VertexManipulationHeightMask_ST) + _VertexManipulationHeightMaskPan * _Time.x, 0, 0))[_VertexManipulationHeightMaskChannel] - _VertexManipulationHeightBias) * (_VertexManipulationHeight + ALHeight) * o.normal;
+    #else
+        float3 heightOffset = (_VertexManipulationHeight + ALHeight) * o.normal;
+    #endif
+
+    if (_VertexBarrelMode)
+    {
+        v.vertex.xz = lerp(v.vertex.xz, normalize(v.vertex.xz) * _VertexBarrelWidth + v.vertex.xz * _VertexBarrelHeight, _VertexBarrelAlpha);
+    }
+    
+    if (_VertexSphereMode)
+    {
+        v.vertex.xyz = lerp(v.vertex.xyz, normalize(v.vertex.xyz + _VertexSphereCenter.xyz) * _VertexSphereRadius + v.vertex.xyz * _VertexSphereHeight, _VertexSphereAlpha);
+    }
+
+    if (_VertexTornadoMode)
+    {
+        v.vertex.xz = lerp(v.vertex.xz, float3(v.vertex.xz + float2(cos(_Time.y * _VertexTornadoSpeed + v.vertex.y * _VertexTornadoIntensity) * _VertexTornadoRadius, sin(_Time.y * _VertexTornadoSpeed + v.vertex.y * _VertexTornadoIntensity) * _VertexTornadoRadius), v.vertex.y), smoothstep(_VertexTornadoBaseHeight, _VertexTornadoTopHeight, v.vertex.y));
+    }
+
+    v.vertex.xyz += mul(unity_WorldToObject, _VertexManipulationWorldTranslation.xyz + ALWorldTranslation + heightOffset).xyz;
+
+    // rounding
+    UNITY_BRANCH
+    if (_VertexRoundingEnabled)
+    {
+        float divisionAmount = max(_VertexRoundingDivision + ALRoundingAmount, 0.0000001);
+        if (_VertexRoundingSpace == 0)
+        {
+            float4 worldPos = mul(unity_ObjectToWorld, v.vertex);
+            float3 worldRoundPosition = (ceil(worldPos.xyz / divisionAmount) * divisionAmount) - divisionAmount * .5;
+            v.vertex = mul(unity_WorldToObject, float4(worldRoundPosition, worldPos.w));
+        }
+        else if (_VertexRoundingSpace == 1)
+        {
+            v.vertex.xyz = (ceil(v.vertex.xyz / divisionAmount) * divisionAmount) - divisionAmount * .5;
+        }
+    }
+#endif
+//endex

@@ -1,0 +1,373 @@
+#T#PoiOutlineProperties
+//ifex _EnableOutlines!=1
+// Outline Vertex
+[HideInInspector][ToggleUI]_EnableOutlines ("Enable Outlines", float) = 0
+[Enum(Basic, 1, Rim Light, 2, Directional, 3, DropShadow, 4)]_OutlineExpansionMode ("Mode", Int) = 1
+[Enum(Local, 0, World, 1)]_OutlineSpace ("Space", Int) = 0
+
+_LineWidth ("Outline Size", Float) = 1
+[sRGBWarning]_OutlineMask ("Outline Size Mask--{reference_properties:[_OutlineMaskPan, _OutlineMaskUV, _OutlineMaskChannel]}", 2D) = "white" { }
+[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _LineColorThemeIndex ("", Int) = 0
+[HideInInspector][Vector2]_OutlineMaskPan ("Panning", Vector) = (0, 0, 0, 0)
+[HideInInspector][Enum(UV0, 0, UV1, 1, UV2, 2, UV3, 3)] _OutlineMaskUV ("UV", Int) = 0
+[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_OutlineMaskChannel ("Channel", Float) = 0
+
+
+[sRGBWarning(true)]_OutlineTexture ("Outline Texture--{reference_properties:[_OutlineTexturePan, _OutlineTextureUV]}", 2D) = "white" { }
+[HideInInspector][Vector2]_OutlineTexturePan ("Outline Texture Pan", Vector) = (0, 0, 0, 0)
+[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _OutlineTextureUV ("UV", Int) = 0
+_LineColor ("Color--{reference_property:_LineColorThemeIndex}", Color) = (1, 1, 1, 1)
+_OutlineRimLightBlend ("Rim Light Blend--{condition_show:{type:PROPERTY_BOOL,data:_OutlineExpansionMode==2}}", Range(0, 1)) = 0
+[Vector2]_OutlinePersonaDirection ("Directional Offset--{condition_show:{type:PROPERTY_BOOL,data:_OutlineExpansionMode==3}}", Vector) = (1, 0, 0, 0)
+[Vector3]_OutlineDropShadowOffset ("Drop Direction--{condition_show:{type:PROPERTY_BOOL,data:_OutlineExpansionMode==4}}", Vector) = (1, 0, 0, 0)
+_OutlineEmission ("Outline Emission", Range(0, 20)) = 0
+_OutlineTintMix ("MainTex blend", Range(0, 1)) = 0
+[ToggleUI]_PoiUTSStyleOutlineBlend ("UTS2 style Blend", Float) = 0
+
+
+[HideInInspector] s_start_OutlineColorAdjust ("Color Adjust--{reference_property:_OutlineHueShift,persistent_expand:true,default_expand:false}", Float) = 0
+[HideInInspector][ThryToggleUI(true)]_OutlineHueShift ("Color Adjust", Float) = 0
+[VectorToSliders(Hue, 0, 1, Saturation, 0, 2, Value, 0, 2, Gamma, 0.01, 2)]_OutlineTexHSVG ("HSVG", Vector) = (0, 1, 1, 1)
+_OutlineHueOffsetSpeed ("Shift Speed", Float) = 0
+[HideInInspector] s_end_OutlineColorAdjust ("Color Adjust", Float) = 0
+
+[HideInInspector] s_start_OutlineAlphaDistanceFade ("Distance Alpha--{reference_property:_OutlineAlphaDistanceFade,persistent_expand:true,default_expand:false}", Float) = 0
+[HideInInspector][ThryToggleUI(true)] _OutlineAlphaDistanceFade ("Distance Alpha", Float) = 0
+[Enum(Object Position, 0, Pixel Position, 1)] _OutlineAlphaDistanceFadeType ("Pos To Use", Int) = 1
+_OutlineAlphaDistanceFadeMinAlpha ("Min Distance Alpha", Range(0, 1)) = 0
+_OutlineAlphaDistanceFadeMaxAlpha ("Max Distance Alpha", Range(0, 1)) = 1
+_OutlineAlphaDistanceFadeMin ("Min Distance", Float) = 0
+_OutlineAlphaDistanceFadeMax ("Max Distance", Float) = 0
+[HideInInspector] s_end_OutlineAlphaDistanceFade ("Distance Alpha", Float) = 0
+
+[HideInInspector] s_start_OutlineFixedSize ("Fixed Size Over Distance--{reference_property:_OutlineFixedSize,persistent_expand:true,default_expand:false}", Float) = 0
+[HideInInspector][ThryToggleUI(true)]_OutlineFixedSize ("Fixed Size", Float) = 1
+_OutlineFixWidth ("Fixed Width ", Range(0, 1)) = .5
+_OutlinesMaxDistance ("Fixed Size Max Distance", Float) = 1
+[HideInInspector] s_end_OutlineFixedSize ("Color Adjust", Float) = 0
+
+[HideInInspector] s_start_OutlineLighting ("Lighting--{reference_property:_OutlineLit,persistent_expand:true,default_expand:false}", Float) = 0
+[HideInInspector][ToggleUI]_OutlineLit ("Enable Lighting", Float) = 1
+_OutlineShadowStrength ("Shadow Strength", Range(0, 1)) = 0
+[HideInInspector] s_end_OutlineLighting ("Lighting", Float) = 0
+
+[HideInInspector] s_start_VertexColors ("Vertex Colors--{persistent_expand:true,default_expand:false}", Float) = 0
+[ToggleUI]_OutlineUseVertexColorNormals ("Vertex Color Normals", Float) = 0
+[Enum(Off, 0, R, 1, G, 2, B, 3, A, 4)]_OutlineVertexColorMask ("Vertex Color Mask", Float) = 0
+_OutlineVertexColorMaskStrength ("VC Mask Strength--{condition_showS:(_OutlineVertexColorMask!=0)}", Range(0, 1)) = 1
+[HideInInspector] s_end_VertexColors ("Vertex Colors", Float) = 0
+
+[HideInInspector] s_start_OutlineRenderingOptions ("Rendering Options--{persistent_expand:true,default_expand:false}", Float) = 0
+[ToggleUI]_OutlineClipAtZeroWidth ("Clip 0 Width", Float) = 0
+[ToggleUI]_OutlineOverrideAlpha ("Override Base Alpha", Float) = 0
+_Offset_Z ("Cam Z Offset", Float) = 0
+[Enum(UnityEngine.Rendering.CullMode)] _OutlineCull ("Cull", Float) = 1
+[Enum(UnityEngine.Rendering.CompareFunction)] _OutlineZTest ("ZTest", Float) = 4
+[HideInInspector] s_end_OutlineRenderingOptions ("Rendering Options", Float) = 0
+
+[HideInInspector] m_start_OutlineAudioLink ("Audio Link ♫--{ condition_showS:_EnableAudioLink==1}", Float) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkOutlineSizeBand ("Size Band", Int) = 0
+[VectorLabel(Min, Max)]_AudioLinkOutlineSize ("Size Mod", Vector) = (0, 0, 0, 0)
+[Space(7)]
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkOutlineEmissionBand ("Emission Band", Int) = 0
+[VectorLabel(Min, Max)]_AudioLinkOutlineEmission ("Emission Mod", Vector) = (0, 0, 0, 0)
+
+
+[HideInInspector] s_start_outline_al_color ("Color--{reference_property:_OutlineALColorEnabled,persistent_expand:true,default_expand:false}", Float) = 0
+[HideInInspector][ToggleUI]_OutlineALColorEnabled ("Enable", Float) = 0
+[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _AudioLinkOutlineColorBand ("Band", Int) = 0
+[VectorLabel(Min, Max)]_AudioLinkOutlineColorMod ("Replace", Vector) = (0, 1, 0, 0)
+_AudioLinkOutlineColor ("Color", Color) = (1, 1, 1, 1)
+[HideInInspector] s_end_outline_al_color ("Color--{draw_border:true}", Float) = 0
+
+[HideInInspector] m_end_OutlineAudioLink ("Audio Link", Float) = 0
+//endex
+#T#PoiOutlineStencilProperties
+//ifex _EnableOutlines!=1
+// Outline Stencil
+[HideInInspector] m_start_OutlineStencil ("Outline Stencil", Float) = 0
+
+[ThryWideEnum(Simple, 0, Front Face vs Back Face, 1)] _OutlineStencilType ("Stencil Type", Float) = 0
+[IntRange] _OutlineStencilRef ("Stencil Reference Value", Range(0, 255)) = 0
+[IntRange] _OutlineStencilReadMask ("Stencil ReadMask Value", Range(0, 255)) = 255
+[IntRange] _OutlineStencilWriteMask ("Stencil WriteMask Value", Range(0, 255)) = 255
+[Enum(UnityEngine.Rendering.StencilOp)] _OutlineStencilPassOp ("Stencil Pass Op--{condition_showS:(_OutlineStencilType==0)}", Float) = 0
+[Enum(UnityEngine.Rendering.StencilOp)] _OutlineStencilFailOp ("Stencil Fail Op--{condition_showS:(_OutlineStencilType==0)}", Float) = 0
+[Enum(UnityEngine.Rendering.StencilOp)] _OutlineStencilZFailOp ("Stencil ZFail Op--{condition_showS:(_OutlineStencilType==0)}", Float) = 0
+[Enum(UnityEngine.Rendering.CompareFunction)] _OutlineStencilCompareFunction ("Stencil Compare Function--{condition_showS:(_OutlineStencilType==0)}", Float) = 8
+
+[HideInInspector] m_start_OutlineStencilPassBackOptions ("Back--{condition_showS:(_OutlineStencilType==1)}", Float) = 0
+[Helpbox(1)] _FFBFOutlineStencilHelp0 ("Front Face and Back Face Stencils only work when locked in due to Unity's Stencil managment", Int) = 0
+[Enum(UnityEngine.Rendering.StencilOp)] _OutlineStencilBackPassOp ("Back Pass Op", Float) = 0
+[Enum(UnityEngine.Rendering.StencilOp)] _OutlineStencilBackFailOp ("Back Fail Op", Float) = 0
+[Enum(UnityEngine.Rendering.StencilOp)] _OutlineStencilBackZFailOp ("Back ZFail Op", Float) = 0
+[Enum(UnityEngine.Rendering.CompareFunction)] _OutlineStencilBackCompareFunction ("Back Compare Function", Float) = 8
+[HideInInspector] m_end_OutlineStencilPassBackOptions ("Back", Float) = 0
+
+[HideInInspector] m_start_OutlineStencilPassFrontOptions ("Front--{condition_showS:(_OutlineStencilType==1)}", Float) = 0
+[Helpbox(1)] _FFBFOutlineStencilHelp1 ("Front Face and Back Face Stencils only work when locked in due to Unity's Stencil managment", Int) = 0
+[Enum(UnityEngine.Rendering.StencilOp)] _OutlineStencilFrontPassOp ("Front Pass Op", Float) = 0
+[Enum(UnityEngine.Rendering.StencilOp)] _OutlineStencilFrontFailOp ("Front Fail Op", Float) = 0
+[Enum(UnityEngine.Rendering.StencilOp)] _OutlineStencilFrontZFailOp ("Front ZFail Op", Float) = 0
+[Enum(UnityEngine.Rendering.CompareFunction)] _OutlineStencilFrontCompareFunction ("Front Compare Function", Float) = 8
+[HideInInspector] m_end_OutlineStencilPassFrontOptions ("Front", Float) = 0
+
+[HideInInspector] m_end_OutlineStencil ("Outline Stencil", Float) = 0
+//endex
+#T#PoiOutlineBlendingProperties
+//ifex _EnableOutlines!=1
+// Outline Blending Options
+[HideInInspector] m_start_outlineBlending ("Outline Blending", Float) = 0
+[Enum(Thry.BlendOp)]_OutlineBlendOp ("RGB Blend Op", Int) = 0
+[Enum(UnityEngine.Rendering.BlendMode)] _OutlineSrcBlend ("RGB Source Blend", Int) = 1
+[Enum(UnityEngine.Rendering.BlendMode)] _OutlineDstBlend ("RGB Destination Blend", Int) = 0
+[HideInInspector] m_start_outlineAlphaBlending ("Advanced Alpha Blending", Float) = 0
+[Enum(Thry.BlendOp)]_OutlineBlendOpAlpha ("Alpha Blend Op", Int) = 4
+[Enum(UnityEngine.Rendering.BlendMode)] _OutlineSrcBlendAlpha ("Alpha Source Blend", Int) = 1
+[Enum(UnityEngine.Rendering.BlendMode)] _OutlineDstBlendAlpha ("Alpha Destination Blend", Int) = 0
+[HideInInspector] m_end_outlineAlphaBlending ("Advanced Alpha Blending", Float) = 0
+[HideInInspector] m_end_outlineBlending ("Outline Blending", Float) = 0
+//endex
+
+#T#PoiOutlineVariables
+//ifex _EnableOutlines!=1
+#ifdef POI_PASS_OUTLINE
+    // outline Vertex Options
+    float _OutlineExpansionMode;
+    float4 _OutlinePersonaDirection;
+    float4 _OutlineDropShadowOffset;
+    float _OutlineUseVertexColorNormals;
+    float _OutlineVertexColorMask;
+    float _OutlineVertexColorMaskStrength;
+    float _OutlineFixedSize;
+    float _OutlineFixWidth;
+    float _EnableOutlines;
+    float _OutlinesMaxDistance;
+    float _LineWidth;
+    float _OutlineEmission;
+    float4 _LineColor;
+    float _OutlineOverrideAlpha;
+    float _OutlineSpace;
+    texture2D _OutlineTexture; //TODO make this dynamically not read for lock in
+    float4 _OutlineTexture_ST;
+    float2 _OutlineTexturePan;
+    float _OutlineTextureUV;
+    float4 _OutlineFadeDistance;
+    float4 _OutlineGlobalPan;
+    sampler2D _OutlineMask;
+    float4 _OutlineMask_ST;
+    float2 _OutlineMaskPan;
+    float _OutlineMaskUV;
+    float _OutlineMaskChannel;
+    float _OutlineRimLightBlend;
+    float _OutlineLit;
+    float _OutlineTintMix;
+    float4 _OutlineTexHSVG;
+    float _OutlineHueShift;
+    float _OutlineHueOffset;
+    float _OutlineHueOffsetSpeed;
+    float _PoiUTSStyleOutlineBlend;
+    float _OutlineAlphaDistanceFade;
+    float _OutlineAlphaDistanceFadeType;
+    float _OutlineAlphaDistanceFadeMinAlpha;
+    float _OutlineAlphaDistanceFadeMaxAlpha;
+    float _OutlineAlphaDistanceFadeMin;
+    float _OutlineAlphaDistanceFadeMax;
+    
+    float _OutlineShadowStrength;
+    float _LineColorThemeIndex;
+    float _Offset_Z;
+    float _OutlineClipAtZeroWidth;
+    #ifdef POI_AUDIOLINK
+        float _AudioLinkOutlineSizeBand;
+        float2 _AudioLinkOutlineSize;
+        float _AudioLinkOutlineEmissionBand;
+        float2 _AudioLinkOutlineEmission;
+        float _AudioLinkOutlineColorBand;
+        float4 _AudioLinkOutlineColor;
+        float _OutlineALColorEnabled;
+        float4 _AudioLinkOutlineColorMod;
+    #endif
+#endif
+//endex
+
+#T#OutlineVertexOffset
+//ifex _EnableOutlines!=1
+#ifdef POI_PASS_OUTLINE
+    float outlineMask = tex2Dlod(_OutlineMask, float4(poiUV(vertexUV(v, _OutlineMaskUV), _OutlineMask_ST) + _Time.x * _OutlineMaskPan, 0, 0))[_OutlineMaskChannel];
+
+    //UNITY_BRANCH
+    if (_OutlineVertexColorMask > 0)
+    {
+        outlineMask *= lerp(1, v.color[_OutlineVertexColorMask - 1], _OutlineVertexColorMaskStrength);
+    }
+
+    float3 outlineNormal = _OutlineSpace ? o.normal : v.normal;
+    //UNITY_BRANCH
+    if (_OutlineUseVertexColorNormals)
+    {
+        float3 outlineTangent;
+        float3 outlineBinormal;
+        if (_OutlineSpace) // 0 Local, 1 World
+
+        {
+            outlineTangent = o.tangent;
+            outlineBinormal = cross(o.normal, o.tangent) * (v.tangent.w * unity_WorldTransformParams.w);
+        }
+        else
+        {
+            outlineTangent = v.tangent.xyz;
+            outlineBinormal = normalize(cross(outlineNormal, outlineTangent)) * (v.tangent.w * length(outlineNormal));
+        }
+        float3 outlineVectorTS = v.color.rgb * 2.0 - 1.0;
+        outlineNormal = outlineVectorTS.x * outlineTangent + outlineVectorTS.y * outlineBinormal + outlineVectorTS.z * outlineNormal;
+    }
+
+    float offsetMultiplier = 1;
+    float distanceOffset = 1;
+    //UNITY_BRANCH
+    if (_OutlineFixedSize)
+    {
+        distanceOffset *= lerp(1.0, clamp((distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz)), 0.0f, _OutlinesMaxDistance), _OutlineFixWidth);
+    }
+
+    float lineWidth = _LineWidth;
+    #ifdef POI_AUDIOLINK
+        // Due to PoiMods.audioLink being frag only I'll just
+        // recreate what it does here for this vertex function
+        //UNITY_BRANCH
+        if (_AudioLinkAnimToggle)
+        {
+            if (AudioLinkIsAvailable())
+            {
+                lineWidth += lerp(_AudioLinkOutlineSize.x, _AudioLinkOutlineSize.y, AudioLinkData(uint2(0, _AudioLinkOutlineSizeBand)));
+            }
+        }
+    #endif
+    
+    float3 offset = outlineNormal * (lineWidth * _EnableOutlines / 100) * outlineMask * distanceOffset;
+    
+    //UNITY_BRANCH
+    if (_OutlineExpansionMode == 2)
+    {
+        float3 lightDirection = normalize(_WorldSpaceLightPos0 + unity_SHAr.xyz + unity_SHAg.xyz + unity_SHAb.xyz);
+        offsetMultiplier = saturate(dot(lightDirection, outlineNormal));
+        offset *= offsetMultiplier;
+        offset *= distanceOffset;
+    }
+    else if (_OutlineExpansionMode == 3)
+    {
+        float3 viewNormal = mul((float3x3)UNITY_MATRIX_V, outlineNormal);
+        offsetMultiplier = saturate(dot(viewNormal.xy, normalize(_OutlinePersonaDirection.xy)));
+        
+        offset *= offsetMultiplier;
+        offset *= distanceOffset;
+    }
+    else if (_OutlineExpansionMode == 4)
+    {
+        offset = mul((float3x3)transpose(UNITY_MATRIX_V), _OutlineDropShadowOffset);
+        offset *= distanceOffset;
+    }
+    if (_OutlineSpace == 0)
+    {
+        localOffset += offset;
+        worldOffset += mul(unity_ObjectToWorld, offset);
+    }
+    else
+    {
+        localOffset += mul(unity_WorldToObject, offset);
+        worldOffset += offset;
+    }
+#endif
+//endex
+
+#T#OutlineFragmentFunction
+//ifex _EnableOutlines!=1
+#ifdef POI_PASS_OUTLINE
+    void applyOutlineColor(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiLight poiLight, in PoiMods poiMods, in PoiCam poiCam)
+    {
+        clip(_EnableOutlines - 0.01);
+        float OutlineMask = tex2D(_OutlineMask, TRANSFORM_TEX(poiMesh.uv[_OutlineMaskUV], _OutlineMask) + _Time.x * _OutlineMaskPan)[_OutlineMaskChannel];
+        if (_OutlineVertexColorMask > 0)
+        {
+            OutlineMask *= lerp(1, poiMesh.vertexColor[_OutlineVertexColorMask - 1], _OutlineVertexColorMaskStrength);
+        }
+        if (_OutlineClipAtZeroWidth)
+        {
+            float lineWidth = _LineWidth;
+            #ifdef POI_AUDIOLINK
+                //UNITY_BRANCH
+                if (poiMods.audioLinkAvailable)
+                {
+                    lineWidth += lerp(_AudioLinkOutlineSize.x, _AudioLinkOutlineSize.y, poiMods.audioLink[_AudioLinkOutlineSizeBand]);
+                }
+            #endif
+            clip(OutlineMask * lineWidth - 0.001);
+        }
+        float4 col = POI2D_SAMPLER_PAN(_OutlineTexture, _MainTex, poiUV(poiMesh.uv[_OutlineTextureUV], _OutlineTexture_ST), _OutlineTexturePan);
+        poiFragData.baseColor = lerp(col, col * poiFragData.baseColor * lerp(1, poiFragData.baseColor, _PoiUTSStyleOutlineBlend), _OutlineTintMix);
+        float4 outlineColor = _LineColor;
+        #ifdef POI_AUDIOLINK
+            if (_OutlineALColorEnabled && poiMods.audioLinkAvailable)
+            {
+                outlineColor = lerp(outlineColor, _AudioLinkOutlineColor, smoothstep(_AudioLinkOutlineColorMod.x, _AudioLinkOutlineColorMod.y, poiMods.audioLink[_AudioLinkOutlineColorBand]));
+            }
+        #endif
+
+        poiFragData.baseColor *= poiThemeColor(poiMods, outlineColor.rgb, _LineColorThemeIndex);
+        col.a *= outlineColor.a;
+        if (_OutlineHueShift)
+        {
+            //poiFragData.baseColor = hueShift(poiFragData.baseColor, _OutlineHueOffset +_OutlineHueOffsetSpeed * _Time.x);
+            float4 hsvg = _OutlineTexHSVG;
+            hsvg.r += _OutlineHueOffsetSpeed * _Time.x;
+            poiFragData.baseColor.rgb = lilToneCorrection(poiFragData.baseColor.rgb, hsvg);
+        }
+        
+        if (_OutlineExpansionMode == 2)
+        {
+            poiFragData.baseColor = lerp(poiFragData.baseColor, poiLight.directColor, _OutlineRimLightBlend);
+        }
+        
+        if (_OutlineOverrideAlpha)
+        {
+            poiFragData.alpha = col.a;
+        }
+        else
+        {
+            poiFragData.alpha *= col.a;
+        }
+        
+        if (_OutlineAlphaDistanceFade)
+        {
+            float3 position = _OutlineAlphaDistanceFadeType ? poiMesh.worldPos : poiMesh.objectPosition;
+            poiFragData.alpha *= lerp(_OutlineAlphaDistanceFadeMinAlpha, _OutlineAlphaDistanceFadeMaxAlpha, smoothstep(_OutlineAlphaDistanceFadeMin, _OutlineAlphaDistanceFadeMax, distance(position, poiCam.worldPos)));
+        }
+        
+        float emission = _OutlineEmission;
+        #ifdef POI_AUDIOLINK
+            //UNITY_BRANCH
+            if (poiMods.audioLinkAvailable)
+            {
+                emission += lerp(_AudioLinkOutlineEmission.x, _AudioLinkOutlineEmission.y, poiMods.audioLink[_AudioLinkOutlineEmissionBand]);
+            }
+        #endif
+        
+        poiFragData.emission += poiFragData.baseColor * emission;
+    }
+#endif
+//endex
+
+#T#OutlineFragmentFunctionCall
+//ifex _EnableOutlines!=1
+#ifdef POI_PASS_OUTLINE
+    applyOutlineColor(poiFragData, poiMesh, poiLight, poiMods, poiCam);
+#endif
+//endex
+
+#T#OutlineForceSmoothNormals
+//ifex _EnableOutlines!=1
+#ifdef POI_PASS_OUTLINE
+    poiMesh.normals[1] = poiMesh.normals[0];
+#endif
+//endex

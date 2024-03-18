@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca98bae4e6557e043a664840fe0ae8e1, type: 3}
+  m_Name: RalivDPS
+  m_EditorClassIdentifier: 
+  ThirdPartyIncludes:
+  - type: 0
+    sourcePath: Assets/RalivDynamicPenetrationSystem/Plugins/RalivDPS_Defines.cginc
+    sourceGUID: 50bf305659786d34ebfaaa3239913238
+    destinationPath: Assets/_PoiyomiShaders/Shaders/ThirdParty/RalivDynamicPenetrationSystem/RalivDPS_Defines.cginc
+    defineName: 
+  - type: 0
+    sourcePath: Assets\RalivDynamicPenetrationSystem\Plugins\RalivDPS_Functions.cginc
+    sourceGUID: 03511e8004c25ec428c695e620454236
+    destinationPath: Assets\_PoiyomiShaders\Shaders\ThirdParty\RalivDynamicPenetrationSystem\RalivDPS_Functions.cginc
+    defineName: 
+  - type: 1
+    sourcePath: Assets/RalivDynamicPenetrationSystem/Plugins/RalivDPS_Defines.cginc
+    sourceGUID: 50bf305659786d34ebfaaa3239913238
+    destinationPath: Assets/_PoiyomiShaders/Shaders/ThirdParty/RalivDynamicPenetrationSystem/RalivDPS_Keyword.cginc
+    defineName: RALIV_PENETRATION

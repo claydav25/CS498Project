@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1039f25740a92fc4292bb1d94d07ad19, type: 3}
+  m_Name: VRLM_PoiFur
+  m_EditorClassIdentifier: 
+  Id: PoiFur
+  Name: Poi Fur
+  Version: 
+  Author: 
+  Description: 
+  EnableProperties: []
+  Properties: []
+  ModuleDependencies: []
+  IncompatibleWith: []
+  Templates:
+  - Template: {fileID: -2606276089180368533, guid: 51bbcd492288da240be4a7a5301ec16a,
+      type: 3}
+    Keywords:
+    - EXTRAS_PROPERTIES
+    NeedsVariant: 0
+    Queue: 100
+  - Template: {fileID: -5408537579882488683, guid: 51bbcd492288da240be4a7a5301ec16a,
+      type: 3}
+    Keywords:
+    - GEOMETRY_EARLYZ_PROGRAM
+    - GEOMETRY_BASE_PROGRAM
+    - GEOMETRY_ADD_PROGRAM
+    - GEOMETRY_SHADOW_PROGRAM
+    - GEOMETRY_META_PROGRAM
+    NeedsVariant: 0
+    Queue: 100
+  - Template: {fileID: 2444707731146528999, guid: 51bbcd492288da240be4a7a5301ec16a,
+      type: 3}
+    Keywords:
+    - EARLYZ_PROPERTY_VARIABLES
+    - BASE_PROPERTY_VARIABLES
+    - ADD_PROPERTY_VARIABLES
+    - SHADOW_PROPERTY_VARIABLES
+    - META_PROPERTY_VARIABLES
+    NeedsVariant: 0
+    Queue: 100
+  - Template: {fileID: -8717186572443143165, guid: 51bbcd492288da240be4a7a5301ec16a,
+      type: 3}
+    Keywords:
+    - vertexOutData
+    NeedsVariant: 0
+    Queue: 100
+  - Template: {fileID: -7460574575834571760, guid: 51bbcd492288da240be4a7a5301ec16a,
+      type: 3}
+    Keywords:
+    - FRAGMENT_BASE_FUNCTIONS
+    - FRAGMENT_ADD_FUNCTIONS
+    - FRAGMENT_SHADOW_FUNCTIONS
+    - FRAGMENT_META_FUNCTIONS
+    NeedsVariant: 0
+    Queue: 100
+  - Template: {fileID: 1698658750499964764, guid: 51bbcd492288da240be4a7a5301ec16a,
+      type: 3}
+    Keywords:
+    - BASE_COLOR_MOD
+    NeedsVariant: 0
+    Queue: 101
+  - Template: {fileID: 838916836888377562, guid: 51bbcd492288da240be4a7a5301ec16a,
+      type: 3}
+    Keywords:
+    - FRAGMENT_BASE_INIT
+    - FRAGMENT_ADD_INIT
+    - FRAGMENT_SHADOW_INIT
+    - FRAGMENT_META_INIT
+    NeedsVariant: 0
+    Queue: 200
+  Functions: []
+  AdditionalSerializedData: 
