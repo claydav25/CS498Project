@@ -15,7 +15,7 @@ C:/Users/jevan/Documents/GitHub/CS498ProjectMain
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-55327
+60857
 Successfully changed project path to: C:/Users/jevan/Documents/GitHub/CS498ProjectMain
 C:/Users/jevan/Documents/GitHub/CS498ProjectMain
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/jevan/Documents/GitHub/CS498ProjectMain
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [30232] Host "[IP] 192.168.51.39 [Port] 0 [Flags] 2 [Guid] 1927288485 [EditorId] 1927288485 [Version] 1048832 [Id] WindowsEditor(7,RadiantDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8980] Host "[IP] 192.168.51.39 [Port] 0 [Flags] 2 [Guid] 2547769727 [EditorId] 2547769727 [Version] 1048832 [Id] WindowsEditor(7,RadiantDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [30232] Host "[IP] 192.168.51.39 [Port] 0 [Flags] 2 [Guid] 1927288485 [EditorId] 1927288485 [Version] 1048832 [Id] WindowsEditor(7,RadiantDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8980] Host "[IP] 192.168.51.39 [Port] 0 [Flags] 2 [Guid] 2547769727 [EditorId] 2547769727 [Version] 1048832 [Id] WindowsEditor(7,RadiantDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 45.68 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 1.10 ms.
+Refreshing native plugins compatible for Editor in 46.43 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 1.00 ms.
 Initialize engine version: 2022.3.6f1 (b9e6e7e9fa2d)
 [Subsystems] Discovering subsystems at path E:/Unity/Installs/2022.3.6f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/jevan/Documents/GitHub/CS498ProjectMain/Assets
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'E:/Unity/Installs/2022.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity/Installs/2022.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'E:/Unity/Installs/2022.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity/Installs/2022.3.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: E:/Unity/Installs/2022.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002473 seconds.
-- Loaded All Assemblies, in  0.283 seconds
+Registered in 0.003589 seconds.
+- Loaded All Assemblies, in  0.357 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.291 seconds
-Domain Reload Profiling: 574ms
-	BeginReloadAssembly (66ms)
+- Finished resetting the current domain, in  0.280 seconds
+Domain Reload Profiling: 637ms
+	BeginReloadAssembly (69ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (125ms)
-		LoadAssemblies (66ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (199ms)
+		LoadAssemblies (68ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (123ms)
-			TypeCache.Refresh (122ms)
-				TypeCache.ScanAssembly (113ms)
+		AnalyzeDomain (196ms)
+			TypeCache.Refresh (195ms)
+				TypeCache.ScanAssembly (183ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (292ms)
+	FinalizeReload (280ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (244ms)
+		SetupLoadedEditorAssemblies (234ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (86ms)
+			InitializePlatformSupportModulesInManaged (87ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (106ms)
-			ProcessInitializeOnLoadMethodAttributes (47ms)
+			ProcessInitializeOnLoadAttributes (96ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,8 +116,8 @@ Domain Reload Profiling: 574ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.907 seconds
-Refreshing native plugins compatible for Editor in 24.51 ms, found 9 plugins.
+- Loaded All Assemblies, in  0.985 seconds
+Refreshing native plugins compatible for Editor in 24.74 ms, found 10 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -159,47 +159,47 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.575 seconds
-Domain Reload Profiling: 3479ms
-	BeginReloadAssembly (112ms)
+- Finished resetting the current domain, in  2.650 seconds
+Domain Reload Profiling: 3632ms
+	BeginReloadAssembly (117ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (706ms)
-		LoadAssemblies (360ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (791ms)
+		LoadAssemblies (412ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (396ms)
-			TypeCache.Refresh (365ms)
-				TypeCache.ScanAssembly (349ms)
-			ScanForSourceGeneratedMonoScriptInfo (23ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (2575ms)
+		AnalyzeDomain (427ms)
+			TypeCache.Refresh (386ms)
+				TypeCache.ScanAssembly (367ms)
+			ScanForSourceGeneratedMonoScriptInfo (32ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (2651ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1285ms)
+		SetupLoadedEditorAssemblies (1316ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (19ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (136ms)
-			ProcessInitializeOnLoadAttributes (634ms)
-			ProcessInitializeOnLoadMethodAttributes (489ms)
+			BeforeProcessingInitializeOnLoad (149ms)
+			ProcessInitializeOnLoadAttributes (655ms)
+			ProcessInitializeOnLoadMethodAttributes (485ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 32.32 ms, found 9 plugins.
-Preloading 2 native plugins for Editor in 0.19 ms.
-Unloading 4298 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 227 unused Assets / (1.8 MB). Loaded Objects now: 4734.
-Memory consumption went from 308.4 MB to 306.6 MB.
-Total: 30.149300 ms (FindLiveObjects: 0.481400 ms CreateObjectMapping: 0.387300 ms MarkObjects: 28.668800 ms  DeleteObjects: 0.610700 ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 33.22 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.18 ms.
+Unloading 4428 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 237 unused Assets / (3.1 MB). Loaded Objects now: 4863.
+Memory consumption went from 327.7 MB to 324.6 MB.
+Total: 25.164700 ms (FindLiveObjects: 0.440400 ms CreateObjectMapping: 0.437700 ms MarkObjects: 22.843000 ms  DeleteObjects: 1.442100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -217,121 +217,158 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 11025.027393 seconds.
-  path: Assets/SerializedUdonPrograms/06b0575bc6785f44d84250ff68e7c5c9.asset
-  artifactKey: Guid(963b43e0c19328343b200a99900fc992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SerializedUdonPrograms/06b0575bc6785f44d84250ff68e7c5c9.asset using Guid(963b43e0c19328343b200a99900fc992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a809ae8a5edc009d627e8085cb3b6b02') in 0.007049 seconds
+  Time since last request: 49346.842241 seconds.
+  path: Packages/com.unity.ide.visualstudio/package.json
+  artifactKey: Guid(656f74f6edaa396458412b9e3903d8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ide.visualstudio/package.json using Guid(656f74f6edaa396458412b9e3903d8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64dcf146b0c337260b0cab28fb94d11b') in 0.005979 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/SerializedUdonPrograms/2b89aeca1f195d9409fe8eebf26a921f.asset
-  artifactKey: Guid(c7217516347cbfa4e8383966a6b8e838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SerializedUdonPrograms/2b89aeca1f195d9409fe8eebf26a921f.asset using Guid(c7217516347cbfa4e8383966a6b8e838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0574a377b8f04ef04e0b87ad8c3f6504') in 0.001395 seconds
+  Time since last request: 0.000035 seconds.
+  path: Packages/com.unity.test-framework/package.json
+  artifactKey: Guid(d6a2e6e4803de7b43baacdc355fc144d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.test-framework/package.json using Guid(d6a2e6e4803de7b43baacdc355fc144d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f735537715d2afc1cf422a3d98bb5408') in 0.001852 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Assets/SerializedUdonPrograms/4a72cd5e73d44e94a832b9fa2b41021d.asset
-  artifactKey: Guid(6f7f1e93e84de134dbed283a622bdb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SerializedUdonPrograms/4a72cd5e73d44e94a832b9fa2b41021d.asset using Guid(6f7f1e93e84de134dbed283a622bdb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2258ba96353a82536c76dc541711d239') in 0.001643 seconds
+  path: Packages/com.unity.xr.oculus/package.json
+  artifactKey: Guid(8cf6f256af772d24eab8f4be77c7fe43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.oculus/package.json using Guid(8cf6f256af772d24eab8f4be77c7fe43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84a2de7aa5bafa0cac7a3c553736c5e5') in 0.001290 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/SerializedUdonPrograms/8b36cdff0d6adbf478c0d6fcae5615dc.asset
-  artifactKey: Guid(1993c26f947c0ce4796768ccbbe6a550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SerializedUdonPrograms/8b36cdff0d6adbf478c0d6fcae5615dc.asset using Guid(1993c26f947c0ce4796768ccbbe6a550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b58251eb3217332090b7c0aed6bbbe') in 0.001646 seconds
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.unity.nuget.mono-cecil/package.json
+  artifactKey: Guid(17a4fd582bf2d47479cf5c1508ca82c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.nuget.mono-cecil/package.json using Guid(17a4fd582bf2d47479cf5c1508ca82c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986b69b28de438455fdb6a1a9c9ba399') in 0.001498 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.unity.timeline/package.json
+  artifactKey: Guid(13a9c1b4df2e489e8eb9cacca7429596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/package.json using Guid(13a9c1b4df2e489e8eb9cacca7429596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae9adad817a93983e2eb52a0a3ded866') in 0.001385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 468.059586 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/TargetFollower.asset
+  artifactKey: Guid(35857a58fe02b524dabbf8af411570ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/TargetFollower.asset using Guid(35857a58fe02b524dabbf8af411570ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d1c303d2724e188f2719abeb9d8ece') in 0.002031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/VRSL-AudioLink-SmoothingPanel Udon C# Program Asset.asset
+  artifactKey: Guid(de6affb8dae610e42826dad25bdc6855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/VRSL-AudioLink-SmoothingPanel Udon C# Program Asset.asset using Guid(de6affb8dae610e42826dad25bdc6855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8ad7dcc8364cd7a47ee44f1543e794') in 0.001615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.006157 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/VRSL_CameraConfigurator Udon C# Program Asset.asset
+  artifactKey: Guid(67c5c62c1ca29a944b388c1e1d437e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/VRSL_CameraConfigurator Udon C# Program Asset.asset using Guid(67c5c62c1ca29a944b388c1e1d437e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29be4eee2df64dfe8a967b643987064e') in 0.002084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/VRStageLighting_AudioLink_Static.asset
+  artifactKey: Guid(2db8081a72b7c5b4eb87ca6ff1e59c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/VRStageLighting_AudioLink_Static.asset using Guid(2db8081a72b7c5b4eb87ca6ff1e59c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5b303fb3214029649c5b0ac3d60c4ab') in 0.006088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/VRStageLighting_DMX_Static.asset
+  artifactKey: Guid(ef420e90c9d72084fb6b3f2fbc441821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Scripts/VRStageLighting_DMX_Static.asset using Guid(ef420e90c9d72084fb6b3f2fbc441821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b016b7085a1a98893a6574a9a4e1d193') in 0.005005 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 40.171405 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/15ChannelLightBar/VRSL-LightBar-FixtureMat-Legacy-15CH.mat
+  artifactKey: Guid(fbd8d9e8dced27240ab143c6151792e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Materials/Lights/DMX/15ChannelLightBar/VRSL-LightBar-FixtureMat-Legacy-15CH.mat using Guid(fbd8d9e8dced27240ab143c6151792e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a284d2dcbafce966f257a8f68f4deb8') in 0.116485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 3.812775 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/LightBar.fbx
+  artifactKey: Guid(91e82d75b40bd784395949c8f0d4068b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/LightBar.fbx using Guid(91e82d75b40bd784395949c8f0d4068b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2177182efa53fbf7fb364028adff410f') in 0.054464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/VRSL-6x4StrobeLight.fbx
+  artifactKey: Guid(b8e32e468ff84654fb433670613a85e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/VRSL-6x4StrobeLight.fbx using Guid(b8e32e468ff84654fb433670613a85e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd431dfa3fc0c7710024e1bc63052557f') in 0.044871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/ShortLightBar-Flasher-LowPoly.fbx
+  artifactKey: Guid(6f553d7406333b4489b7a1b6d185581c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/ShortLightBar-Flasher-LowPoly.fbx using Guid(6f553d7406333b4489b7a1b6d185581c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09829d5a2837564ec58585d6540b98b5') in 0.018868 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/ShortLightBar.fbx
+  artifactKey: Guid(9c03f00b7e4ee9f4f86dc64b50c224aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/ShortLightBar.fbx using Guid(9c03f00b7e4ee9f4f86dc64b50c224aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20ecde8d5e069fdd9732f70cce795b15') in 0.023465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/MoverLight--RTP-SplitMesh-V2.fbx
+  artifactKey: Guid(1906031483474b741b5229cbd62b083c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/MoverLight--RTP-SplitMesh-V2.fbx using Guid(1906031483474b741b5229cbd62b083c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a01a74a8e100c6c6f314ce2e5844643') in 0.072627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/StrobeLight-Non-Volumetric.fbx
+  artifactKey: Guid(bff95ffce743dae4c93585ea731f890c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/StrobeLight-Non-Volumetric.fbx using Guid(bff95ffce743dae4c93585ea731f890c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ff96887e444a0934d3b28dbeebe9d94') in 0.021396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
 ========================================================================
 Received Import Request.
   Time since last request: 0.000013 seconds.
-  path: Packages/com.unity.collections/package.json
-  artifactKey: Guid(bd605698a338c4de88bb5b3c4632af68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collections/package.json using Guid(bd605698a338c4de88bb5b3c4632af68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd445de657920b3300376d968765ca761') in 0.001154 seconds
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/ParLight--RTP-SplitMesh-LowPoly.fbx
+  artifactKey: Guid(f6c033226eb4bbc4c8abcbea27c3ca11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/ParLight--RTP-SplitMesh-LowPoly.fbx using Guid(f6c033226eb4bbc4c8abcbea27c3ca11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7725cc3cfee8db60fe77dbdaf6f79328') in 0.037740 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 15
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/SerializedUdonPrograms/1f7e9fb643472ef4d83f2ad49fe34b18.asset
-  artifactKey: Guid(ac9d64fd0e5732c4a9115bd50acd62c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SerializedUdonPrograms/1f7e9fb643472ef4d83f2ad49fe34b18.asset using Guid(ac9d64fd0e5732c4a9115bd50acd62c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02292a21cffa81e6cac51e623bbf0eb1') in 0.001609 seconds
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/VRSL-AdvancedLaserCone.fbx
+  artifactKey: Guid(dd682c135ea01d340bb6f587c98b4df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.acchosen.vr-stage-lighting/Runtime/Meshes/FBX/VRSL-AdvancedLaserCone.fbx using Guid(dd682c135ea01d340bb6f587c98b4df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53f62aa592fd1ec07dc1983c5d3b6b9') in 0.019325 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/SerializedUdonPrograms/2db8081a72b7c5b4eb87ca6ff1e59c98.asset
-  artifactKey: Guid(a4d0dce67427b9f4b9ba7e775f85a719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SerializedUdonPrograms/2db8081a72b7c5b4eb87ca6ff1e59c98.asset using Guid(a4d0dce67427b9f4b9ba7e775f85a719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6dd96aa09e48032c4654b51f7205a5e') in 0.001119 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/SerializedUdonPrograms/0b33359d4cc544247b593809cabfb2fd.asset
-  artifactKey: Guid(230ffad142f7a1e44ade51d18fb8d9fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SerializedUdonPrograms/0b33359d4cc544247b593809cabfb2fd.asset using Guid(230ffad142f7a1e44ade51d18fb8d9fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef4443c5389cf50dfd321c53ef3303a') in 0.001712 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/SerializedUdonPrograms/1e8e8bf7247bc3c49b7a62d9b59bfc7d.asset
-  artifactKey: Guid(479a4d9b61e89584c9d59b10915615b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SerializedUdonPrograms/1e8e8bf7247bc3c49b7a62d9b59bfc7d.asset using Guid(479a4d9b61e89584c9d59b10915615b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ac39e9c230b2e30f932314606cd7751') in 0.001439 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Packages/com.unity.ext.nunit/package.json
-  artifactKey: Guid(8143d3a8390f2c64685e3bc272bd9e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.ext.nunit/package.json using Guid(8143d3a8390f2c64685e3bc272bd9e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e6ff00f4d339ca929f0df7e6e68e04') in 0.001156 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/SerializedUdonPrograms/3fc74b9eb7511fe498ca75457034661a.asset
-  artifactKey: Guid(709b9bdecb9921c46a553796c22384e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SerializedUdonPrograms/3fc74b9eb7511fe498ca75457034661a.asset using Guid(709b9bdecb9921c46a553796c22384e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0918a099a948b77d18908bf72251a8b8') in 0.001880 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/SerializedUdonPrograms/4ac0e45cbc1ff924e9b1cb9555e51afb.asset
-  artifactKey: Guid(0aef2dc60e37e6145a0197e7f7bee80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SerializedUdonPrograms/4ac0e45cbc1ff924e9b1cb9555e51afb.asset using Guid(0aef2dc60e37e6145a0197e7f7bee80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8630f90c5de0ce46856675401ecb1779') in 0.002647 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Packages/dev.architech.protv.extras/package.json
-  artifactKey: Guid(2c6e0de9853da3a4ebae08f6ca75e786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/dev.architech.protv.extras/package.json using Guid(2c6e0de9853da3a4ebae08f6ca75e786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adaba38d0b1aa3cd223b993b98dda9f1') in 0.001272 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/SerializedUdonPrograms/2ea4575b129bc9244aeffdbba97c8882.asset
-  artifactKey: Guid(3aa9b6ec00963324387f91a1c4e6fa89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SerializedUdonPrograms/2ea4575b129bc9244aeffdbba97c8882.asset using Guid(3aa9b6ec00963324387f91a1c4e6fa89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671f0b86567ebeef73b6853f4e20490d') in 0.002176 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/SerializedUdonPrograms/9bbd924cc7629fb43b4c9a19518ad3ab.asset
-  artifactKey: Guid(591741b991d4b5c46a43bcd888d7561d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SerializedUdonPrograms/9bbd924cc7629fb43b4c9a19518ad3ab.asset using Guid(591741b991d4b5c46a43bcd888d7561d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0875270d6a72534685e59d64c1de4ecf') in 0.001934 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 8
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

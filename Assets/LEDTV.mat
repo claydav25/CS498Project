@@ -2900,7 +2900,7 @@ Material:
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
     - m_lightingCategory: 0
-    - m_mainCategory: 0
+    - m_mainCategory: 1
     - m_modifierCategory: 0
     - m_renderingCategory: 0
     - m_specialFXCategory: 1
@@ -3879,7 +3879,7 @@ Material:
     - _VertexWorldTranslationALMax: {r: 0, g: 0, b: 0, a: 1}
     - _VertexWorldTranslationALMin: {r: 0, g: 0, b: 0, a: 1}
     - _VideoMaskTexturePan: {r: 0, g: 0, b: 0, a: 0}
-    - _VideoResolution: {r: 640, g: 480, b: 0, a: 0}
+    - _VideoResolution: {r: 2944, g: 1792, b: 0, a: 0}
     - _VoronoiGradient: {r: 0, g: 0.5, b: 0, a: 0}
     - _VoronoiInnerColor: {r: 1, g: 1, b: 1, a: 1}
     - _VoronoiMaskPan: {r: 0, g: 0, b: 0, a: 0}
