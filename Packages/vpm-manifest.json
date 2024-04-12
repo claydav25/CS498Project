@@ -79,7 +79,7 @@
       }
     },
     "dev.architech.protv": {
-      "version": "3.0.0-beta.14.3",
+      "version": "3.0.0-beta.14.6",
       "dependencies": {
         "com.vrchat.worlds": "^3.3",
         "dev.architech.sdk": ">=0.14 <1"

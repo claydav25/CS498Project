@@ -1,0 +1,928 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.6f1 (b9e6e7e9fa2d) revision 12183271'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 12084 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/JC Edwards/OneDrive/Pictures/Documents/GitHub/CS498Project
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+52687
+Successfully changed project path to: C:/Users/JC Edwards/OneDrive/Pictures/Documents/GitHub/CS498Project
+C:/Users/JC Edwards/OneDrive/Pictures/Documents/GitHub/CS498Project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [24804] Host "[IP] 10.47.166.43 [Port] 0 [Flags] 2 [Guid] 2574028470 [EditorId] 2574028470 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3QBMFHN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [24804] Host "[IP] 10.47.166.43 [Port] 0 [Flags] 2 [Guid] 2574028470 [EditorId] 2574028470 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3QBMFHN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 307.00 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 4.00 ms.
+Initialize engine version: 2022.3.6f1 (b9e6e7e9fa2d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/JC Edwards/OneDrive/Pictures/Documents/GitHub/CS498Project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x9b41)
+    Vendor:   Intel
+    VRAM:     6042 MB
+    Driver:   27.20.100.8729
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.105406 seconds.
+- Loaded All Assemblies, in 15.634 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.506 seconds
+Domain Reload Profiling: 18129ms
+	BeginReloadAssembly (12862ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (455ms)
+	RebuildNativeTypeToScriptingClass (139ms)
+	initialDomainReloadingComplete (433ms)
+	LoadAllAssembliesAndSetupDomain (1732ms)
+		LoadAssemblies (12853ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1693ms)
+			TypeCache.Refresh (1691ms)
+				TypeCache.ScanAssembly (1646ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (2507ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2130ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (846ms)
+			SetLoadedEditorAssemblies (17ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (698ms)
+			ProcessInitializeOnLoadMethodAttributes (561ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 69.406 seconds
+Refreshing native plugins compatible for Editor in 1819.75 ms, found 10 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Resolve needed.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VRC.PackageManagement.Resolver.Resolver/<CheckResolveNeeded>d__6:MoveNext () (at ./Packages/com.vrchat.core.vpm-resolver/Editor/Resolver/Resolver.cs:88)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<VRC.PackageManagement.Resolver.Resolver/<CheckResolveNeeded>d__6> (VRC.PackageManagement.Resolver.Resolver/<CheckResolveNeeded>d__6&)
+VRC.PackageManagement.Resolver.Resolver:CheckResolveNeeded ()
+VRC.PackageManagement.Resolver.Resolver:.cctor () (at ./Packages/com.vrchat.core.vpm-resolver/Editor/Resolver/Resolver.cs:53)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Packages/com.vrchat.core.vpm-resolver/Editor/Resolver/Resolver.cs Line: 88)
+
+Cancelling DisplayDialog: VRChat Package Management This project requires some VRChat Packages which are not in the project yet.
+
+Press OK to download and install them.
+This should not be called in batch mode.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:DisplayDialog (string,string,string,string)
+VRC.PackageManagement.Resolver.Resolver/<CheckResolveNeeded>d__6:MoveNext () (at ./Packages/com.vrchat.core.vpm-resolver/Editor/Resolver/Resolver.cs:89)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<VRC.PackageManagement.Resolver.Resolver/<CheckResolveNeeded>d__6> (VRC.PackageManagement.Resolver.Resolver/<CheckResolveNeeded>d__6&)
+VRC.PackageManagement.Resolver.Resolver:CheckResolveNeeded ()
+VRC.PackageManagement.Resolver.Resolver:.cctor () (at ./Packages/com.vrchat.core.vpm-resolver/Editor/Resolver/Resolver.cs:53)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[./Packages/com.vrchat.core.vpm-resolver/Editor/Resolver/Resolver.cs line 89]
+
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-CS498Project
+<RI> Initialized touch support.
+<RI> Initializing input.
+New input system (experimental) initialized
+Using Windows.Gaming.Input
+<RI> Input initialized.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+  at System.IO.Directory.CreateDirectory (System.String path) [0x00003] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at VRC.SDKBase.Editor.VRCPackageSettings.EnsurePathExists () [0x0000b] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:45 
+  at VRC.SDKBase.Editor.VRCPackageSettings.Load () [0x00000] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:50 
+  at VRC.SDKBase.Editor.VRCPackageSettings.Create () [0x00005] in .\Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\VRCPackageSettings.cs:19 
+  at VRC.SDKBase.Editor.SampleHintCreator..cctor () [0x00007] in .\Packages\com.vrchat.base\Editor\VRCSDK\SampleHintCreator.cs:18 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.27 seconds
+Refresh completed but there are assets queued up for importing. Check for code that modifies assets which gets called after OnPostProcessAllAssets. Additional details in Log file
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+AudioLink.Editor.AudioLinkAssetManager:ReimportPackage () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkAssetManager.cs:38)
+AudioLink.Editor.AudioLinkAssetManager:.cctor () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkAssetManager.cs:29)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkAssetManager.cs line 38]
+
+Assets queued for import after Refresh completed:
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/Waveform.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLink.DataAPI.cs
+	Packages/com.llealloo.audiolink/Runtime/AudioLink.asmdef
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/Quantize.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts
+	Packages/com.llealloo.audiolink/README.md
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ThemeColorController.cs
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveSurface.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_ColorChordStrip.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_DropdownArrowWhite.png
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ThemeColorController.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/AutoCorrelator.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkExamples_ColorChordStrip.shader
+	Packages/com.llealloo.audiolink/Runtime/Texture2D/tex_AudioData2D.asset
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ALController_tablet_MaskMap.png
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkTexturePreview.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkMiniPlayerController.cs
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkMiniPlayerControllerInspector.cs
+	Packages/com.llealloo.audiolink/Runtime/AudioLinkAvatar.prefab
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLink.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkUI.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLink.PlayerAPI.cs
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ThemeColorControllerV0.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/BandPulse.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Color3DTextFade.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLink.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/GlobalToggle.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo8.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDebug.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/TranslateUV.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkMiniPlayerOut.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/AudioLinkTime.asset
+	Packages/com.llealloo.audiolink/Runtime/AudioLinkControllerV0.prefab
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLink4BandColors.mat
+	Packages/com.llealloo.audiolink/Runtime/AudioLink.USharp.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLink.cginc
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/ColorChordLights.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_ColorChordLights.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_Chronotensity.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveLight.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/FilteredVUDebug.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkControllerV0.cs
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkControllerHandle.cs
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkShaderCompatabilityUtility.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkTestTime.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_GainIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveObject.cs
+	Packages/com.llealloo.audiolink/Runtime/AudioLinkController.prefab
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_FilteredVUFlat.shader
+	Packages/com.llealloo.audiolink/Editor/Audiolink.Editor.asmdef
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_CheckmarkWhite.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkMiniPlayerOut.shader
+	Packages/com.llealloo.audiolink/Editor
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkController.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo2.shader
+	Packages/com.llealloo.audiolink/Runtime/RenderTextures
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_BasicVU.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/Fonts
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Color3DText.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_FilteredVU.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/Fonts/Arial.ttf
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo3.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveObject.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioReactiveSurface_SmoothAlpha.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ytdlpPlayer.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo1.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_Hue.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkAutocorrView.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkTestLights.mat
+	Packages/com.llealloo.audiolink/Runtime/CVRAudioLink.prefab
+	Packages/com.llealloo.audiolink/Runtime/AudioReactiveSurface.prefab
+	Packages/com.llealloo.audiolink/Runtime/Resources/Fonts/Arial.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/BlendOverlay.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioReactiveSurface.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioReactiveSurface_Cutout.shader
+	Packages/com.llealloo.audiolink/package.json
+	Packages/com.llealloo.audiolink/Runtime
+	Packages/com.llealloo.audiolink/Runtime/Resources/ALControllerLogo.fbx
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/4BandAmplitudeFiltered.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkQuickView.mat
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkAssetManager.cs
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkThemeColorPreview.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioReactiveSurface.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLink.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkMiniPlayer.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLink.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkZone.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo6.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_UdonAudioLink.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/AutoCorrelatorUncorrelated.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkZone.asset
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkEditor.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo5.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_UdonAudioLink.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ThemeColorControllerV0.cs
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_ThemeColorGrid.mat
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_LockedIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Scripts/GlobalToggle.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_4Band.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkMiniPlayerController.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/ColorChordStrip.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/IsAudioLink.asset
+	Packages/com.llealloo.audiolink/Runtime/AudioReactiveLight.prefab
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkAutoCorrView.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/DrawLine.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkMiniPlayer.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/4BandChronotensity.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkControllerScreenMaterial.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/GlobalSlider.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo7.shader
+	Packages/com.llealloo.audiolink/LICENSE
+	Packages/com.llealloo.audiolink/Runtime/Shaders
+	Packages/com.llealloo.audiolink/CHANGELOG.md
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_UI.png
+	Packages/com.llealloo.audiolink/Runtime/VERSION.txt
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveSurfaceArray.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_SpectrumCoords.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/StringInListDrawer.cs
+	Packages/com.llealloo.audiolink/Runtime/RenderTextures/rt_MiniPlayer.asset
+	Packages/com.llealloo.audiolink/Runtime/AudioReactiveSurfaceArray.prefab
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo9.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_4BandFiltered.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/4BandAmplitudeLerp.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/4BandAmplitude.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkSpectrumUI.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_AutoGainIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_Waveform.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveLight.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkControllerLogo.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_ControllerHandle.mat
+	Packages/com.llealloo.audiolink/Runtime/Texture2D
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_PowerIcon.png
+	Packages/com.llealloo.audiolink/Runtime/AudioLink.prefab
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ThemeColorSelection.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ALController_tablet_BaseMap.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ALController_logo_BaseMap.png
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_ControllerMaterial.mat
+	Packages/com.llealloo.audiolink/Runtime/Resources/ALController.fbx
+	Packages/com.llealloo.audiolink/Runtime/AudioReactiveObject.prefab
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_ControllerBody.mat
+	Packages/com.llealloo.audiolink/Runtime/Resources/Fonts/ArialFade.mat
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLink4Band.mat
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkDebugRaw.mat
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkTestTime 1.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/RotateUVFill.asset
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_PlusBoxIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_SyncIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkMiniPlayerScreen.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/GlobalSlider.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkTestLights.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/SmoothPixelFont.cginc
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkLogo.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/UdonSyncedAttribute.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkQuickView.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/GlobalStringExample.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/VU.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkController.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkDebug.mat
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_QuadrantNumbers.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_StopIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioTextureOverlay.shader
+	Packages/com.llealloo.audiolink
+	Packages/com.llealloo.audiolink/Runtime/Materials
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_UnlockedIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_AutoCorrelator.shader
+	Packages/com.llealloo.audiolink/Runtime/RenderTextures/rt_AudioLink.asset
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_SliderArrow.png
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkControllerV0.asset
+	Packages/com.llealloo.audiolink/Runtime/CVRAudioLinkController.prefab
+	Packages/com.llealloo.audiolink/Runtime/AudioLinkMiniPlayer.prefab
+	Packages/com.llealloo.audiolink/Editor/Scripts
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveSurfaceArray.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/ThemeColorGrid.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ResetIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo4.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_UdonAudioLinkHorizontal.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/AudioLinkInfo.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkController.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveSurface.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkExamples_ColorChordLights.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkSpectrumUI.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/VUFiltered.asset
+	Packages/com.llealloo.audiolink/Runtime/CVRAudioLinkVideoPlayer.prefab
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkControllerHandle.asset
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_SliderArrows.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/SpectrumWheels.fbx
+Asset Pipeline Refresh (id=a025d61f1f0ed9b4498c7a31fa6ebb62): Total: 0.002 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Assertion failed on expression: 'm_Ptr'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+AudioLink.Editor.AudioLinkAssetManager:ReimportPackage () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkAssetManager.cs:38)
+AudioLink.Editor.AudioLinkAssetManager:.cctor () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkAssetManager.cs:29)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkAssetManager.cs line 38]
+
+Cancelling DisplayDialog: Upgrade AudioLink compatible shaders Do you want to check all shaders in this project for AudioLink 0.3.x compatibility and update them if necessary? This is useful for upgrading projects using AudioLink 0.2.x or below.
+
+If you choose 'Go Ahead', shader files in this project which include references to 'Assets/AudioLink/Shaders/AudioLink.cginc' will be edited to use the new path introduced by AudioLink 0.3.x. Shaders which already use the new or custom path will be unaffected. You should make a backup before proceeding.
+
+(You can always run this utility manually via the Tools/AudioLink/Update AudioLink Compatible Shaders menu command)
+This should not be called in batch mode.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:DisplayDialog (string,string,string,string)
+AudioLink.Editor.AudioLinkShaderCompatabilityUtility:UpgradeShaders () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkShaderCompatabilityUtility.cs:29)
+AudioLink.Editor.AudioLinkAssetManager:.cctor () (at ./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkAssetManager.cs:31)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[./Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkShaderCompatabilityUtility.cs line 29]
+
+Refresh completed but there are assets queued up for importing. Check for code that modifies assets which gets called after OnPostProcessAllAssets. Additional details in Log file
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+VRC.SDKBase.Editor.Source.Helpers.ReloadUtil:ReloadSDK (bool)
+VRC.SDKBase.Editor.Source.Helpers.ReloadUtil:ReloadSDK ()
+VRC.SDK3.Editor.SDK3ImportFix/<ReloadSDK>d__2:MoveNext () (at ./Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs:45)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<VRC.SDK3.Editor.SDK3ImportFix/<ReloadSDK>d__2> (VRC.SDK3.Editor.SDK3ImportFix/<ReloadSDK>d__2&)
+VRC.SDK3.Editor.SDK3ImportFix:ReloadSDK ()
+VRC.SDK3.Editor.SDK3ImportFix:.cctor () (at ./Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs:27)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[./Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs line 45]
+
+Assets queued for import after Refresh completed:
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/Waveform.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLink.DataAPI.cs
+	Packages/com.llealloo.audiolink/Runtime/AudioLink.asmdef
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/Quantize.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts
+	Packages/com.llealloo.audiolink/README.md
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ThemeColorController.cs
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveSurface.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_ColorChordStrip.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_DropdownArrowWhite.png
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ThemeColorController.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/AutoCorrelator.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkExamples_ColorChordStrip.shader
+	Packages/com.llealloo.audiolink/Runtime/Texture2D/tex_AudioData2D.asset
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ALController_tablet_MaskMap.png
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkTexturePreview.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkMiniPlayerController.cs
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkMiniPlayerControllerInspector.cs
+	Packages/com.llealloo.audiolink/Runtime/AudioLinkAvatar.prefab
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLink.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkUI.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLink.PlayerAPI.cs
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ThemeColorControllerV0.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/BandPulse.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Color3DTextFade.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLink.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/GlobalToggle.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo8.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDebug.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/TranslateUV.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkMiniPlayerOut.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/AudioLinkTime.asset
+	Packages/com.llealloo.audiolink/Runtime/AudioLinkControllerV0.prefab
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLink4BandColors.mat
+	Packages/com.llealloo.audiolink/Runtime/AudioLink.USharp.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLink.cginc
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/ColorChordLights.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_ColorChordLights.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_Chronotensity.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveLight.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/FilteredVUDebug.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkControllerV0.cs
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkControllerHandle.cs
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkShaderCompatabilityUtility.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkTestTime.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_GainIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveObject.cs
+	Packages/com.llealloo.audiolink/Runtime/AudioLinkController.prefab
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_FilteredVUFlat.shader
+	Packages/com.llealloo.audiolink/Editor/Audiolink.Editor.asmdef
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_CheckmarkWhite.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkMiniPlayerOut.shader
+	Packages/com.llealloo.audiolink/Editor
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkController.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo2.shader
+	Packages/com.llealloo.audiolink/Runtime/RenderTextures
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_BasicVU.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/Fonts
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Color3DText.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_FilteredVU.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/Fonts/Arial.ttf
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo3.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveObject.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioReactiveSurface_SmoothAlpha.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ytdlpPlayer.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo1.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_Hue.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkAutocorrView.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkTestLights.mat
+	Packages/com.llealloo.audiolink/Runtime/CVRAudioLink.prefab
+	Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+	Packages/com.llealloo.audiolink/Runtime/AudioReactiveSurface.prefab
+	Packages/com.llealloo.audiolink/Runtime/Resources/Fonts/Arial.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/BlendOverlay.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioReactiveSurface.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioReactiveSurface_Cutout.shader
+	Packages/com.llealloo.audiolink/package.json
+	Packages/com.llealloo.audiolink/Runtime
+	Packages/com.llealloo.audiolink/Runtime/Resources/ALControllerLogo.fbx
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/4BandAmplitudeFiltered.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkQuickView.mat
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkAssetManager.cs
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkThemeColorPreview.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioReactiveSurface.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLink.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkMiniPlayer.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLink.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkZone.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo6.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_UdonAudioLink.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/AutoCorrelatorUncorrelated.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkZone.asset
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkEditor.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo5.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_UdonAudioLink.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ThemeColorControllerV0.cs
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_ThemeColorGrid.mat
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_LockedIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Scripts/GlobalToggle.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_4Band.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkMiniPlayerController.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/ColorChordStrip.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/IsAudioLink.asset
+	Packages/com.llealloo.audiolink/Runtime/AudioReactiveLight.prefab
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkAutoCorrView.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/DrawLine.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkMiniPlayer.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/4BandChronotensity.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkControllerScreenMaterial.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/GlobalSlider.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo7.shader
+	Packages/com.llealloo.audiolink/LICENSE
+	Packages/com.llealloo.audiolink/Runtime/Shaders
+	Packages/com.llealloo.audiolink/CHANGELOG.md
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_UI.png
+	Packages/com.llealloo.audiolink/Runtime/VERSION.txt
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveSurfaceArray.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_SpectrumCoords.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/StringInListDrawer.cs
+	Packages/com.llealloo.audiolink/Runtime/RenderTextures/rt_MiniPlayer.asset
+	Packages/com.llealloo.audiolink/Runtime/AudioReactiveSurfaceArray.prefab
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo9.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_4BandFiltered.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/4BandAmplitudeLerp.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/4BandAmplitude.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkSpectrumUI.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_AutoGainIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_Waveform.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveLight.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkControllerLogo.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_ControllerHandle.mat
+	Packages/com.llealloo.audiolink/Runtime/Texture2D
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_PowerIcon.png
+	Packages/com.llealloo.audiolink/Runtime/AudioLink.prefab
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ThemeColorSelection.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ALController_tablet_BaseMap.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ALController_logo_BaseMap.png
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_ControllerMaterial.mat
+	Packages/com.llealloo.audiolink/Runtime/Resources/ALController.fbx
+	Packages/com.llealloo.audiolink/Runtime/AudioReactiveObject.prefab
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_ControllerBody.mat
+	Packages/com.llealloo.audiolink/Runtime/Resources/Fonts/ArialFade.mat
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLink4Band.mat
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkDebugRaw.mat
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkTestTime 1.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/RotateUVFill.asset
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_PlusBoxIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_SyncIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkMiniPlayerScreen.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/GlobalSlider.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkTestLights.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/SmoothPixelFont.cginc
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkLogo.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/UdonSyncedAttribute.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkQuickView.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/GlobalStringExample.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/VU.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkController.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkDebug.mat
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_QuadrantNumbers.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_StopIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioTextureOverlay.shader
+	Packages/com.llealloo.audiolink
+	Packages/com.llealloo.audiolink/Runtime/Materials
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_UnlockedIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_AutoCorrelator.shader
+	Packages/com.llealloo.audiolink/Runtime/RenderTextures/rt_AudioLink.asset
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_SliderArrow.png
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkControllerV0.asset
+	Packages/com.llealloo.audiolink/Runtime/CVRAudioLinkController.prefab
+	Packages/com.llealloo.audiolink/Runtime/AudioLinkMiniPlayer.prefab
+	Packages/com.llealloo.audiolink/Editor/Scripts
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveSurfaceArray.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/ThemeColorGrid.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ResetIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo4.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_UdonAudioLinkHorizontal.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/AudioLinkInfo.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkController.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveSurface.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkExamples_ColorChordLights.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkSpectrumUI.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/VUFiltered.asset
+	Packages/com.llealloo.audiolink/Runtime/CVRAudioLinkVideoPlayer.prefab
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkControllerHandle.asset
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_SliderArrows.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/SpectrumWheels.fbx
+Asset Pipeline Refresh (id=18ab3804f5d4514409f724aafde80740): Total: 0.002 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Assertion failed on expression: 'm_Ptr'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+VRC.SDKBase.Editor.Source.Helpers.ReloadUtil:ReloadSDK (bool)
+VRC.SDKBase.Editor.Source.Helpers.ReloadUtil:ReloadSDK ()
+VRC.SDK3.Editor.SDK3ImportFix/<ReloadSDK>d__2:MoveNext () (at ./Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs:45)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<VRC.SDK3.Editor.SDK3ImportFix/<ReloadSDK>d__2> (VRC.SDK3.Editor.SDK3ImportFix/<ReloadSDK>d__2&)
+VRC.SDK3.Editor.SDK3ImportFix:ReloadSDK ()
+VRC.SDK3.Editor.SDK3ImportFix:.cctor () (at ./Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs:27)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[./Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs line 45]
+
+Refresh completed but there are assets queued up for importing. Check for code that modifies assets which gets called after OnPostProcessAllAssets. Additional details in Log file
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+VRC.SDKBase.Editor.Source.Helpers.ReloadUtil:ReloadSDK (bool)
+VRC.SDKBase.Editor.Source.Helpers.ReloadUtil:ReloadSDK ()
+VRC.SDK3.Editor.SDK3ImportFix/<ReloadSDK>d__2:MoveNext () (at ./Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs:45)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<VRC.SDK3.Editor.SDK3ImportFix/<ReloadSDK>d__2> (VRC.SDK3.Editor.SDK3ImportFix/<ReloadSDK>d__2&)
+VRC.SDK3.Editor.SDK3ImportFix:ReloadSDK ()
+VRC.SDK3.Editor.SDK3ImportFix:.cctor () (at ./Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs:27)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[./Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs line 45]
+
+Assets queued for import after Refresh completed:
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/Waveform.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLink.DataAPI.cs
+	Packages/com.llealloo.audiolink/Runtime/AudioLink.asmdef
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/Quantize.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts
+	Packages/com.llealloo.audiolink/README.md
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ThemeColorController.cs
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveSurface.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_ColorChordStrip.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_DropdownArrowWhite.png
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ThemeColorController.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/AutoCorrelator.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkExamples_ColorChordStrip.shader
+	Packages/com.llealloo.audiolink/Runtime/Texture2D/tex_AudioData2D.asset
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkDefineManager.cs
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ALController_tablet_MaskMap.png
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkTexturePreview.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkMiniPlayerController.cs
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkMiniPlayerControllerInspector.cs
+	Packages/com.llealloo.audiolink/Runtime/AudioLinkAvatar.prefab
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLink.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkUI.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLink.PlayerAPI.cs
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ThemeColorControllerV0.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/BandPulse.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Color3DTextFade.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLink.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/GlobalToggle.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo8.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDebug.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/TranslateUV.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkMiniPlayerOut.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/AudioLinkTime.asset
+	Packages/com.llealloo.audiolink/Runtime/AudioLinkControllerV0.prefab
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLink4BandColors.mat
+	Packages/com.llealloo.audiolink/Runtime/AudioLink.USharp.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLink.cginc
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/ColorChordLights.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_ColorChordLights.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_Chronotensity.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveLight.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/FilteredVUDebug.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkControllerV0.cs
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkControllerHandle.cs
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkShaderCompatabilityUtility.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkTestTime.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_GainIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveObject.cs
+	Packages/com.llealloo.audiolink/Runtime/AudioLinkController.prefab
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_FilteredVUFlat.shader
+	Packages/com.llealloo.audiolink/Editor/Audiolink.Editor.asmdef
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_CheckmarkWhite.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkMiniPlayerOut.shader
+	Packages/com.llealloo.audiolink/Editor
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkController.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo2.shader
+	Packages/com.llealloo.audiolink/Runtime/RenderTextures
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_BasicVU.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/Fonts
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Color3DText.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_FilteredVU.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/Fonts/Arial.ttf
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo3.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveObject.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioReactiveSurface_SmoothAlpha.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ytdlpPlayer.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo1.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_Hue.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkAutocorrView.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkTestLights.mat
+	Packages/com.llealloo.audiolink/Runtime/CVRAudioLink.prefab
+	Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+	Packages/com.llealloo.audiolink/Runtime/AudioReactiveSurface.prefab
+	Packages/com.llealloo.audiolink/Runtime/Resources/Fonts/Arial.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/BlendOverlay.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioReactiveSurface.mat
+	Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3-Editor.dll
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioReactiveSurface_Cutout.shader
+	Packages/com.llealloo.audiolink/package.json
+	Packages/com.llealloo.audiolink/Runtime
+	Packages/com.llealloo.audiolink/Runtime/Resources/ALControllerLogo.fbx
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/4BandAmplitudeFiltered.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkQuickView.mat
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkAssetManager.cs
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkThemeColorPreview.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioReactiveSurface.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLink.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkMiniPlayer.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLink.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkZone.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo6.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_UdonAudioLink.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/AutoCorrelatorUncorrelated.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkZone.asset
+	Packages/com.llealloo.audiolink/Editor/Scripts/AudioLinkEditor.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo5.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_UdonAudioLink.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/ThemeColorControllerV0.cs
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_ThemeColorGrid.mat
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_LockedIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Scripts/GlobalToggle.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_4Band.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkMiniPlayerController.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/ColorChordStrip.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/IsAudioLink.asset
+	Packages/com.llealloo.audiolink/Runtime/AudioReactiveLight.prefab
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkAutoCorrView.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/DrawLine.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkMiniPlayer.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/4BandChronotensity.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkControllerScreenMaterial.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/GlobalSlider.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo7.shader
+	Packages/com.llealloo.audiolink/LICENSE
+	Packages/com.llealloo.audiolink/Runtime/Shaders
+	Packages/com.llealloo.audiolink/CHANGELOG.md
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_UI.png
+	Packages/com.llealloo.audiolink/Runtime/VERSION.txt
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveSurfaceArray.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_SpectrumCoords.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/StringInListDrawer.cs
+	Packages/com.llealloo.audiolink/Runtime/RenderTextures/rt_MiniPlayer.asset
+	Packages/com.llealloo.audiolink/Runtime/AudioReactiveSurfaceArray.prefab
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo9.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_4BandFiltered.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/4BandAmplitudeLerp.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/4BandAmplitude.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkSpectrumUI.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_AutoGainIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_Waveform.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveLight.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkControllerLogo.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_ControllerHandle.mat
+	Packages/com.llealloo.audiolink/Runtime/Texture2D
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_PowerIcon.png
+	Packages/com.llealloo.audiolink/Runtime/AudioLink.prefab
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ThemeColorSelection.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ALController_tablet_BaseMap.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ALController_logo_BaseMap.png
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_ControllerMaterial.mat
+	Packages/com.llealloo.audiolink/Runtime/Resources/ALController.fbx
+	Packages/com.llealloo.audiolink/Runtime/AudioReactiveObject.prefab
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_ControllerBody.mat
+	Packages/com.llealloo.audiolink/Runtime/Resources/Fonts/ArialFade.mat
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLink4Band.mat
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkDebugRaw.mat
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkTestTime 1.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/RotateUVFill.asset
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_PlusBoxIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_SyncIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkMiniPlayerScreen.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/GlobalSlider.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkTestLights.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/SmoothPixelFont.cginc
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkLogo.mat
+	Packages/com.llealloo.audiolink/Runtime/Scripts/UdonSyncedAttribute.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkQuickView.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/GlobalStringExample.shader
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/VU.asset
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkController.asset
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkDebug.mat
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_QuadrantNumbers.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_StopIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioTextureOverlay.shader
+	Packages/com.llealloo.audiolink
+	Packages/com.llealloo.audiolink/Runtime/Materials
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_UnlockedIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Shaders/AudioLinkAmplify_AutoCorrelator.shader
+	Packages/com.llealloo.audiolink/Runtime/RenderTextures/rt_AudioLink.asset
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_SliderArrow.png
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkControllerV0.asset
+	Packages/com.llealloo.audiolink/Runtime/CVRAudioLinkController.prefab
+	Packages/com.llealloo.audiolink/Runtime/AudioLinkMiniPlayer.prefab
+	Packages/com.llealloo.audiolink/Editor/Scripts
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveSurfaceArray.cs
+	Packages/com.llealloo.audiolink/Runtime/Shaders/ThemeColorGrid.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_ResetIcon.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkDocs_Demo4.shader
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_UdonAudioLinkHorizontal.png
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/AudioLinkInfo.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkController.shader
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioReactiveSurface.asset
+	Packages/com.llealloo.audiolink/Runtime/Shaders/AudioLinkExamples_ColorChordLights.shader
+	Packages/com.llealloo.audiolink/Runtime/Materials/mat_AudioLinkSpectrumUI.mat
+	Packages/com.llealloo.audiolink/Runtime/Shaders/Amplify/Functions/VUFiltered.asset
+	Packages/com.llealloo.audiolink/Runtime/CVRAudioLinkVideoPlayer.prefab
+	Packages/com.llealloo.audiolink/Runtime/Scripts/AudioLinkControllerHandle.asset
+	Packages/com.llealloo.audiolink/Runtime/Resources/tex_SliderArrows.png
+	Packages/com.llealloo.audiolink/Runtime/Resources/SpectrumWheels.fbx
+Asset Pipeline Refresh (id=fd6f9be9c616c994c8c4d18f7527d5d5): Total: 0.002 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Assertion failed on expression: 'm_Ptr'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+VRC.SDKBase.Editor.Source.Helpers.ReloadUtil:ReloadSDK (bool)
+VRC.SDKBase.Editor.Source.Helpers.ReloadUtil:ReloadSDK ()
+VRC.SDK3.Editor.SDK3ImportFix/<ReloadSDK>d__2:MoveNext () (at ./Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs:45)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<VRC.SDK3.Editor.SDK3ImportFix/<ReloadSDK>d__2> (VRC.SDK3.Editor.SDK3ImportFix/<ReloadSDK>d__2&)
+VRC.SDK3.Editor.SDK3ImportFix:ReloadSDK ()
+VRC.SDK3.Editor.SDK3ImportFix:.cctor () (at ./Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs:27)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[./Packages/com.vrchat.worlds/Editor/VRCSDK/SDK3/SDK3ImportFix.cs line 45]
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00040] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:282 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in .\Library\PackageCache\com.unity.xr.oculus@4.0.0\Runtime\OculusLoader.cs:267 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <eef08f56e2e042f1b3027eca477293d9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <eef08f56e2e042f1b3027eca477293d9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <347e3e2bef8c4deb82c9790c6e198135>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+Assertion failed on expression: '!isWriteTxn || s_CurrentSourceAssetTransaction->m_IsWriteTxn'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:63)
+UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
+UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
+UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
+UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
+UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
+UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
+UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
+UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
+UdonSharpEditor.UdonSharpEditorManager:UpgradeAssetsIfNeeded () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:868)
+UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1689)
+UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+
+[./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs line 63]
+
+Received signal SIGSEGV
+Obtained 46 stack frames
+0x00007ff6adfc891a (Unity) core::hash_set<core::pair<core::basic_string<char,core::StringStorageDefault<char> > const ,ArtifactInfoBindings::ArtifactInfoDependency,1>,core::hash_pair<core::hash<core::basic_string<char,core::StringStorageDefault<char> > >,core::basic_string<char,core::StringStorageDefault<char> > const ,ArtifactInfoBindings::ArtifactInfoDependency>,core::equal_pair<std::equal_to<core::basic_string<char,core::StringStorageDefault<char> > >,core::basic_string<char,core::StringStorageDefault<char> > const ,ArtifactInfoBindings::ArtifactInfoDependency> >::operator=
+0x00007ff6ae0aa67f (Unity) SourceAssetScanner::Refresh
+0x00007ff6ae06b094 (Unity) Scan
+0x00007ff6ae05a846 (Unity) ImportAtPathV2
+0x00007ff6adfd9852 (Unity) AssetDatabase::ImportAtPath
+0x00007ff6ae0477de (Unity) CreateFolderV2
+0x00007ff6adfd3d8e (Unity) AssetDatabase::CreateFolder
+0x00007ff6ac4b6d77 (Unity) AssetDatabaseBindings::CreateFolder
+0x00007ff6ac445b3e (Unity) AssetDatabase_CUSTOM_CreateFolder
+0x000002491daeeee5 (Mono JIT Code) (wrapper managed-to-native) UnityEditor.AssetDatabase:CreateFolder (string,string)
+0x000002491daeeb53 (Mono JIT Code) UdonSharp.Updater.UdonSharpDataLocator:InitializeUdonSharpData () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:65)
+0x000002491daee5f3 (Mono JIT Code) UdonSharp.Updater.UdonSharpDataLocator:get_DataPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpDataLocator.cs:44)
+0x000002491daee28b (Mono JIT Code) UdonSharp.Updater.UdonSharpLocator:get_SettingsPath () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Runtime/UdonSharpLocator.cs:49)
+0x000002491daee193 (Mono JIT Code) UdonSharpEditor.UdonSharpSettings:GetSettings () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:87)
+0x000002491daee0cb (Mono JIT Code) UdonSharpEditor.UdonSharpSettings:GetScannerBlacklist () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:160)
+0x000002491daeda6b (Mono JIT Code) UdonSharpEditor.UdonSharpSettings:FilterBlacklistedPaths (System.Collections.Generic.IEnumerable`1<string>) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Editors/UdonSharpSettings.cs:182)
+0x000002491c85aaf3 (Mono JIT Code) UdonSharp.Compiler.CompilationContext:GetAllFilteredSourcePaths (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:212)
+0x000002491c857343 (Mono JIT Code) UdonSharp.Compiler.CompilationContext:GetAllFilteredScripts (bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/Compiler/CompilationContext.cs:228)
+0x000002491c853723 (Mono JIT Code) UdonSharp.UdonSharpProgramAsset:IsAnyScriptDirty () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:256)
+0x000002491c85364b (Mono JIT Code) UdonSharp.UdonSharpProgramAsset:CompileAllCsPrograms (bool,bool) (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpProgramAsset.cs:292)
+0x000002491c82fa73 (Mono JIT Code) UdonSharpEditor.UdonSharpEditorManager:UpgradeAssetsIfNeeded () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:869)
+0x000002491c844abb (Mono JIT Code) UdonSharpEditor.UdonSharpEditorManager:RunAllUpgrades () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:1693)
+0x00000248bb8c3933 (Mono JIT Code) UdonSharpEditor.UdonSharpEditorManager:RunPostAssemblyBuildRefresh () (at ./Packages/com.vrchat.worlds/Integrations/UdonSharp/Editor/UdonSharpEditorManager.cs:132)
+0x00000248bb8c2b70 (Mono JIT Code) UnityEditor.AssemblyReloadEvents:OnAfterAssemblyReload ()
+0x00000248e577bff5 (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void (object,intptr,intptr,intptr)
+0x00007ffe1549e0d4 (mono-2.0-bdwgc) mono_jit_runtime_invoke (at C:/build/output/Unity-Technologies/mono/mono/mini/mini-runtime.c:3445)
+0x00007ffe153deb74 (mono-2.0-bdwgc) do_runtime_invoke (at C:/build/output/Unity-Technologies/mono/mono/metadata/object.c:3066)
+0x00007ffe153ded0c (mono-2.0-bdwgc) mono_runtime_invoke (at C:/build/output/Unity-Technologies/mono/mono/metadata/object.c:3113)
+0x00007ff6acc36f54 (Unity) scripting_method_invoke
+0x00007ff6acc15bd4 (Unity) ScriptingInvocation::Invoke
+0x00007ff6acc0032a (Unity) MonoManager::FinalizeReload
+0x00007ff6adfe59ba (Unity) ScriptingInitializer::FinalizeReload
+0x00007ff6adb9388b (Unity) LoadUserAssemblies
+0x00007ff6ae09403f (Unity) <lambda_e4c09a862f47a773e31babb76239f51f>::operator()
+0x00007ff6ae0cd842 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff6ae0b97ee (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff6ae0bb41e (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff6ae0cbbec (Unity) IOService::Run
+0x00007ff6ae0a03af (Unity) AssetImportWorkerClient::Run
+0x00007ff6ae06af67 (Unity) RunAssetImportWorkerClientV2
+0x00007ff6ae06afeb (Unity) RunAssetImporterV2
+0x00007ff6ad86eca1 (Unity) Application::InitializeProject
+0x00007ff6adcf50c5 (Unity) WinMain
+0x00007ff6af0de87e (Unity) __scrt_common_main_seh
+0x00007ffe98d4257d (KERNEL32) BaseThreadInitThunk
+0x00007ffe9a0aaa48 (ntdll) RtlUserThreadStart
+
