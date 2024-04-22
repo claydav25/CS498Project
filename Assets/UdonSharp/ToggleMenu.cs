@@ -17,7 +17,7 @@ public class ToggleMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            Cursor.visible = true;
+            
             teleportMenu.gameObject.SetActive(!teleportMenu.gameObject.activeSelf);
         }
         
