@@ -12,6 +12,36 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.texelsaur.access": {
+      "version": "file:com.texelsaur.access",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.texelsaur.common": {
+      "version": "file:com.texelsaur.common",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.texelsaur.misc": {
+      "version": "file:com.texelsaur.misc",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.texelsaur.playeraudio": {
+      "version": "file:com.texelsaur.playeraudio",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.texelsaur.video": {
+      "version": "file:com.texelsaur.video",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.burst": {
       "version": "1.8.7",
       "depth": 1,
@@ -234,36 +264,6 @@
         "com.unity.textmeshpro": "3.0.6",
         "com.unity.inputsystem": "1.2.0"
       }
-    },
-    "dev.architech.protv": {
-      "version": "file:dev.architech.protv",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "dev.architech.protv.extras": {
-      "version": "file:dev.architech.protv.extras",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "dev.architech.sdk": {
-      "version": "file:dev.architech.sdk",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "dev.architech.umbrella": {
-      "version": "file:dev.architech.umbrella",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "dev.architech.videoplayershim": {
-      "version": "file:dev.architech.videoplayershim",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
     },
     "dev.onevr.vrworldtoolkit": {
       "version": "file:dev.onevr.vrworldtoolkit",
